@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:dbfa8f98b3a987b6bebfb1720ed60f8b5da548b517be8a14c97cf2f0ff634160",
+  "claims": [
+    {
+      "id": "claim_6c4c73f8644446998978b0739e83025d",
+      "statement": "Persisted single-asset data requires Datetime `timestamp` plus numeric OHLCV columns, and canonicalization casts those fields, supplies neutral dividends/splits defaults, and returns a fixed canonical column order.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/models.py#L151-L223",
+          "version": "repo-lines-v1:sha256:a3d9b46b7a8727cc88c8c95f86bcb8eb0b1a197c5e5e739003fb4b25e0960303:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMWE1ZGI5MzBiMTMzMDc0YmM0ZTQyYTUzMWJmNzI3Njk3ZTdiNmQwYjEyZjA5MTQzNTA0NGZkY2EzZGQ0MTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyYmZhNzI3NzAxMTc1ZmM2Y2UxNzk3MzFlNzhlZTViNWNjOTFjNjhkYWY0OTkwY2Q2ZTNhYmY1YzM3ZTIwMmIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ5ZjBiZTlmMjE3YWQwZTlkODM5NTNlNTM4ZTc3ZDRmZDY4NGRlZGEwN2E2YmVmZjM4Y2VkMThiMjFkMjIyZjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/core/schemas.py#L21-L31",
+          "version": "repo-lines-v1:sha256:eacfd092249bd2f74d9449674f6b613341f60b9c9359d12c42a57df95f4b0eb3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk4ZTEyMDc2OTllNTI0MWJjOGE0MWFiYTJlYzYyN2JiMDUwNDJiOGU0ZDFmNWY4NDNjYWEyZjkyMWQyM2I4OGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFhYWY3NjM3Y2I2ZTdlNWRiODVkNjM0Mjc0NjAxNGRmMDQxY2NkNTU4YTkyMGIyOWViNmFjNzE5ZDdiYWY1YzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjNjk5ODE2MDcyZDQyOGY4ZTFlNWE2OGExNjE0YTQ3OTM3NWY1OTcwZWM5M2MxOTA2M2Y3ZWY1ODE2ZTQzNDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b44d50ec70994ea59b5d5c150cb8873c",
+      "statement": "The canonical stacked multi-asset shape adds a symbol to OHLCV, provides asset-class optional columns, accepts compatible input types during validation, and offers explicit casting and deterministic timestamp/symbol ordering.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/schemas.py#L102-L173",
+          "version": "repo-lines-v1:sha256:04cb34302bd355ea39e3c209b44ee9c63938eb364f339d7d8bd2746c8b34abd4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiMTk5NDEyYWY1NmU2M2E0ZTM5MmI5OTBlOGRkNzFlMGIzNDU3ZjJkYmNhODc2NTI2MTM2NWFkZTdlZTY3YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyNWU4ZGI2MTYwMmNhM2Q4NTRmMzI0NDRlNDI1MDE1MmFhYzcwYWU1MjhiZGI1MzNkNzdlMjZlNTE5MzBlNzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFlOWM5YjgzNDg2NWNiODYwN2IwMWIyMDBkN2YwM2QxNzBkYTllODZlMmM0ZmE1ZTE1OTQ3NTBiOGM2NjA0YWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5MjgwNjZhNjExY2Y5MjkwYTQzZjQ0MjhiNjIyZmVhYzFmNDM1NmI1ZjViNzVmMzk1M2I1MzZjMzJhM2FiMTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/core/schemas.py#L199-L280",
+          "version": "repo-lines-v1:sha256:6b45ba0e38209a47bd7883570f407c739c3c39367563d05e788233c1bf5631d0:eyJzZWxlY3RlZExpbmVDb3VudCI6ODIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmYzJiYWE4Nzc5NDQ1NjNlMmU5NGQ2YjRkZWU1OTE0N2M1NzZhYjczODQ3MGY4ZDVlYTZhODM5ZTY1ZDZmOTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhODYxZWIzNjJjZjk5MTFhNDg4YjY5NDBjNDM4NzM2Y2M1ZjVhYTA0YjljNzIwNDNhNjcyMmVmZGIwNmJlYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1ZTE2YWNlZDA3ZTJlYTFjYTQ5YmQ3ZmVjMDQxMTdmZTI5Y2NkM2UwMmY4YTZjYTJkNTViYzMzNWI4OGNjMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU3MTkxMmNjODQzZjQ1NTU2MGUwMTI1ZDc0MjY2Y2ZjMThkMDZmZWIxMmU2OWNlZTRjNzEyNzNjNjBjZjgyNGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/core/schemas.py#L338-L467",
+          "version": "repo-lines-v1:sha256:d7b5917b72002396778e28ab82983f2fdc0929b68ae83a9a3491af2735cc4878:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwNWM3MTgyOTQ5ZWMwMTRjYjE2ZDM2ZTZkZjAzYjIyNDRjZWIzZTFmNjQxZGRiZjcyNTRjYTY4MmE2MDdkYWRjIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmMmY2MGE5NDIzODc4N2Y4Mzk3ZTgxNDMxZjBjM2M4N2NkYzZkNzRhNjE1YzBhZWVlODA1YTAwZjhhNDhlZGFkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhZjU1YzAzYmJjNzQ3MjI5NzQ5NzQ4YTIzNmU0ODEwNjE1NzQ3Y2I1MDc1MzExYmE3NDQ2Zjc0ZDIzYzZkZmYwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_2bf6b2a3d246498bab06731f319eb302",
+      "statement": "Schema alignment unions columns and reconciles dtypes without reducing datetime precision, while incremental merging aligns corporate-action defaults and keeps the last observation per timestamp.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/schemas.py#L33-L97",
+          "version": "repo-lines-v1:sha256:b8064e32bcf419c13aba2f07d5cb1f10d4795fb4d680f8bf9fb17ecdf9adff0f:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3NDQzY2JiNzhkODQyNGQ0NDk0NWQyMzY5NmMxYTJmY2QyMTVmZGQwMmIxNTdkZjAwYzU0NTFmY2QyMzg2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlNWU2OGNjNTY3NjczNjJkZGFhYmUzMzYzZWViMDMxM2U0OTc4ZmQzYTQ0YjdhYTFkZDE1NzNkZTA3YmRjYjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI1Y2MyYmUxN2Y4MjczMTZkMjI2OWViYTZjZTVmZTY2ZWRmMDkwMjZkMmJhZGUzMDcwNTAwYWNjM2FmOGMwNmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA3NTZmZmM3NmE2MDQzMzZlY2VhOWYxMjIwMTUxZTdhMDI4YmEzNWUxNGQwMGFkNDQ4NGY2NjYxMTZlZWJmNTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L147-L176",
+          "version": "repo-lines-v1:sha256:ba3683039ad236009559d3b7c7472b013d376f723bf06c9888fd98b25c94b47a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5NGFiZGE4MTJiYWYyYzdjMjI5NDQ5NjM3M2M5YTc5ZjVhYTI1NWM0Yjc2ZTFkNDMyYTgwMzM4NjhjZTVhNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiZDNhNWQxZmYyYzJiZmM0YzcxZGNmMTJhMmM5YzlkYWViYjRhMzg1NGIyYWFlM2UyY2QyMTg1ZTZmNzMwNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzYTczOWM4OWE5YzgxMGE4ODdmMmU1OTA5MDg5Y2YwY2U4ZGYzNGFhYTQ2NjVlN2M4MGM4NzBhMWNiMWRiZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQxNmQwNTNjZWVlZTNhNGM3YWQ4OWU3YjJjZjMzMTI0NGE2NDc2MWQ5NmYxZWNjMjE3MDUxMGM3OWJmMDA5YjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_db3bfd99839b4f25b270263c494dd4f1",
+      "statement": "Feed resolution rejects contradictory aliases and explicit column-role overrides that disagree with a supplied feed declaration.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/feeds.py#L1-L26",
+          "version": "repo-lines-v1:sha256:7879812bc8037ccb481a331ec7aed2ecc8af655cfd95d65b10638500789fb53e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkMTg0MmViYWQxNmNlNTNkOGZkMGExNWU2ZTgzZmU0OWU1NjhmMDQzMGRjZDNkM2I5ZTRhNjU1NzUyMTE2NzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5YzFmOWE2YjBmNzIwMzAxM2M3ZDU5NmNjNjU3N2E2YTM4ZTZjZWMyZTlmNDI1YzE3OGE0Zjg0NjFhN2M5N2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e31da36185448ecb946ceed381b1503",
+      "statement": "Version-2 metadata preserves the distinction between an omitted calendar and explicit `calendar=None`, allowing explicit disablement to survive model and storage serialization while omitted declarations retain compatibility default behavior.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/models.py#L66-L140",
+          "version": "repo-lines-v1:sha256:171ee3aa9225ba5a428affb852182056caaca9b9d833851e35ad7076833a7410:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyODEwN2I4ZTFiMjMxYjljYzAwZDE3NmEwYWFkMzgwNTVhY2U2MzczYmE2MjRhYTU4MGY1MTQwZmUyODgwZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU3YWExNzY1MWIwYmQ4NWRlNWMyYzViMGIzZTEzY2JiNGI3YmY0MjYyMjgxODVjNDgyODkyN2EzOGRmM2EzNTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkNWI4ZDNiY2JmY2E2ZmVjZWVhNGY0ZTEyMWMxOGJlZGFiMjUwYzJhN2RiM2NkYTU4YTU2NmQ0OTYzYzJkMDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjOTllN2IxYThlYmY5MmUwNjFjYjc0NWIxZWFmOGU5OTIwNzFhZTBjOWMyOWY2MGEyYmVkZmFhY2Y4YjBiZWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_ingestion_calendar_declarations.py#L34-L67",
+          "version": "repo-lines-v1:sha256:0d06af452a1fd03c89aa1094dae5d675bbaaf4c7fab89d1a31e14cd5323a91eb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhMjNiMjU5ZmY3MTI3NDNlNzRkOTE4NTY2NzNiNmQ2NjM0ODM5NzczODM3NTUwNDVhMGFkOGY1ZWM2YmJhMzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxZjc4ODdkOTNmMzk4Yjg1YjNlYjE5YThiZGNhZDYyMGE0Y2ZlMjVhN2EzZWVmNzlkMGIwMzVlZDRmMTM1MGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIxYWJkYmIxODRjOGVhYjAyNDA3Nzc5ZjdjYTdjMGY3OTlmNTJlMGYwZDY3ZDdiMTUwNWYxNDBkNTFkZmZlZTIifQ"
+        },
+        {
+          "resource": "repo://tests/test_session_calendar_contract.py#L171-L205",
+          "version": "repo-lines-v1:sha256:8ab3923c297cdd64791af0804bdc8b4b1b459f2265c41bc5d9e0245dacdbabfd:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MmVlNDcxZWIyZDNhYzA3NzUzZDE3NTdjMzZhZWZhODg2NzZjMmE4NWM2YWE0MDk2MTA4ZDZiZGIzYzUwM2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlNjBlZjYzZWYyODk5Mjg1ZjEyZTdkYzE3ODIzNzNiNmI5MmExMmM0OGVhNGNiODc0YTg1ZjhlNmZmOTk3M2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgwYzY3NTQ0MTEzY2M2YTNkYWY4NmExOTg1MTZiOTVkNmMyNDczNzBiMWU1ZjhjM2ZkNTNiY2QxNzQyZGVlNzQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6a3896d1b7444bde915379d983751a23",
+      "statement": "Ingestion validates feed frequency, bar type, and calendar before publication and persists the effective temporal declaration; updates reuse stored declarations unless overridden and invalid selections do not replace existing stored generations.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L192-L222",
+          "version": "repo-lines-v1:sha256:1a21bb974cc3c69e87bf33e9226aed2b557a5aaef2726eb76a2ba0d44d94c732:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhNWUwNmFhNDQzOGI1ODQ4Y2JiYmJjMTNhNjkyZjRjZGVmOWEyMzFlNTliNTQxZGNhY2Y2MjBiOGNmNmZkNTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ3OTFmOGMwYWQ1YjY5NGJmOGJkMGNjMmQzODIyNGVmNWMzMmRiNWNiZjhjOWQ5NzA3ZTdlODliN2VlNTAwMTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRmYWIxY2FiMDcyZjJkZmE5NmJkMjY3Njc1NmZmZTFhMzMzNTVlZWI0NjA3YmFhMmI2OTU3ZDg0NjM2ZjYyYTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L261-L348",
+          "version": "repo-lines-v1:sha256:67bdc5566526ae4d8ad22a2f71266b572c6aa5ff45caa8c3f09016f073b9a536:eyJzZWxlY3RlZExpbmVDb3VudCI6ODgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUwMTU5ZTY1OTRhMDQxNGYyMmM4Yjg2MWM4NWZhNDBhNWMyMzM2MTdiNTZmM2ZhOWQ0YmU5ZDZjZjc0MjRiMGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2Y2UwNDk0NTllYjgxNzdkNjcyY2MxMTYyM2MxZTBlZDI0ODBlOGQ3OWU4ZDMzMDk5MmRhOGY3ZGExYTQwMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRhNjJlMTM0ODU1YTNmYzNhMGFmNjJhMDU3NmRlYjRiMzhkOWUzYWZiNGY4MzE5MTg2M2VlYjk4MmMyYjJhZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE5YzBkZDc5ZTgxNjQ3OWZkYmY0MTdhYzExNTQ1YzJkNzkxMzYzZTAyYjg4OTAyMWMzYWQzNDlhYWZlMGI4ZDMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L582-L600",
+          "version": "repo-lines-v1:sha256:651bed793120989985fc96e601bb0013f632da7deb64e68a763052d1330b7ee0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMyZjYwNGUyMDljMmY0ZmU1OGRjYTQyMjY4ZjFjMzJlZjRlNjUyNGI0NjI2NWUzYTExZGIyODdlZjk3NjUzOTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwOTZmMDBkNzI2MWVmZTk0OGZlODM4Y2QxYTgwNWNjMTkwNjE4MmE0NWMwZDJlMWVlMjQzNjg2OGFjYmQ3M2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhYzM3NmFhZjdjZTRkMmI1OTI0MDJlZGRkNTljOTg4OGRkY2MxYzE3NjQ0ZmI3ZmY0MjIwNTk2MmYzZDA3NGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5ZThkMmM4YmJmZDQ2MmMzM2YwOWQwMjZlNTIwM2E3ODQ2N2M4ZTIwMzIxZTJmMTU4NmM0OGU1MWMxZDA3YmEifQ"
+        },
+        {
+          "resource": "repo://tests/test_ingestion_calendar_declarations.py#L178-L197",
+          "version": "repo-lines-v1:sha256:53dd71697bf06a4fa0833fcffaa0059a03f80ac1a069c475d0d18a23482449ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhMjVkNzg5NDFkZTZhYTBhODk0YmY3OTAxZmRjYTUwNTAyODM0MjdlOGQ5YmI1ZWRhNmFiNzRhMTEwN2I1ODEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNjYTZjODZmOWI4YTA5N2NmOTNmMDA5ZGFhMDJjODk5OGFmODllMTQzN2I3NjU0ZjdmMzA3ODgyY2U1NzhiZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwNGNlNmJmMDFlYzY2M2VhYTliNTk5YTJmMWIwYjcxZGUxMjU0NjcyYTc2NjIyMjJiNzNmODY1YzJhMjcxODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_ingestion_calendar_declarations.py#L70-L101",
+          "version": "repo-lines-v1:sha256:e835090c53d3ec2f7f49e7ffc1cd3b16a7a027196357eda9c664328ba3cdd0a2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4NWNiNzk0ZDhiNmM1MDJmNDdmN2MyMWI1NjE0YzJkZjQ0YWU1ZmVlZmI4MGI3NTJhMjU3OGMyMTBkYjQ4MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZjZTIyOWQ4NTM4NWM2NTYwYTdkMmI3ZGIwYWQxMzY0NTVjZmU1NTBkMDE1ZjZjZTI5Nzk5ZjE3ZjVjNWVmMTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhlMzkwNmEwYTU1OGZkNWRlZDVmNTAyYmY0OTNhZTMyMWNmNmNiOGVmMmExMmNkOWU1OGM1N2NiYmEwMDBmNWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_362e229279514e9fa5f905f0e699d017",
+      "statement": "Session assignment uses calendar intervals minus breaks and interruptions, distinguishes session labels from intraday instants, applies `[open, close)` to event/left labels and `(open, close]` to close/right labels, and exposes null, drop, or raise policies for out-of-session rows.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/sessions/assigner.py#L19-L52",
+          "version": "repo-lines-v1:sha256:03b34b557e889c0521225f2472db07fcb33405375470c69fef9fd6b67cb84edc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5M2ExMzA2MmYxMGVlNGYxMjE4ZDkzZTM3YTZmODFkMzQ2ZmYxMWVjN2U1NWRkNTQyZTJkMmQyZWYwNzExZjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1ODFiMDM1ZGIwZTM1MGEyNGQxZjg4NTk0NTg3NzcyNTNmOWQzYWNjNzA4NWY2NDIxOGIyZDM5N2IwNGRjMjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiOWIwN2IyYWMxZjI5MWMzYjFiNWI3NDg3ZDU3OGI4MDM3ZGZmZDQ4MjA4MjYxMzIxODZmZWI5NTU0ZTMwNDYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM2NWRlMjVjMTkxZDhlZmM4ZThhNDU1NmEyMDlhNzEyMzdmZDFmZWVkMDJmNjQzOTMwNDJjNTJiOGMwOTA1ZWUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/sessions/assigner.py#L235-L458",
+          "version": "repo-lines-v1:sha256:3abe031db81eb6a04de01d420d9c433a8f4acb477474d5316686d09c7984438b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjI0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMjljNTI0NDM0YzAwOWFhZjBkN2ZlOWUyZmZlNzIyYjE3MGNmOGViMWM4YzE1NzVlNGUzYmQ1MWU5MjZjNzFiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhZWZhZjM2NTVhNDQ5NjZkZTViODgxMTZlMzZiYTEzOTU2MGZkNTI0Njg1MDUyNDAxOTI1ZjUwYmZjMzgzZmFjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/sessions/assigner.py#L80-L99",
+          "version": "repo-lines-v1:sha256:35895ce076d1b31bc0751c7dc0e2ade5bf77bacf35d089fca0ece858d8440523:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4NWJkNzUwOGIzNmRjY2UyNzJhMjI3Nzk1MzQ0ZTFmMjdiMTgzODYxOGEzZjZiMTMxOWQ2ZTk3ZTNhM2Y3OTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0MTg2NTMwNTY2MTA1NzA0MmI1ZjQ3NWI2N2IyNDViMTk3N2VmNzQ4YWI0M2I4MmI2ODU2MjkyOWJhODg3ODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlMjAzOGI4YjJlMjU2NzI2OTkxMTExMTE3NjQ3MzlmM2FiYmFhZDE3YjkwYjY3N2JiZGYxZGRiMjg0ZGMyOGMifQ"
+        },
+        {
+          "resource": "repo://tests/test_session_calendar_contract.py#L46-L107",
+          "version": "repo-lines-v1:sha256:5738d0cc230306a57892f95ed8b418d7d35ae68b18babc7f1cf90c2ed1facada:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIyYmYzZjZkYzY0ZTAyMzg0OGJhYTIyNDRjYTFlZTc5YjI2OWMxYzYwNjM1ODQxNDQ2MmFkMDViMTdlNDA3NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxMTE1ZGE2YjBkMTM3NTIxNWY5MzU3OGQxNTgxZjQ4ZTYwODk5ZDNhYjIyOWIxZTFlY2EwNjkxZWRkMWNmZDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmZWI4NjkwNWFhMDFlOTI0NzAyZGQyNjVlNTVjMjg1MTNhMjg5ZGRiYTQ2Y2RlZDA2MjZlYjg3ODUyMjZlYTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhY2IwZjA3MmU2MjlhY2NmMzcxYTVkY2JhZGQ2MDQyNGVjMGZkNTkwZmUxMjZhZTRhODJhMGZkZDFjYzQ4YmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cfe075336b1a4b4091e18bedd0636671",
+      "statement": "Naive event timestamps are interpreted in the declared timezone and invalid or ambiguous civil times fail rather than being silently treated as UTC; unsupported `session_start_time` overrides also fail explicitly.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/sessions/assigner.py#L176-L205",
+          "version": "repo-lines-v1:sha256:eceb070325e51a2b7cd4a1cd3b124aceaf12c5ddf8928ca82b2280f59eb42d6c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRkOWNmMGYyNTJiMDg5MmE0YTY1MTk3ZWRiMWJjN2VmZmY1MmQxZWZlZjc3Yzg0OTBmN2E3NjNmZWQwZmU5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3YTNhN2U1YzUxNDk2ZGFmMjI5ODg0YmJhMTdlMjVjMDA2NjVkMDBmZjM4ODBhYjRjZmM2MDRmMjdhNjNjNjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY0MDhmOTliZTllODAxMjY0ZTYzZTA3YWFhMTc1ODMzYjZkODIxOTM5ZjIyMjNlMWRlOTM1NDk0NDIzOThiMDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5MjliYzBhYTc3OTlmMWY1M2RmNWVmNjdiNjYxNDM3MjllZjhmMjliNzdlYzU4MjY1NzA3ZGUxOTQwMDJkMTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/sessions/assigner.py#L317-L329",
+          "version": "repo-lines-v1:sha256:6a417d5f47531ecfc8de844300dface769136d327f031d0269504b1b01656d67:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2ODhlODkwNjUzZWRhZWE3NWY0NTk2OGE0NGU1NjQ5MzVmZmRkNTUyNDQ2ODdhNmE3NmI1M2I1MjcxMDJjYjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkN2Q4MDk1NDFiZTE0MzY3ZTY3MjdhOTNlNzM5OTEzNzA4MWQ1NTQ0MDliN2ViNzEzZmQ3NGIwNzk5NzQ4ZjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1YTBiMTA2YWI2ZmEzMWFmNjU5ZGIzZTI5ZDI4OTgzM2FhMmY2NWQwNzUyNzZlZjk3ZGY4M2Q0ODRkZjg4N2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2MTdiYzcwNjdjZTdlM2IyMTdiODQ2YmZjNmIxM2VlN2M0NzFiMTUwOGFkMTAyNTVjMmU0OWI4NDNlN2Y3MTYifQ"
+        },
+        {
+          "resource": "repo://tests/test_session_calendar_contract.py#L260-L288",
+          "version": "repo-lines-v1:sha256:51c2e6aa59ae670f64e159bbd67a6fc6a869c00ec9c2bb986e7fdb72ea77557a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0Y2E2OTIxNmFjNzBhZWNhMjliYjVjYjY2OWYyNzFjN2NhZTY3NjFhYTJlZTQ5YmZmMzFjMmUwMjI2YzljZDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkNDIyN2Q3MmI4NWEwOTBlMWZjZTE1NDllZWZmYjc4YzI1MGZkNzc0MTBjYjExZDQwMWE3ZjkyNTI3MGMxMzMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYzNmYxMDczYzAxOGRkYmFjOGViNTAzZWIyNmU3Mzk1OTAwNWZhNmZlMDhlOTE4OTMzZjE4NDdjM2NmMjFmNTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2MzQyZTQ4MmYzODJhNGZiYWFjNTM5YTI5NDQ5NGYxOWVmMzAwOWEwMmY1N2Q5MjhhNzFlNzNmOTIxM2YzMmYifQ"
+        },
+        {
+          "resource": "repo://tests/test_session_calendar_contract.py#L352-L365",
+          "version": "repo-lines-v1:sha256:d46b4b955f70f313f8d074e9369d72afb23739895db8fcaeb0162713ce41d744:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgzOWU5MWFiNGQwZWMwODM2NmEyMWUzZWRmMGFjOWQzZmJhMzgwYmZjM2I3YzNhZjIzNDUzZjkyYjViYzIxODEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzNjc5ODdkZGUyNTYxNmQyZDZhNTYwOTBhZDdkZDgzZDg0MjA0Zjg4NjliYTNiNzc2ODViMTRlODBhMWQ2NDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3YzNkZjdiYzAyZmExZWVlYjQ5OGQ5NmEyZTkwMmI4NDUyMjE4M2Q2ZWExODE2YTcxZWZlNWFjOWRkYzIwN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjNTY4MWVjMGI0Y2E4NDU0ZmVkY2QxZWJjNWYwMzQxOGU0YzU3NmRlNGJiYWYwMmMxZjA0NzQxYzE0MjEzNDIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_204badf8231348b8859e7c132d05c776",
+      "statement": "Session completion creates nullable placeholders only for scheduled one-minute positions, forbids synthetic prices and volume, requires unique in-template observations, and marks absent rows with `is_imputed` without manufacturing market values.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/sessions/completer.py#L119-L255",
+          "version": "repo-lines-v1:sha256:69758bf6730f968252aa0e3b6d63a1c24133f97ebe8f83b6bdd9cf249797080d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTM3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkMWI3MzdmMzMwN2ExMTA4NWU4NDNmOGE1MjJjNDE0N2MxMGYxYjQwMjE3Y2VhM2E5ODg0MjQwZTI0MWNlYmY5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2Y2I2OGQzYjc1NDZhNjdkYzYwMTVkNDlmY2ZkYjFmYWRjY2IwMGFmOGU0N2NhOGM3NWMxZjVhM2VjNmIxZmYxIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/sessions/completer.py#L25-L117",
+          "version": "repo-lines-v1:sha256:df04557bcae744e03ada11669d48b2a1348316784d417479033ce7e991f712eb:eyJzZWxlY3RlZExpbmVDb3VudCI6OTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhOTdmZTM1ZjAwYmQwMDk0OTAzZGZhZGU5YThmMjFkMGIxYjcwYWZiMzIyODExODAzMjAwOWUzZjY3NzkxZTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjNDIyNjBhMjVhYmU0NGRjZTQ5ZDg0ZWE0NzlmMzM5N2JkMjIzZjBiZjliZGNkYjFiZjBmOTY5ZjRhODIyODMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4NzI5ZDAwNzM4NTM0ZGE4NWJmNjUxYjRmYjRhYWE0OWI5MTFlOWFiYzhkYjMwOTY5OTVkMTQyNjY5OWIxZWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_session_calendar_contract.py#L77-L96",
+          "version": "repo-lines-v1:sha256:23d50e7aaf7f09204267c706994b865c003541aed0ec6d906387a6bf92915056:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViOTA3YmZmYWE0NDc5ZTdjNmZlY2M0MjdiMmIyYTE3ZDM4NDgzOTkzYzIyY2ZkMGExYjZkNTNlM2QwYTEwYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4MjExNDVmMTY4NTlmOGM0MWJiYTliNjJkNDk0MzI3YzJkMTMzYThkYmM0ZDAzYmVjNDE0YTc1YWY2MjY4NjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ5M2Q1MjQ3OTgyZWIwMDUxYTI1NWNkN2ZiYjk0YmQ5Y2U3YmQwYWI2YjcxMThmMzFjNjExZjcxNzVhZjkzODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3ZDZhNzhlYTE4MzY4MWE4NTM4ZTczZDI3MGYxODAwNGMyODIzZDkzYWEyOWVmM2JkYTU5MGFkNmQ5YjZjYTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3150844da459455681ab930e6fb49c14",
+      "statement": "Calendar-aware gap detection treats explicit calendar disablement as no expected schedule, uses session labels for daily gaps, requires a complete version-2 bar-grid declaration for intraday gaps, rejects off-grid timestamps, and excludes placeholder rows from observed coverage.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L139-L205",
+          "version": "repo-lines-v1:sha256:03f7a39d1d75ca86dc74e133879367970d2ab4eeb307813ad53a3efc1613ee27:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3Y2Q2MDMzOWJmOTQ3ZGNlZTQxM2ZjOTU2ZjkzMWQ1MmUwZGJhNTk2NWYxODI0ZDZhYzE5YjBmMDIzOTg3ZGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4MjY0NjVlY2VjZTNlZjk0MTY5NmY5YmQ3YzU3Nzg4ZGZlZDJlOTMwMDU3YTU4ZjBjYTQ0NGViYmMyMGQ1ZjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyNWFlMTU2MGUwZmEzOWNkMmVlMGEzZmU5MmZhZTU0MDNkMTYyOWM0OGRiYjAwOTQ2MDIwODcyOWJhZTY0ODQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L251-L276",
+          "version": "repo-lines-v1:sha256:e4e9fa4f5c9745e6f5131d2cf40cf0937b7ca59249c12fabca716f85ca02732c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhODdkMjdkYjE1NGRmN2M0MWJiMjllZjIxZWIwODZkZTk3NWYyYTgxMzZlOWVhMWZiMTI3MWMyYjJhOWQ0MmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1YzViODc5ZjFlZGJiMjNhYzYwNzA1NGUwMTc4Nzk2OWFhNTBjNTY3NjJkNjJiYzZjODUwZTQ1MTllMmEwYjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE2ZjcxNTkxNzYyOGFhMzIyZjU5ZTgxNDViNGQzYjVlNTZjYjc3NTA1NWJlNjk3Zjk5NmJiNzJjYTcyYjY1NWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5Yzk3NzU0NjUyODA5NzZkMzNlOGJlOTYxNjQwZGQ4NzdjYmJlNzhkZTk3ZDdhMjM3MjkzYjFiMWIxNjc1OGIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L278-L405",
+          "version": "repo-lines-v1:sha256:b5a9c84fd9c125e9d37b4db42307893f374bd964bdeb1e5f6d296ccdd1bb90ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MTI4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI0OTUwMTM1YTJlODU5OGEyYzI4ZDFhNDJmMjhmZTM5NmNiOTBmZGRjY2M1NmU5YjkzZDA2NGM1MzNlZDRhMGJlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzM2Y5MWQ1NWJmZWY1OGRmYzA5YTNkMGFlYjkzMWNmZmJlYzdmYTk3N2IxMWZkZGUyYjNhZGI2ZmUyZmQxZmJlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0ZTg2MDI3ODFmYjViOWQwM2U4NzAxMTcyOGRmMjczM2NiNGI4ZTUwY2YzYzc4YWNiNDYwNGYxMzAzMzA1MWZmIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJmMWRlZDVhMjA4ODkwOTljOTNlNDI4MTRiMmEwNzExMzc0ZWM3NmZmMDM5MzIzYWYyN2IyMjdiMGFhMGQ0NWM2In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L407-L443",
+          "version": "repo-lines-v1:sha256:9f12294b80f9cd0c1ac667dc9582478178e1ebe344cf1a947f81e98c900a2cfd:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2MGUwN2RkZDdlNzdlZTBiNDQ1ODExYTQxNGM1MTM2MzU2ZWFmYTM0MDA0ZTk4OTllMzFhNmY0NGU4YTFjZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5ODI0OWE1NGM1YjYxNDM5OTAzYjM0MTlkZGYzNGViNWY4NWZjOGQwOGNiMjE5MGQ5ZTM1NDQ5YWY1MTg2MDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0YzJhODQ2YmFkY2E4YmJlYjVlNDVhZjljY2NmYTcwN2I2OWRjMGVlNTM5Njg3NWQ3YmJkZjBiZmJkZGU1NWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmOTkxNGM1ZDM4YmJlOTVkYjFiN2E5Y2RlYmQ1MmVmZmVjZTM5NTI4YWVhNDcyYmEyNmU3ZDJjNzAyY2JlZDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f13fe2a49f34e78b5b7f368e5fa506b",
+      "statement": "Incremental updates report calendar gaps without changing observations, reject legacy synthetic gap filling, and persist gap-check status and missing-observation counts in metadata.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L501-L520",
+          "version": "repo-lines-v1:sha256:e304b00d6dad73576715d37faf14e9e41e401f09fd7012459502ee56c6273253:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhNzBmMDg1Y2QyNjQ3MGQyMDQwMzlhYTA5YWFkYTAyZjc5NDRmOGVhYTk5ZGY4M2VjMjUwN2I3ZGU1Y2JkMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0MjQxNTI1ZjNhNzYyNzM0NWQ2NDE4YzZkN2JjYTc5YWQwMWM1MjM0Yjc1ZmY2MDRkMWIyNGM0ODQyMmJlMDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2ZWFhOWI1MTkxNzY2MTM4YmVlYTU0ZGM0N2M4Nzk5YzJjOGI0ZWRiZDI5YTQzNGZjZWEyMTIxZjI2OTk1N2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZiMzljYmY1ODZiMjgxOTU5NGJhODA3YTMxNjU2NjYzOThhZDA1YmEyZDNkYWQ5MzIzZmU0ZWY1OWYzZTNlY2IifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L656-L698",
+          "version": "repo-lines-v1:sha256:43e475afec3924bfdfbd91cd1128e759e39d1f071300a8c51737d936b659a19d:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1OGZjYTk3MTMwM2M5Mjc1NjBjNWQzY2Y3YTBlNzExYjJkMzAzZmFhMTJjYWI1YjNjNTFlYThmMGRiYzgwODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2MjkwNGI4MmVjNjg4M2ExNmI1ZGRiNzY2ODhkZjBiMTk1MWU0MWFhNWQ4ZmViOGE1MjIyMzlkMjA3NTdkZWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmN2QyZWY2MjJkNmQ3NTIzMWViZjc3MTFlYTVkYTdhODg4OGU3ZTU2ODI5ZjA5Y2FjN2YyNTY4MmExZmFiYTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4YWMyMmExYmQ1NTMyMDg3MjgwZjY1MGUyMzFlYWM3NGFiZjgwY2YwZjNiODg3YzIwY2ZlZjk1YjJmZGZlYmYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L704-L729",
+          "version": "repo-lines-v1:sha256:99e43eb943d8bf676a5f94407ec5f33584219e4728a0217b4dbccb4ad072fa19:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkyYWJhZGJkMjc1MWYxYmJkM2NlMTU1NGI4NTcxNjMwOGQ4NDM5ZDA3NTk1YzE3N2NlMjk0ODUzMjY2Njg5YjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwMWUzMzFjNWRjOTI0NGQ4N2I1YzY4NzVhNjUxZjhiMzVhYjk4YzI1Mzk4ODU0NGI1ODFjNmNjM2I5YTZmYWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJiM2UwNmFjOTE3YzE0MDQ2ZjRmYTE2YTRlMzZjNTJkZTU3NWM0YmNmYmI1YzMzYThmMGI4ZjMzMjEwYWNhYjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIyYjg4NDEzOTJjYzBkNmU5ZmQxYjVhZGZjMjM4NTY4NGQ2MzM4M2I4MDQ0MTRhZmJhNmRlMDNiNGQxODhlYWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d390f3c30a9544d49ca264c2a8da8915",
+      "statement": "Instrument identity is modeled as revision-aware, non-overlapping, half-open dated intervals for stable assets and `(symbol, exchange)` pairs; normalization requires exactly one dated match and can resolve instant observations through session-label identity intervals.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/assets/registry.py#L105-L149",
+          "version": "repo-lines-v1:sha256:6a6d2add683afdcdc3c8286940832c4298f9b71d6dbbdb21930dfe9119ff3480:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzZGUyMjUwNzJjMDM5MWI3NTY4NmI4ZGMwYWNkMzkwNzViYTI1ZDA5YjZmNjQwODIxNDQyZTFhMzNhMzZiOWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzZDAwY2YyNzA5NjRkNDRhMTNkZmFjODc1MmIwOWZjYzQzNWIwZjE5YjMxNmFiY2Y4MWE3YWE2NGJiMTIyZDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE1OTg5MDIyZmE3YzYxZmZhM2JhYzk1YzRhNTMzNGI3MGFiNWIyNWRmMzc4MDg1YjNhNjFlMTFjN2FkNDU4OGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBjYWI4OGRlYTBiMGRmZmU3MjA5NTEwYTQ1MTkxOWY4YjhiOWRiMWFjZTM0N2JhYWI5NjkwYmFmYzQwMmNkM2MifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/assets/registry.py#L170-L245",
+          "version": "repo-lines-v1:sha256:3a8d98041cd8570f24ca97cbe572dddea246f013758c7193423076a2b9c2aa76:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkM2Y0MDBjYzg4NzYyMzg4ZDRiNTFiMWM4MTlmMDA3MjVlMjYzYjk3MmExYmJmYmZkMjY3NjVmYWI3ODVjNjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTJjMTE4N2RiYTMzOTk4NmI3MzU1MDFiNDdjZWJkMTEwYjhjNTcyYjQ4MTAxNmViNWM3Y2NhNDAwNzk1NDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjZDg0ZDMzYWFkYTk5ODliN2IzMjJkMjAwN2VhMzYxZjRkZmQzZWFmZmIwOWI1NWY4ZGE5M2U2YzE2YzFlY2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU0Y2IyZWQxYWUzMmRkZDU4ZTIzNTFhMzg1MWJlZGIyNDQ1OGUwZmQ5Zjc2OWI2Y2EyZWU0ODcxYmZhNTEzN2IifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/assets/registry.py#L18-L98",
+          "version": "repo-lines-v1:sha256:e140982415623a122d59bfde13da320f9e3d14bf485c7f8066bf81eda5ef4ea8:eyJzZWxlY3RlZExpbmVDb3VudCI6ODEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkMTM4MTM1YTI3NDhmMjNjNTkxNzU5MzFjMDQwMmVlN2Q3OGVjZGY4N2JiM2VjZWZiOTc0N2JhNWEyNDc2OTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiYTYxZmMxM2FkOWZjMDIzYzk0YWE5NDZmN2YyNDMzYTMzODJmNDZjN2Y2NWE5NDA5ODBiYzI2MzA1ODhkYzgifQ"
+        },
+        {
+          "resource": "repo://tests/test_history_identity.py#L185-L220",
+          "version": "repo-lines-v1:sha256:b5e82196446a7866d78528521210e4a9d48353787cb47f05cc7b57630826f44e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk5OWJlZDNkMTdiYWE5ZGE0MjhiMmFlYmE5ZGU1M2Y1NWE5NDkxZDgyNTI4MzZkZjdlZjNhNDgyYmM4YzExYjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlZGM0NWZhMGRlNmFkZGE3ZTUxNmIxOGM0ZGJhOGM2OTkzZjc0NTIyOGU1MDQ3MDkzNjk4YmEzNjQ3NDhlMTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVkZjkyYzMxNDE4YzNhODIwZjA2Njk3OTFhMmU2YzBkNmEzOTg5N2Q1YmY3YTkyNDEyNjZjZjQwMzU1YzJhNjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_961f0d29f245493fab18267a996e9abe",
+      "statement": "Known-at identity/history normalization selects revisions using an `as_of` cutoff, preserving native source columns while adding stable IDs; future price or identity revisions do not change an earlier known-at result.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/assets/registry.py#L247-L300",
+          "version": "repo-lines-v1:sha256:de2f09ac14529c341d0c9fe9791625244a451a73c9181d1944778e28ed16d9af:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI4NWQ4N2NlNGY4MGIyNDdkZjZiNjYxZTY4ZjA2YmY4ZWFlOWExMDRjZWU4NGFlMDFjMzJlYTE2YWQ4NmI5NmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNGRkMjlmYTBhMzBhZThhOTM3MTVkNGVhODBiZDZmOGUwN2JjYTk2MWM5Y2YwM2QzNjZlNTZlNmE4YTVmZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjMjAzNTFhYmNkY2MyNjdkNWQ1NjMwNWY1MDgzNDEzMGQ2YzMzNDY4ZGRmODgxNDhhYTFiZTJhNTZhM2U1ZWMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_history_identity.py#L125-L163",
+          "version": "repo-lines-v1:sha256:e48cdb9450012f929e8f91e5fa100fe2f2ced6fcb142ae109e7bcdd59d7d8575:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3OGIzZjE0NjgzM2E0NTM2OTk2OWJlNzE2YzkyM2UxNTAwNTQ0MjQ3ZDQxNDFmZjZkMTA1ZDM1YmQxZTZiMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiMzg4ZWZhNmU5NjdhNjgwMTNiNTgwYTY3YTk5NGFiYzdkZjc2NzNlMWU3YzJiMzUzMjhkMDczYjdiZjA3OGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmNDQ1NjNiMDkzNjRjNDQ3Y2U5NDZkYzI3ZTBlM2ZjNDViNmQ1ZmQzMWRkNTZlZjVkNmRkNzYyMDA0MGZjZTMifQ"
+        },
+        {
+          "resource": "repo://tests/test_history_identity.py#L60-L92",
+          "version": "repo-lines-v1:sha256:47738f86b0636d4c1171cff77f88319d580c8c2ab8a7f39cc691f83f8da35b48:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxNTJiNjNkNzAyYTcyMjU5YmVlNmY0ODA0ZjljYjA5ZjMwMThhZGJiNjQxZDU1Mjc2MGMxZjBjMjk2NDNlZDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyOTMzNTIxOTJlNzM0NTgxM2JiMDc0OTJhYWRjMmNiZDBkYjYzMDI4ODJjMWViMjhhZTRmNmNjOWE2YTZmNzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRkZjM5ZDM4NjkxMTU2YjEwMzYwMmI0ZGIxMjQzNzBiYmE4Y2I1MzY2ZGM3MmQ3YmZhNGYxM2QzYmRiMjdhN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMzYThmMDYyNGUxZmJjMDUzYWNlMjNhMjRiZDgyMTM5YjFhYWNkNzljYmY2NDliMjRlN2EwOTMxOWE4Zjc4YzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9253e2642a774511bc442aa69aecda38",
+      "statement": "`ContractSpec` is an economic contract definition separate from dated listing identity, providing multiplier, tick size, optional margin and exchange metadata, with tick value computed as multiplier times tick size and an extensible root-symbol registry.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/assets/contracts.py#L16-L65",
+          "version": "repo-lines-v1:sha256:5b9a86f0b8280634460661efe7316cfdbb572f43d332481850e229e85bcfd30b:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5MGJjNzJlMmZmOTI1MzhjN2VmOTg2Yzk3NTliOGU2MTYxN2Q3N2JkNGNmNmJkM2VlNWJjNmRiMmFhZWQ0NTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2ZTZlZDVhOGM0ZGEzNjE0YmYyYTNlNzVjOTk5MTI0Y2FkOTg0OWRlN2FhY2M4MjdmNzdjNDc4OTU3YmQ1OWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlZTFkODMzZDY3Nzk1NDRkZGU3MDgxNTFmN2M3NGM4YTliZGMxMDg3NDQwZGEzNmRiNWZhN2QzNTYzZTVjNjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/assets/contracts.py#L372-L422",
+          "version": "repo-lines-v1:sha256:31d1f27a2501d71eec7348e31ef5842c3deb8e5c1d86c6ad8fc3c4e3441089ea:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5N2QxZTI2YTRkNmEyNmI1YTgxYzI2MDhmZDk5ZjE0YmU5NjUyNDVlMTcyMzM2M2RhYmM5ZGE5ZjUyNDZlNWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2YzRiMzliOTMxOGFkYzU3ZWVjYTZkNDcxMjkzYzc0NmQwNTZjMjAyMzc3NDU2ZTM4NjQ3NDI4MWQ1YjIzMTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjczZGJiNjVhOWJmOGE2OTJmYTRmMjk2MmVhODQyOWViOGI1OWNjYmFkNTFhYzkyYTY4MGQ3ZTc3M2NjMGMzODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}

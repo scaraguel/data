@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:7d40b8290bbf187d4a16051cf278caf88e0358156468484b8c12b449860ec7ab",
+  "claims": [
+    {
+      "id": "claim_57b8a9850c3946008f445b89e911de48",
+      "statement": "ConfigLoader discovers the first existing YAML file in a fixed current-directory and user-config search order, returns DataConfig defaults when discovery finds none, and processes explicit YAML through recursive includes, environment interpolation, path resolution, dataset defaults, and typed DataConfig validation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L144-L191",
+          "version": "repo-lines-v1:sha256:b5721008e4e68c4e3be866aaa5a9a830b0a3f1a6c25036987e7e4f82a577c7ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3M2ZmODYwY2NjMDA1OTljNTBhODUzNGJiNTE1OWYzMDFlYTg3NTUzYTNmMzg5ZmY4MGZlYTg1OGVkMWRmMWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyZDlkNWQ5YTJlZmY2ODFmYTQ5MGI5ZWFlZGE0NDRmN2U2YjU2NDFiMmZhNzRjYzQ4ODQyMDIzNzdiM2RkYTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkMjcwN2M5ZDgxYzE0NmMzMjJhM2Y5YmNjNmVlYTkwZGJhNjExYjZlOWFmYTdmODZmMTI0MzE3ZTkyZmNmYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0NDZmMTU0NmJjZmNjOTNlYmNhZTI1MTI3NmQ0OTk5MTNiYTM4NjI4MWVjN2E5Zjg5NjEyNDQxNTIwYjI1NzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L214-L298",
+          "version": "repo-lines-v1:sha256:44c18a14aa7aafb821ce4f1ef88819471dddc14f3be4e1018ccea81bc90e410c:eyJzZWxlY3RlZExpbmVDb3VudCI6ODUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmMzAzOTg3ZDI0NmJmZDdkOGM2Njg5NWI5MTIzYmY0ZGQyNmI4ZTQ1NjkxNTZiZjUxMDU0NWIyZTliZWE4ZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxNmI0Y2MyZDgyODgyNGM4MGU5MjliNTk3MGRiNTc3YTc5NzUxMjFlMDJkYTU0ZTU5Y2Y3YjEwOTFjYWVjZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MjE1N2Y1NzI0MjhiYWY0MmM1M2RjYWVlZmJmZTY2ZDBmMmQzOWI0NDI5MDIyZDJiMmNlMmE4ZWRiN2NjYzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4NzQxMjAzYzk2NTBhNWM0ZmVlMjI5OGE2ODA5OTAwZDFkY2M0ZTZhZDY4Y2I0ZjZhZDkzZDcxZjBiN2FmODcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L22-L47",
+          "version": "repo-lines-v1:sha256:a9a59e538123b58609b5cbc7a179191f5b33e4f230f7b91d807608ea3f308ecf:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MzdiOWY0MjlmMGZkNTFlNzYxM2M4ZDg3MGEzN2MyN2I4MmZmNjU3YTY2ODY5OWE1ZTdhMjY4MDgyMjRmNDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3MzQ5MDAxNjg2NTljMWM1NTI1MjdjMjllYjZiYTI3YmQ0ZWQ3YmQ3ZWU5M2NjYThkYjhiMzJiYzcwMzVlZGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5Y2ExNTQ5YjhkMjNhYWU2NGVkM2RlMzFkY2FlZTBiMjE2YjQ3MjM0NDA3YzM3ODcyMWZlZTBiYTBiYzM1YjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_857fe594f8c24f1cb88bd29855ae1c44",
+      "statement": "Included configuration is deep-merged in listed order and the main document overrides included values; mapping values merge recursively while list values are replaced.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L144-L191",
+          "version": "repo-lines-v1:sha256:b5721008e4e68c4e3be866aaa5a9a830b0a3f1a6c25036987e7e4f82a577c7ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI3M2ZmODYwY2NjMDA1OTljNTBhODUzNGJiNTE1OWYzMDFlYTg3NTUzYTNmMzg5ZmY4MGZlYTg1OGVkMWRmMWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyZDlkNWQ5YTJlZmY2ODFmYTQ5MGI5ZWFlZGE0NDRmN2U2YjU2NDFiMmZhNzRjYzQ4ODQyMDIzNzdiM2RkYTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJkMjcwN2M5ZDgxYzE0NmMzMjJhM2Y5YmNjNmVlYTkwZGJhNjExYjZlOWFmYTdmODZmMTI0MzE3ZTkyZmNmYmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0NDZmMTU0NmJjZmNjOTNlYmNhZTI1MTI3NmQ0OTk5MTNiYTM4NjI4MWVjN2E5Zjg5NjEyNDQxNTIwYjI1NzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L88-L119",
+          "version": "repo-lines-v1:sha256:74278e3edb472ea4b890bb067e10ae42609d9559f6e94dc8173a0c811bad3275:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3ZjIzNDI0N2I3OThhOTE3ZjI4MmM5YWU4NjU2MWYxMTAwYmJhYWNhYWQ5MzdjOWYyY2VmOGUwNzdlYzA3NzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwY2FmNTBhZGI3MWE4NDI5MzQ5ZjA1ZGM4ZTUwYmJjZTk1YjVhMjdiMzRlMmQ5YjJjMWRmZjAyNzU2NTdlZjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFjZGYwMWZjZjZmNmMyZmQxNmJlZjg3MThjMTNkMzU3N2JhYjI4NWY4ZWEzZTllODc2MTYyNTQ1M2JkOTk2YzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_946cb9c3108d4c788fe2eeb9eb8d9d0b",
+      "statement": "Environment interpolation supports recursive `${NAME}` and `${NAME:default}` substitutions, with process environment values taking precedence over defaults declared in the YAML `env` mapping and unresolved variables left as references with a warning.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L244-L251",
+          "version": "repo-lines-v1:sha256:4d732d025267f10abff14feae5d4281c48a26d7d5a65b52f9965bd861b10befb:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTdjNTEzOTdjMDgyZDgxZmExYTkzZjI0M2IyNzQxZTAzYWU5YjY2YWY3NDQzMjI0NTcyNDQzMzY3MGNhMDcxOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjM2ZTU3NTg0YWEwMDI5MDE0NGNlMTIzNTg2NDM0NTZhYmE0NTNiYzAwMmQwYzc1NmU3ODI5MjYyZDg3ZjcwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTU3OTFhZGIxZGQxOTk1MjM5MWQ5ODMyNzQ2N2ExN2JkNjY4ODllYTEyYjBjZThkZWIyM2I1MjcxMmEzMjM3NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L49-L86",
+          "version": "repo-lines-v1:sha256:fa6c9030b96bb42febcc25c85700a7e3db2822f278b1903c970d663af06c040a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlN2M5NTdiY2I0NGZiNjczYzk4YjAwNTBhNzVkMzgwODJkYjgxZDkxOGRlMzEzYTNmMDdjMTIzNTMwNmQ3ZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhkYjlkMmJiYWY3MWIyZDkxOTM4NGY3Zjg2Mjk5OGYzZjYyYTQxNmVlOWFkZTU0N2ZjYTA4ZTQwYmRjNmUxMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0MjIyZmNjNmNlMDM1Zjg5ODhmOWYzNThjYzEzZGNiZjM4YTlkOTI3OTMwN2Y5YzQ4ZWU1NDllZmQ0MWVlNGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_900a2ba6e9054bf0b2d3ad88369e4410",
+      "statement": "The authoritative data-root precedence is explicit data_root, ML4T_DATA_PATH, deprecated QLDM_DATA_ROOT with a DeprecationWarning, then resolved project-local ./data; ML4T_DATA_PATH wins when both environment variables exist.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/core/config.py#L15-L53",
+          "version": "repo-lines-v1:sha256:499acffcff88f757e9fec428b959298684ca5d741d75b5e05bb3f0c63ddfc53b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5NmY1ZDY1NTc1ZTViOWRiZTllZTJkZjA1ZTkxODdmNmNjODI5ZDNiMDNlNTNlZjVlZjZiYmUyNjFjY2VjNzIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyMmRiNWE4ZDY0NjRkYTQ2ZTg4ZDQ2MWQ3MTQwOTJmOTc4MWQ2MjY4MTYwYjYzYWQ2YTY2ZmU2Y2Q3OTA5NTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZjODk2MDljZGFiNjU4ZWU0MjhhNDU5NmViMzY1NTE4MDU0ZWZlZWNmNTJmM2I3N2IwY2VlZmYzODU5N2M2NjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb47255d04b5404c8bfedea2e707e5e3",
+      "statement": "DataConfig accepts canonical list sections plus legacy mapping forms, top-level api_keys, storage.path, and dataset start/end aliases, normalizing them before strict typed validation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L278-L296",
+          "version": "repo-lines-v1:sha256:02a7edb58a197aa46afd80fc6b58314a018d2a3aa28917d42818b35ce822ec3d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyMGI0NTNmNWUwYzkyZDVmNmMyNTFhNWVhMTk2MGQ3MmYzYmQwNzk1NmFlODU3ZGEyMGUzMWE4OGM1NTk2OWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3ODE1ZWI2Yjg1YjY5ZDIyMzBhNTJiYTZmZmQ4MTZiZTFmMGViODRmM2YwMWNkZGIxOTIwMWFhODA2YzI2NDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5NGFhNjQ4MTllN2VjNzhjNTkzNjA0NTJlZjhlNzliYTk4MzA4YjAzNjJjMmQ2ODkwZjljYTU5YjliMTkyNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY2ZmViY2ZlMmE5OTEwNWQ5OWIzYWEwMzY4ZGM4MWY4MmZjZmI3ODdiOWRmMmE0MzE2MmE1ZWEzM2ZmZDQ4YjAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L378-L488",
+          "version": "repo-lines-v1:sha256:30dac37f6257a477c5ad0093a7dabfed715667d53b1cbdd25b869a4b11bf8973:eyJzZWxlY3RlZExpbmVDb3VudCI6MTExLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3NGJhYzFkMzk0Y2Q0OWE5YjVmYjQ5OTc4NTUzYTFlYWVmMGIzNzUwZWE2NTFlMmFkNTQ3NTVjMGE5NTU0MWE3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhOGY4ZDEwMzA3NzU5MjcxYTJhNDI5NGMwMGZkYzUyOTJlMDU5ODVhZGRlZTBkNDU2YWY3ODJkMjQzZDU0MjI5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3ZDBlN2JmN2NhZjhmODNiMDU4YjliM2U5ZGI3MWJhYjI2YWI2YjlmMGI1MzgwMDgyOTU5YzI5MTEzZTI2MDgwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyMTVkOTEyNDc5ZGZlMmMwYjE4Nzg4N2E2NDFiZDQ1NmYwZWQwMmM4ZGQwOTMxMTJmNzc5YWY1OWM1YWM0MjY4In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_cb974a52c0814bd8804cb2ab5f7910cd",
+      "statement": "Provider configuration is strict and validated against provider-registry credential capabilities; runtime conversion emits provider dictionaries keyed by configured name and ConfigManager validates runtime provider overrides through the same DataConfig boundary.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L490-L546",
+          "version": "repo-lines-v1:sha256:69294d9ef46cba1ae3aead56ae14e5e1c868d2324360a7681c6de6ff477d9198:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyNDE0YWFlZTJlMzc4NzkwMDVhNTQ5NGJkODczZGMzM2Y4N2IwYTI4OTVhNzg0YThiMGY2YmRjYjAwNzFjZGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MjBlYmM4ODZkNjEyNWRhNmU4MjA2NGYwOGExZTQ3MDE0YmVlMGQzZDFhNzUzMWI4ZDc0MGZjYWUyOTU1NTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0YjNhMWZiYWY2NDI3YjhkZjg1ZGNjMTY3MjYzNzdkZDllOTFhNjRmOTYxNzY2NzBhZDM3ZjAwNTI3MDU2ODYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkOTE5MzJhMzZhYTRiODlkZWRiNjkyMjVhMzhjYWM4ZDQ0ZmUxMDZmMzZiMzhhZWE2MDgzMmViNDRkMzRiNjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L98-L148",
+          "version": "repo-lines-v1:sha256:60506a9a0445b1e18456dcd5bf1e83f43eda57000ba864afe985912b2cee7395:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4ODA1N2M2NGNkMTA5NWI2MGI2YmMwNWFjZDJhZmQxMjQzNmIyMGY0MjczMDZlMzVhZDQ5ODdlNDg0NmU4NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViYWQyZDNkOGU4MWRmODY0MGUwNDYwYTQ1NGMxMzRhMDMwZWNkNDA2NGI5ZjIyZTgwODgyNTU5Y2JiMjA2OWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlYjg5ZjE0ZmZiMzQwZTNhNGViZWUwOWIwOTc2MTg3NTgwZmYzZjhmMzg1ZDM0YTBiYTA1MzEyNzEwOTcyZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNhMmUyYThhMmNmNWYyYTNkNjkwNDlkNWYyODE3OTNlMTZiMDFhMjBjYzE2NTk0ZWFhMjk4MjcxN2I3MGNhOWMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/config_manager.py#L170-L222",
+          "version": "repo-lines-v1:sha256:926bc0abfeec3005b133f2ee598c0c5e80a8fcb56e79abbebfc6a5f022a66287:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyOTZlMzY5MjkzZjcwODE3MDIyMTRhYTU1NTkyYmM4MDc3OTU3NGYwOTdhZWI3ZmI3NDVlZjI2YjU1MWI5MTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4NmJjZmIyYWUxYmFhNDc5NTBjNzQzMTIxN2E4NjJiODI3ZWQ0NDRmOTRmZGJmOTYxNmQ0ZTU4YjJhN2Y4ZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYTgzOGJhYmE5ZTRkYjIwYmZhMDNhZjE1ZjNkMTNlNjc5OWNiNWYwYzg2YTgxNTQ0YzFjNmIzZDFhNjE2YTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyMGZlMTliOTQ4ZTc0NTlmYzcxZjExNjc5NTVkNTg3YzIwMjEyN2MxMDcwMmJkNWEyZTQ2MjdlMzhmYTJkOWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3255ddedfd0d45f5ad9cf975fda1f8e3",
+      "statement": "The effective DataManager configuration order is built-in defaults, typed YAML, provider credential environment variables derived from the provider registry, then runtime overrides; DataManager uses that result to initialize routing and provider/fetch managers, while storage is supplied separately.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L73-L145",
+          "version": "repo-lines-v1:sha256:c5fc8f9ba1c20eb241e03785d123fbe8c322d05c3a9f1894abed57f4b7766de4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3OThhNTQ4NTVhZTdiOGI0YjZmN2QwNzI5OGNlYmJiZjUzNjdhNzNkMjE3Yjc5NTFhYzg2ZTkyN2JhOGY5NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYzM2QyYmFiZjhhNzdiYTc2ZDgwZGVkYTRhMDgzMjRjMmMzNGRlMDM3MDU3NzA0NWQyNWQ1MWNhNDAxYTk2MjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/config_manager.py#L1-L14",
+          "version": "repo-lines-v1:sha256:dbe7a3fa2f3d9e1df6592af4ee872c4361da9d42d0d3ec0d8fe034047b61541c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3Yzc2MDk4YTcyMTA4YmUzZGQ5M2YyOGY3YzgwZmRjMTY2ODBjNzA3YmMyZDU3ZTc0ZmE5NTU1MmUxYmJhNTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM3MjdhZGZmNTI0ZTA2MTYwMjJlYWRkOGY0YWYyMWEwNzc4YjI5ZmM0Yzc3YmRmZWZkMWFmY2UyY2JmNWU0YjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjNjVkOWRkNzk0Mjk5NDI2NDdkMWM2MDFkNzMwOTlkZTA3NzI2YTIzOTNlYWM3NjcxNTBiYzRlYTQxZTRiMGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/config_manager.py#L37-L101",
+          "version": "repo-lines-v1:sha256:6384dbe18bd28547504779dd788c38c6c850ede9d0a081cd74154e490fe301b2:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwYzk5MzhhZjgxMWRkNjY4ZjgxMGIzN2FkMTQ2NzU2ODNhMGE1MThkNTU0OGRmZDhhNWI3OGYzN2UxMTY2NWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0YWExNDM4NGRmYTcxNDM4MTkzM2ZhOTUwYzRjM2YwMDY1MzZjNTUxOGE1OTU2NjI3ZDc5MGNlYTRhOGQzMjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkMjcxMWRlYTFlNjQyNmQ0YTQ1M2VkY2ZiMDZlYzUxMTYxMDdjY2RlYzU0ODMyNjYwZjkwYjBmNzBmMzUxMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY0YjllZDFkMDhkOGE4MjQ0YjMxZDBiMzcxYWZjZjc3MDA4NGNiMmUxZTBlODIyNGViM2E4NzE0YTc4ZTI2YTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_269254c611e94afa94a11acfb4202763",
+      "statement": "Credential values remain usable at runtime but are hidden from representations and excluded from serialization; ConfigLoader retains raw environment-reference templates for safe reserialization, and validation diagnostics omit input values.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L121-L142",
+          "version": "repo-lines-v1:sha256:ce42aa01826960bde39385b6dbf048454d790915252ef143d8dd836bc3b9a2fd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlYzM3MTgyYTdmZGIzYTNkMjRkYmEyMWE3ODczZDE0MTQ5MjQzZmE3YzZmNjAzYmVjNDI5ZWYwZGFiYWU5NzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1NjljYjA5MjgwZWUwNzgxOTQ1ZTQ4ZDQwNDFiZDJkZmFhZTY5MWFkMmVhYmY1ZDNjYmEwODQ2YzcyMTZjYWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdjNDAxZDMzNzg5MzNmMDZhMmY4NTg3MGIwNDRjNjM5NmM5MTY5OGUzYjYyYzU3Y2Y4YjcxODNjM2Q1MjFlM2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzY2Q4Y2IwYjY3MjBmM2QxZmNkZTc5NzY0YTZhYjI1NzFlYjY3MWViMGQwNzYwMTAzNjdhZmY2N2NlYWViMDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/loader.py#L286-L298",
+          "version": "repo-lines-v1:sha256:bfa49ab79926c9492f85aea301ac99285c291d7a793fee011212434195283b40:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcyN2JjN2U3NjE4ODY2YTYzYzE3MWNjMDViZGM1YzE1Y2JhOWIxODc4NzczNDk1YzdiMzRjZDIwNmE1NWMyMGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxNmI0Y2MyZDgyODgyNGM4MGU5MjliNTk3MGRiNTc3YTc5NzUxMjFlMDJkYTU0ZTU5Y2Y3YjEwOTFjYWVjZmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAxYWE1OWQ4NDExMzg4NmM3MmRjNzhkNTM3MTRlNzgxNGE3MWE3MjIwNTI1ZWQ4YzRhMDIxNmY1MzQwNjc5OTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI4NzQxMjAzYzk2NTBhNWM0ZmVlMjI5OGE2ODA5OTAwZDFkY2M0ZTZhZDY4Y2I0ZjZhZDkzZDcxZjBiN2FmODcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L30-L42",
+          "version": "repo-lines-v1:sha256:08e2a9b600a8d8297f07e99fd8f208c20ead63d49b2450591927b1f4cc3d63e5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzMjJjNmI0MzJhNDM1MzM5NTAyMWQxZjNmNzc4YTBhMjg1MTM4ZDVkMWM1MDM4MDhlOTBmOTAyNzEwZGM1ZjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0ZjU2MTY5YWE0OWRjMzFjMDFiOTQ3YmJmNTgzYTY2NTM2Mzc4NTg5OTJiMGU0NWIzOTQ3YTM2NzhlMDBmZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0YjY0NjM3MzMzYjFlNjFiYzhkZjM1MGQzODVhMjM0MGVhYmQzM2ZiZDc5MDIzNTkxZTM3M2I4ZTMwMDA5M2MifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/models.py#L98-L180",
+          "version": "repo-lines-v1:sha256:14696f293dd75393252f606c9ca64aab0ac40176097673a44c6aa868256ad138:eyJzZWxlY3RlZExpbmVDb3VudCI6ODMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4ODA1N2M2NGNkMTA5NWI2MGI2YmMwNWFjZDJhZmQxMjQzNmIyMGY0MjczMDZlMzVhZDQ5ODdlNDg0NmU4NWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlYjg5ZjE0ZmZiMzQwZTNhNGViZWUwOWIwOTc2MTg3NTgwZmYzZjhmMzg1ZDM0YTBiYTA1MzEyNzEwOTcyZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU4MGFhZmIwNjRmNTMwN2IzNTYxNTJmZWIxNWE3NzM1MTEzMzJhZDE2ZjFjZjUxNDA5ZTkyZGRkZTNkMTgzOTAifQ"
+        },
+        {
+          "resource": "repo://tests/test_config.py#L354-L466",
+          "version": "repo-lines-v1:sha256:80d1d237348d23d4e6c832c639aabd539d8af019511f83591cc3c89e0bbb11ef:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIyNzcxNzNmOWQ1ZGRjYmM2MWZiM2EwNDQyM2QyNDQ2ZTk0ODQ4YWMxY2U5NTIxNWFjNmI5NTJjNjU4MzRlODQ0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI3ZWUxM2MzMzIxNDEwNjcwMTc2YWIyYWUyM2JiODI4ZjVhMjljZTg1N2ZiMDUzMGU1YTc5YzJiYTg0ZmFmZTY0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2ZTY4NzMwZjE4MjYwYjAxNmRjMzU1ZWU0NGQ5YWI4N2U3MjEzYmMxOWUyMTg1ZjY3YzBhNTI1MDY0YWE1ZDg0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzYTY1ZWE5NDcxNGE1YzU3ZTEyZDNjMDg0MmI0OGVhOWYzYjEyZjA2YmY1MzZjODI4ODM5MjM3YjZlZDY3ZDU2In0"
+        },
+        {
+          "resource": "repo://tests/test_configuration_authority.py#L94-L105",
+          "version": "repo-lines-v1:sha256:00526ddc47a70195fc1a9a9c5eb34b48e3c0ea4209c34f0246adee75c12ad0e1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzOGU3M2NkZTI3NzcyMTM5NjJiMTBmNDcwMmNlYmE5NGUxYjM2Mjc5NzBlOTRiZWUyMWUxYmZmZjM3NGJkMzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2Y2ZkNWIzNDQyNDRhMzZiNDQwMTYxNmM2ZjBlYjg3ZmEyMWUxMzcwYzBjZTlkZDljOTE4ODg3NGYzYWIwNzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljZjIxY2M5NGMwNjYxYWNlYjUzNDY4NzIwMTE5YTI2ZGQxMWI1NzQ0NDk5Y2FmMDI5MWQ1YWE3ZDM0NzhkOGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllOTc4ZjhkMjIxNGE2M2UxMjllMjkyNmY3YmNlOTEyYWM4OTdlZDkzOWQ5MmZhZWQ5MmQ1YmExMjFiNzFiYzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_802398d385194211a00746631d2e399a",
+      "statement": "ConfigValidator is an explicit semantic validator for cross-references, dates, schedules, paths, duplicate names, and orphan warnings, whereas the CLI validate command checks stored OHLCV schema, price relationships, duplicate timestamps, and optional anomalies.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/core.py#L368-L527",
+          "version": "repo-lines-v1:sha256:01ebdf5acc9921c8a914142f32f234b046e6ffb6ef3fb1eb9d8614509131efb2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiNTYwNmZhNjc2OTY5NjMzZGVmNzg4NTA0N2JjOTQwMzk5NjQ5ZThjMTQ1NzRlYzg5ZmQzN2Q5NmUwNGQyY2ViIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1Njc0ZTk5ZWM5YTNiZTY0NWQ4OTEwN2E1MWNmYmEyOWY4NmYwY2I4YWUzODllNGYxMTQ1NDQxMjE2ZTIwNmVmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxZjZjOTMwMWZmM2E1NDNiYmUyYmNhNTVhN2ZhNzVkM2E4NDNiNDViOGQ5ZDlmNzJjNTc3YjU1ZWM0MDA5ODc2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzYjI0ZThiMmY5ZGNmODBhNjJhMTdlNWZiNzFhZTBiNjVkMDg4NDY3MjNhZDFiOWNiYWQ5NjRmMjg4NTg0MDA5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/validator.py#L14-L55",
+          "version": "repo-lines-v1:sha256:279d9364820c13c9595f4578fa0230f49ce8d40877080a935f86f14f05e4a00e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk1NmRjZmZlOGRhZTkzMDgxYTMzYmM0YjEwYWM0NTRjNTA3NmRhMDRiZTM0Y2I0MmRkMDg3OGUxYTJjY2U0MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmODU4M2I4ZmI2ODQ0MGNlMmI1ZDUyNTdlMWUyZTVkMmFiMzhiYmFjYzUyYzFhNDUwOGJlOTA1MzYxMjU5MzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwMzg0ZDRhMDZiOWZhMmM1YWEzNmM3ZDcwMjIzNzNhMDYwNzZlNzNhNjIxMzJjYzhiN2U2MWE3NDBlOWNhZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmNjUwMjhhZWU5MTBmOWVlNDNlMDhkNWUyNTdmYjkxZGE4OTVkYjE4MWEwYmNlODRlZDY3Yjk5YzZlMTQ2MWQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/config/validator.py#L83-L222",
+          "version": "repo-lines-v1:sha256:e763a775aad3275edc0c72c3758d75bc806bc7b8f7123e55adb9834fac2b8068:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJhYmJjMTY0M2QwYzRlZTAyODdmY2VlYzU0ZmU3ZTEwOTAyMjU0ZjFkMTE3ODkyNzk1MTYxNzE3YjZlNDQ0NjAxIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJiMzM5ZTk3MzExMzdjYWI4MWViN2FmYmJmOGQwNzNjNTUzYmRjMDQ0NGQ0MzY5NjEwNzc4ZGJiNTU2YmE2NTNhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwN2YyMDQ5OWJiOWI2NjA1N2U0OGU1OTIwZjRiNmJjMzNlNjRhYzMyOWZiYjFmZDEwMWFjNmEyZWM3MjBlMGEzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIzMzM5Y2U1NTE3OWQ2MmYzYmJjZTlmZTViMTk0ODQ3OWY5ZGY1NmYxYjYyOWZmMzBlNjU1YmVhMzNjYjJkMDYzIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_a68157d329ef402ca1d2fe3d49147c1e",
+      "statement": "Core CLI storage commands either construct storage from a validated YAML storage section or from an explicit/default directory, reject simultaneous --config and --storage-path, and pass the resulting backend into DataManager for updates rather than relying on DataManager to create storage.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/batch.py#L29-L55",
+          "version": "repo-lines-v1:sha256:550b7790bed5e6478180820a39fd05add59137af8e9d1ce505a883ffc65f454f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3YTc4NjU1ODM4NjExOWQ0NTUxMTljMGE2YzdkZWIzMGY5MDAwYjYxNDczMmRmYjVkOWFkNjA1ZmZkZjhiNWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0NjA1YmE2YTY5NzJjMjQyZjQ2NmRmMThmMWI0NTQxOTE5ZjIxN2M1MGQzNThkMTRiNDMwMmRhMTE4ZWQxNmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE3YmUwYjk3NjJhYWUzYWYxYjMwYmM4MjIxMzAyYmIwNjBmZjNmODc3YTMyOTM4ZGQzZGVjZjdiMDJmZTkzYjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk3OTE2ZjY2ODFhMWYyMjZmNWQ4NjVlZDdlNThhMGZkMDMzOTJjM2Q1MjFmYmVmMzU1ZTEyYjcxNDk3N2E1MmMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/core.py#L275-L365",
+          "version": "repo-lines-v1:sha256:6b0cec30be1e17caca3fb8fa808ba46c365f300030f7d0b72543ff47133f3269:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1NjA2ZmE2NzY5Njk2MzNkZWY3ODg1MDQ3YmM5NDAzOTk2NDllOGMxNDU3NGVjODlmZDM3ZDk2ZTA0ZDJjZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NTVmMjZiMWQ5YTAzZmRmODQ2MzFhOTIwMzNkYjg0MWM5ODVjZGVlNmYwOTk1MjU1MWRlNTQwZWRiYjk2OGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFmNmM5MzAxZmYzYTU0M2JiZTJiY2E1NWE3ZmE3NWQzYTg0M2I0NWI4ZDlkOWY3MmM1NzdiNTVlYzQwMDk4NzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ0NjBkYjFiMDU4Njk0NGIyZjY1MjNjOGVhNmNiYzE0MmQ2NTFlNzYwZTE0YTg2MGE4MDc1OTEwY2FjZGY2YTIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/core.py#L33-L46",
+          "version": "repo-lines-v1:sha256:9d45433eb8100e2740c4e34c6ab52b227d103c6deee756e00245dc75426695bd:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyZTU3MTNlNjlmZWUzYjc0ZTUwYWI5ODQ2MTczOTYwMmM0YmI5N2ViYWI2ZTMwNGY3ZGFjMDdiMTNjOTcwMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZDFhNzllZDdjZDBmNzQwM2EyNTE1NDllODZkNzMwNGNhOTEzNjQwM2JhNzMxMWE0OTk1ZGYzNTk2MjY4NDEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI4ODVjOGY2Zjc0NGQ5OWQ1ZmZiZTYwZmUxMDJkNTY5ZGI1MWZhNmY2ZmI0YTViZTA2MDk2ZDAwYjY0YmIyMjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEyNGZkMzk3YmMzM2FjYzNkNjU5ODFmMTlmZDg5ZDQ4ZTBlZjEyNzRiZDRjZjE3NDVhYTQ5ZjVjY2IyNzJjYTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_95824d54c29846adbc1565c064248e1a",
+      "statement": "The update-all command loads canonical configuration, resolves dataset symbols from inline lists, files, or universes, and invokes DataManager.update per symbol with dataset update controls while reporting individual failures and continuing.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/batch.py#L58-L207",
+          "version": "repo-lines-v1:sha256:f14f0dd923b19ca16d73b37b3ea0620f9c7c3cea0f5b00249210709dc925cbc8:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkYmJlOWViMmQwNjExM2FjOTA3NmE3ZWM0MTAyZTAxYWU5MDYxMWMzOWIxNmU5ZjgzZDE0YmZiZTNlY2JjOGI4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2YTQxMjUzODY5NTNhYTljOTIzNjBmOWM2ZGVlZWFhZDRlYTFiN2JlODkyMjQ1NTQ3NzAyZjRjNWNhYzk1YTM5IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlNmFiZDY0MjIwYmI3NjMwZjM0ZWUyYWViNjdhMjc2MjY1M2JkMzA5MzM2ODlkOGUyNjQ4YzEzZjY3NWNiOWFlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9fb8533d228344d8a96af13144175bb9",
+      "statement": "The futures CLI uses the dedicated futures loader and Databento downloader: download-futures estimates cost and supports dry-run, force, and parallel execution, while update-futures advances existing data from the day after its latest date and does not silently perform a full download when no data exists.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/futures.py#L13-L166",
+          "version": "repo-lines-v1:sha256:0a00bc0c1cbabaa479b3d28ddbf6207aba69b2d4062ac13b810bd3bacd2d5f66:eyJzZWxlY3RlZExpbmVDb3VudCI6MTU0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5NmY5ZmUwMDAyYzkyYWMyMGIxZmMzZTZlZmY2MjlkNTRmNDRkNTNlMjdjNWE5MDE1ZjVhYjlhZWRjNDhkMWQ1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJhY2Q3MGI4NGI2MzIxMDk4ODVjZjc4YTc1ODU0MDc0YTBmMjYwNjQxNmVhNTg2NGQ4ZjNhNDk5NjgxZTMzMjMxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1MWFhZmZlZDYwMWZiNWFmMGYxYTVkYzE1MmQ4OGE2ZDM0ZTI2YjM4OTM3OTY4MGExMmNlMzE0MmI1NGVjMjEwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlZWYxYjgwMmJiOGY5OGE0NDcwMTUzZDhkMDUxZTc1ZTEwOTRlZDE1MWVjNDVhNTdkMzVkNDk2NThjNDJkMzAxIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/futures.py#L175-L320",
+          "version": "repo-lines-v1:sha256:6ad56d4f9a5c90dd0443e9a81333d249eddc5e1a2fc71e57602e9978a3692771:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQ2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmYjYwN2I3MjkxMTZlYmU2ZjE3NmQ3NmQyNjUwY2E5OWIzYzUxNWYzNWI4MjU1NzFmOTQ0MjM5OWU0OTY0MjJhIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5NjQ2NzhiMDNiOGYzMTJlODhhZmNjOGNjMWYwNjE5Y2M0ODk1MjcwMDM0MTdmYmYxMjM5ZmE2MDMzM2Y1YWUyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwZjkxZmRlYjViMjhlMDNhZDhhM2JkY2M5ZWU0YTU0Mzc2ZDVlNDkxMmEwMzkxMGQzYzIyZmJlZDdlMjRmNjU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_60e05cbf1b124d23a2b03f4ac4b998da",
+      "statement": "The COT command applies CLI product, year, and output overrides to loaded configuration through dataclass replacement, validates product codes, uses the authoritative data-root helper for default output, and skips existing per-product Parquet data unless forced.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/cot.py#L123-L175",
+          "version": "repo-lines-v1:sha256:2c958af6a6d32083b39a603a5b0145e8bdc1c46362602f0ffb08feda66eefa24:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkNTU5YjdmN2E5ODQ0MzdmZDMyMmZhZWUzOTM3NWRjZWE3Y2M5ODdjN2Y3NDNiMzg5N2VlMGI1NTRjYjU4NjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhMzc3MTFkNzhjMjBjMTJiN2E3ZjExZmJiNjBhY2U2MDUxMzQzNjViYWM3MWExM2VjOWQxZjlkOTdlNzM3YjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY1OTY3OWU4NjMzOTBiZWMwOGI4YTE3ZTcxMTgwZmNjYzg5YWI2ZWJjYjUyNDc5N2M0OTI1ZDBiNWQ4NDk2OWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3YjYzNDkwOTg0NWU0ZWQ3MGRkZDEyYjk0MzY2MTJkMGFiNjc1NWUxZGMzYmVkOGFhZTgzYmE3YmFjNDM1NGQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/cot.py#L19-L63",
+          "version": "repo-lines-v1:sha256:f5d2d42b58adc92da8c41143ff0d8770f56286d637470acdb09357a540b4cf7b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3NzViNjVhMDFiOTNmNmZkZjdhOTM2ODQ2MTMyYTllZmQ5YzVjYTM2MjAzMTRlYzhkZjNjMzU2NzVkMjY2YWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5YzdjNDYyZWY4ZmRmNTIzZDEyYjQ1ODNlMmU3ZmRlZWNiMTdjZjdjNzIyY2UyMjE3NjI0M2VmYTNkZTg0YzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzNzhkMWJhZThlZTVlZTliMGZlOWZjNTlhMjc1ZTIzNGJlNmYwZThkZDY2ZmI5ZjY0YTY5MGVhZmViYjk4MjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzZmMzY2EwZGFiYjJkNjU0MDNhYjk5NTIxODE0ZTljMWEyNTZmNmM2MjZjYmQzZDFjNWI4OTEzNDM5YmU2M2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/cot.py#L199-L246",
+          "version": "repo-lines-v1:sha256:1cfdc3b6d3f7bc8d7e413522990eb95a809446b67b4763e0959a5b75e042665e:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzYTdiMmMwMjY2MmE3NmIzMzA1ZTAwNDgzNzg0ZThmYWQ1MDRkNTJlY2U2MWZiMzI4MGQ4MGE0Y2RjNjZjMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3OWRjNzU4N2UzYzZhOTg5YjRjNjM2NDU4NzlkN2M4YTIwZTdiNDE4NThjZDQyZjg0ZmI4OGZmZGE3NThkNDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2YjVkZjFjZjg5ZWNkZjQ4MzgzMzVkNDgxOWQ0OGE4Nzk4ZDc4MDkwNjViYTZkYzljZTU1MTBiZDgyMzQxZmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlMzI1ZmNmOTU0NDgyYmYwNDRhMzVjNzc2Njk4YjZkYTk3NTIxMTQwOThkNmEyZDAyNWRiNTZmMjZlYmY4YzcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4bebb7ed5aad49319df2bb69a223f9de",
+      "statement": "The modular Click group registers core, batch, futures, COT, and configuration commands, while ml4t.data.cli_interface preserves backward compatibility by re-exporting the group, utilities, and legacy patch targets.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/cli/__init__.py#L20-L69",
+          "version": "repo-lines-v1:sha256:72e8e4078484589fc7736ce758d07d95430204c8e0c66bc4510d1c84cda84fe5:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlZDRjOThmMDU5N2I1ZGMxM2QzZjc1NGE0YWMwN2Q2MDU5OWQ1YWRlNTBjZGI2MWRlMzEwZjFlNjc4ZDc2YjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1OGEzZjk3ZWVkN2IzMDNiNTM1ZDBiYmNkYzYwMTY1NTA5Mzg3YjlmNjlmNWNlYzUxYjNmNTAzMzIzZTUyYzIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU3ZjdjY2M2MjI0ZjA5ODQxMWU0OTE5NTVkYWRkZjlhYjBlZDRiNjg2MzNhOTkwZjdhNDE5MTI1MTA2ODg0MjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli_interface.py#L15-L59",
+          "version": "repo-lines-v1:sha256:1271d05807082dc1328781b69ceb40139365a9f9409bfe20ed1cefff427a4284:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUzODRiZmRiMmRmMzgwYjY1NTdjYzdhNzFkMTY4OTE0MTViY2NhYTg3Njk5NDA2ZTIzNmY3NTJjNjQxNTM4OWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5ZDgwN2JlNTcyZGJhYjkyYzhiMzgxZjJiZWM4MTk5Y2YyZWRkMzRhYTQ2Y2QwZTNhZmZiMmIwZDM2ZWFkZjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE0ZWIyMGU3ZjQxMjBhMGMyZDk1YzI4ZjlmZGI0YjQyN2Y2ZTQyZmVmMWI0YmRjMWY5YTA3NzY5YTExNDVmMjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}

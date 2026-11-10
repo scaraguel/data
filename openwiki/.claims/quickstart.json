@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f01fc7660a8c9cb5cb10b0b6cea9fcdb6d3b2699fdfb451892665b12e26257c8",
+  "claims": [
+    {
+      "id": "claim_1ad02f178d9a4a4d9aa5bbdb2f2b0832",
+      "statement": "The `ml4t-data` distribution provides the `ml4t.data` package for market-data acquisition, validation, storage, and update workflows, and supports CPython 3.12 through 3.14.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L1-L5",
+          "version": "repo-lines-v1:sha256:b5630910081f8ea6074e90a6ceda26182889c1475a9c4e5beec9d1299ebd034c:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTJjNTNjODYxMzY5OGU4NDgwYzY2YzgzNDg2ZWU2MmExZTg1ZWIzYjJiZmYxNTQwZjEwYTE1OTkzMzA5MWIyMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2M2ZDU3NzAxYTZhMzg0MWQzZWQ1MGM4OTk0MDI5OThmY2Q0ZDg3MDA2NTE4N2YzNTU3NmRlM2U2NzhiM2FlNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDgwOGZiMTQzOTJiNjRmNGQwZmFjNzEyZjExY2ZhZDc3MTdlYThiYmQ4MGZmNzQxZWU3NDllMTc2N2QyZTFmMSJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L33-L70",
+          "version": "repo-lines-v1:sha256:bd42dc93bf9bb2483319ac15712ef8999b936355a62543b49d68f81cce6b3255:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxZjM0NzUyM2NkZTYwMjVhZmVkNGFkZWQ3NTJiOTRiYmRhYjRjMWNkMzcyOGEzY2NiNmRkZGFjMzI2NzUwNzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwODI2ZGRhOWY0NmYwMTZhYWRlZjVmODgxOGY2ZDIzODQ2MzE2YWU0NmEzM2NhM2RjNTVlYzJlMTJiYjMyYTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyNjllMzBhZTEzMDIzNGI3YzhhNDVjMGY5MzkyMjE2ZTQwMmViYWEzOThmMzVjNzEyZTE5MjdhMjg4MTU3NTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhiMDEzY2QwNzg2MGExZjk3MzkzZTRhMDFjYjllY2EyZTBhNDVjNjljZDllOTk5ZTQyZDg5ZTkzZmQ5NmI4YWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_678f5de588f54b33a7f696826bba2e4c",
+      "statement": "The supported console command is `ml4t-data`, whose entry point is `ml4t.data.cli_interface:cli`; the compatibility module re-exports the modular Click CLI, which registers core data, batch, futures, COT, provider, and configuration commands.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L134-L135",
+          "version": "repo-lines-v1:sha256:4de7bc1a70ac1df4e833151c76929c1248df91bee7978546276158fa0fc8467a:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjcyMzBhZWY5MTU2NzQ4MjkzZDM2N2JhNGQ2NzcwN2UxNGY5N2E3NjM5ZDZiOTUzMTAwMzhiOTdiM2QwZTI0NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RlN2EzZGNiZDE3NTE5ZmM3NjdiOTExYzY0NWVjZmI1NDk1YjhkNmI2MWEwYWY1MWJjODI0MjcyZTFjOGU4ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTA5YzI1MGM3YTQzYTQwNjk4NzY5ODA0N2E1ZWZjMTU3ZmIzOGY1MDg3MjYwMjRjZWVmY2I5Njg2NjU4NmQwNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjI1MjhjZTkyMzRhNzZhMTY2NjY0ODdjMDlkMTkyY2U0OWVmYWI5MjAyYmU2NjBlYmZlNmIxNzRkZGM2ZGFhZSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli/__init__.py#L35-L65",
+          "version": "repo-lines-v1:sha256:ec15c6c6f5d19e0c5874448b1e0be09fb809c4c861c20c7e30fdd438c5040737:eyJzZWxlY3RlZExpbmVDb3VudCI6MzEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc0ZGUzZTc1N2M4MmNjZjVkMzk0YmM1ZDAxMmM5YjA3MTIzMWNlNTcyYzA3NWY4ZGIyMWJjYmZkZGQ2NGI4ZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiODUzNzZiYjU0NWQ3ZDZkZjFhZTU3OTEwYjY3MjE2NWJkOTNlZmE5ZGM4YTM2OGFiMTA1YjhhZjJjMGJkZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmMzM3NTRlMmFiMGFiMTFjMWI3OTY0NjE1ZmM3OTZkODI2ZGY5OGM3OWM0ZmI0YzUyNTExNmRkZmE4OWM5ZDkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhODhmOWQ4Nzc2ZDU4NWE2ZmVjZTAyM2Q1YzBlNDQ1OWJkM2QyYTRmNjljMmNhMDEyNDhlYTkzMjM2MGQzM2YifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/cli_interface.py#L1-L30",
+          "version": "repo-lines-v1:sha256:0dc27fb15bcde3a1ce5a878318f4d6b71c76a9d5af96b81c1a5ce449199c77d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxN2Y5NzBkMWE2N2JmZmNkYTQ3ZjkzZjFjYzkzYmFjM2E5MjFmNjRlNzVlMDkxOTIwNjI1YzQ3NmU2YjA3OTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyZTU3MTNlNjlmZWUzYjc0ZTUwYWI5ODQ2MTczOTYwMmM0YmI5N2ViYWI2ZTMwNGY3ZGFjMDdiMTNjOTcwMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI5MTk1YzY4OTU0MjM0ZmRkM2E4ZDhjMTc5NGNmMmI3OGJmMzQwZTM3ZGI0ZDMxZTdlZjExNWMzMGY2NGYyNjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a76f15490b8d404b835a6adfd456a653",
+      "statement": "`DataManager` is a facade over focused configuration, provider, fetch, batch, storage, metadata, and bulk managers; fetch works without storage, while managed load, import, update, metadata, and bulk operations require an injected storage backend.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L1-L14",
+          "version": "repo-lines-v1:sha256:ab67304dcfb2994c61ab6aed75ad7bc71599d95d49d20c6802b77849d28065aa:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk3OWEyMDcwNTcxZGM1M2VmY2FiMzc0MGE1OWE4YjM3YjEwYThjOGY0YjhhYzg5MTBkMDVjNGM5MWRkNmI3ZDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjZTU5NjE3MTEwMzkxMDFiNzY1NmU5NDkyNzU1M2M5Njk3Y2ZiZjdiOTY2MWZhOGNhNTkxNWU0YTMwOTlmNWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjFhYWY3NjM3Y2I2ZTdlNWRiODVkNjM0Mjc0NjAxNGRmMDQxY2NkNTU4YTkyMGIyOWViNmFjNzE5ZDdiYWY1YzIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L331-L433",
+          "version": "repo-lines-v1:sha256:a8acebc6155dd0829910bf6bcdd2b414b6a2aa2dc304d581481d111220b3a8c5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxYzM4ODM5MTJjNDAzOGExOTdhOGU0MTUzOTJlNjlkY2E4NTUzN2U4YTYzYmQxZWNhNDRmZGI1MTk2OTZkYWQ5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmMWUzNGMwZTY2NzMyYzg4ODYxMzdjZjljM2I5YTQ3OGI4MzFkNGRmYjUwNDdkNGVmNWRiMjBjYzFjYzBiYTIzIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1MGZhZDAxNDE2MWJhNzJhMzIzODA4MTdmMGI0ZDI2NWEyOTU0YTkxNWQ0ZDIyZjE4OWI4OTQ1MWI2ODJmMDVjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2OTMwNzBkMTQwMGFhNzkzNDFjZWU0ZTkxZmIxODg2ZDk5ZDdmYTIzZjcwYWZjNjRhNGVjYTAwN2YzMzU0ZWUzIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L437-L513",
+          "version": "repo-lines-v1:sha256:d29cb8291f9d9d91b6783c4511b977180e52df05ecd945905f99d78533997de6:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkMjE1NTljOWQ0MjM5Njg0YzI3NDBjZjljYjc0MjdkOTk0NWNiNWU3NzZiYjRkNzA3ZWQ0ZGMzMGU3NDJkODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxZTM0YzBlNjY3MzJjODg4NjEzN2NmOWMzYjlhNDc4YjgzMWQ0ZGZiNTA0N2Q0ZWY1ZGIyMGNjMWNjMGJhMjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY5MzA3MGQxNDAwYWE3OTM0MWNlZTRlOTFmYjE4ODZkOTlkN2ZhMjNmNzBhZmM2NGE0ZWNhMDA3ZjMzNTRlZTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZlNGMyNDFiMDQ0ODAxMjVhMzA3ZGFhMWUwZGUwNzFjNGVkM2ZmODVkYzRmYTE3OTgwZDAzMzBkMGM4NzU4ZjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L74-L165",
+          "version": "repo-lines-v1:sha256:48c03070325bf844a4720dfc6380d03e45b0f584a145ffad4d4ad279a5c10e6c:eyJzZWxlY3RlZExpbmVDb3VudCI6OTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmZDdhMDdhODNkZDE5OTZmYjUxNjg0YjQyYWVjYWY0ZTkwZmI3OGJhNzIzMGU1NDJlZDdiZDAxZDQyMzAxYmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3MWNhMzU0M2JhMzJiMmM2NDQzMmMyZDg1MTA4MGVkM2ZiYjkxNzllYTcxMzFiYWU3OGEwNmQ0YzRkODBkMmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkyNmU0NmUyNjFiOWY5NjA1NTY4YjZlMjUzNTIzMTg2ZmE0NjY3Y2Q1ZWQxMmUyNjE4ZGIzN2Y3Yjc5MDk2YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4M2EzZmY2Y2Y4ZWM1N2Q0MTgwNzliNWM2NjBmNmE2ZWI0ZWQ0Mzg1YzAyMjRmZGRhOTAwZDc1MmUyYjY0NmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_87734ac5275b4c1990880a3a11430c52",
+      "statement": "The project uses a PEP 420 `ml4t` namespace: wheel configuration enables namespaces and contributors must not add `src/ml4t/__init__.py`.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L40-L44",
+          "version": "repo-lines-v1:sha256:bc755817f8d1594c0676697d4b06449a6ff48edfec9b6e6d322fceed7f1e885e:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjE2NGRlMzYyNWIwN2U4NTQ2OGU1NDMxYzlhNzYyYjBhMDBhOTllNjRhYmE4NGQ1YTIxNTY0OTU5N2MwNzgzOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjUyMTAwZjNhMDQwZmU3ZjRlZjNhZWY1NTAxYjE0YmJjNjhiMzE5MDAyZmYxMDJmODcxMmZhNGE1Mzg2OTZhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTViM2ViZTc1MzgzMWUxM2Q2NGUzOWU0MTNhMDNkMjlhNzQyZmY1MjFlNjVjNzkxMzI4ODFmMmZmMThiNmUwOSJ9"
+        },
+        {
+          "resource": "repo://pyproject.toml#L18-L21",
+          "version": "repo-lines-v1:sha256:2629b5990a86896514f91839c159951a7ffdbb374d16b5f995a1cc672a6a6c90:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTBjZjAyNGRiNjg1NTdiOWJiNTIwM2ViNTVjOWMxNGM1MTYyMTRjZjM1YWQwYThiYzhjOTQ4ZDE4ODljYmM5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTYwNmQwOGVkZGY4YWJlOWVjZTg1ZTU3M2NiMGExNTJlZDYzZWIyNDhjNWZjZTdkNjFhYmJhYjExNDQzYzk0ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzA5ZjU5YjIxM2IyNTkyODdiZGViODNjNWViMGE0NjgzMTUwMDNhNDlhNDkwY2UwNjU2M2E2YzFmMGYzODdlZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTIyZTMzZTQ4YzkxN2EzOTFlZjZmYzdlOGQyNjRkZTRjYTFkZjkxOTcxM2I2N2I4ZTRiZWQwMjBkMjY3ZTYyMCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/AGENTS.md#L26-L30",
+          "version": "repo-lines-v1:sha256:66e79fa86be86d40bbf6a2eed7541cfb439eda12d8651899eff58d8084469d3b:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmY5OWJhMzE1NTZjMjYwNDI2NjNhZTkyMzU0NDU3ZWFkNDQ2YzBmYzkyZGZiYWNkOGU4Y2ExZGI3ZTFhYzRhMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmRmZTNjNzI2M2JiNDM3YWM5MWI2ZGIwODlkZTkzMjE0OGMwMGM5YTk3OTJmZjg1YTg3MDVlMDM3ZmEzNjg1OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTE4Y2QyYmY2ZmNmNmQzZWEzNTI4NWRjMjQ0MzMxYjQ2YTFjOWQ1YTE0ODA1MzRiOWI5NzFlMWQ3ZGJjZThmZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjVkZjkyZjU5MDZjMDY2NWUxMTE0OGRiNTIzYjYyZjY4ZDlhNDA0NDQzMzgxNjg3NmMxMTUwOTk2YWE4MmYzOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c6b00703dfcc4ff699d6b7c331f01a7f",
+      "statement": "Optional-provider dependencies must remain isolated so the base package imports without unrelated extras, credentials, or network access; provider registry specifications expose static metadata and lazily import implementation classes.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L29-L38",
+          "version": "repo-lines-v1:sha256:40469a2290ca41d0c108541de9ce6523cdb30c4ce32e016dc7cc769455abeee1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhYjFhZDg2MzZiN2Q4MDM3ZDI4NDBkMzM2MzNkMTU1YjEyNGU1Yjk0MTZlYTdhNzE5ZjBkN2NmMzZmMDA4M2EiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyZDFiNzZiMWE2NDdiNDA4OTJkMzljNjBhNDEzZjY0OTg4ZTZkZjFmZGRiODEwZTIxNjgyMzZjN2RhYWVjNGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcxNDk3OGY0OGIzNzZhY2U4NTNiZjBiNzY3MWQ2ZDJlOGJmOWJiNTYyOTI3M2U1YzY4MDkxNzY4ZGM0MWFkNTgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/providers/registry.py#L1-L7",
+          "version": "repo-lines-v1:sha256:bbab675e8ecd717e5f5009cbe3642ffa4e5861f24fb9ab4c3f14b88da5d9bcfa:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjUyNGQxNDJkNTU3M2YxNTM0YjVlZjAxODA0NGE2M2Y4MjM4OTk1MDVhZTBhMDUwNzc2M2JhNWUzOWM1YTliOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDI4YjE0Zjg4ZmMxMjc5YzMxMjAxOWJlMDA3MmE3Y2Q2OGRkYjM2MmVjMWMwODc5MzgxYTc2MWMyYjk0MTE0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTk3NGIzMDk1MmY5YzlhZTkwYzQ2OGRlYWQ0NjU1NTRmMWIxZGUzY2Q5MTJjZWU1MDgxN2RlMmY4Njg5MWQ5YiJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/providers/registry.py#L27-L81",
+          "version": "repo-lines-v1:sha256:660ef9029a00e53cfbb2516ce091ba478cfcdbb4475854e910e94907e8307722:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhYWY2MGYxMWJhZGQ4ZGY0OGJjODRiYjdiMzY3YjA0YmMxMWU0MDg3OGQyMzkxNTg3MDU3OGI2YjFiMDhjN2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiZDM0NjU3MDJhN2RjYWJiOGZkYzI3NmM0MGEyMmY4N2NlMjRkZWIwOGY3Yjc5NDk2NGVhNDE5OGZkMzcwNmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwY2UzZjI0YWI0N2MyZjVhOWQzMzdmMzc3ZWQ4NTczZmE1NjU4NDA3NjQwMmYxYWYwNTRhM2RlZDYxOTQ2MmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYmQ4M2RhMTg3YTBmNWQ4NzRiNGJiMThmNmI1ZmE3NDdjNmFhMmMyMWVjMDIyMTIwNjJkYjNkNzU1ZmFlYTEifQ"
+        },
+        {
+          "resource": "repo://tests/test_package_metadata.py#L119-L153",
+          "version": "repo-lines-v1:sha256:11acf551fa7a4445e02bca0fa8d8d2a3256ccaac45924152f5035c4d1bc490ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllYjZhNWM0Y2I0OTU4Y2M4NWRkOTRmZWI3MjJkNzRhNTRmZGRmNWY5OWY4ZjU0NTA0YWZhNTFlYTE4ZjNlOWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjNDI5OWJiOTA1NDQ5YjBhNWRjZWQ0ODAwMGY4ODU1ODY5NjBmN2FhNDQ1M2VmNDIyZDk4MmRlYTZjMjQwZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_97bde74ea3884d729350dc461b131023",
+      "statement": "Shared data-root resolution uses the precedence explicit argument, `ML4T_DATA_PATH`, deprecated `QLDM_DATA_ROOT` with a `DeprecationWarning`, then `./data` relative to the current working directory.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L42-L53",
+          "version": "repo-lines-v1:sha256:5e3754e1328302fa476026738d39115762615a7a38d823c04fafe2c1d1135652:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyNTI3NjQyYmJiYWIwYjUzMTQ4MDNiYTdiM2YyMjczM2MxNzVhYTNkZGJjNDc1MzU0NjI0ODQxNzM0NDE2M2YiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0NjA4OWYwMzJkZmE1ZjdhMWYxMDExYjBmZGQ3MjkyMTRlODI0ZmE1MjJhNDViYjBhYjUyOTNiZTA2NDdlMmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0YjdiMTkxMTRlNTExMmIyYTM5OGJkMTEyZWJmMTgxMDg4NTliNzY1YjNiOWFiZmIzNmNhMGU4MjVhMmM3YjcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/core/config.py#L13-L51",
+          "version": "repo-lines-v1:sha256:892a1c4f4ecd8d758eb656e14e777fd07dd9740d0a32d687189dd47f2bd5d1c5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdkZmMwMGUzMGMyODM2N2Y1YTA0YjVlNjhjMjFiZTUxMDNjZDBiNDQxNWQ1NTgxNzRkM2ZmNDZiYmUzNWE4ZjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk3NzkwM2RjMWQ4YjBmOTk2OTIwN2ZkM2U5ZmJhZjMxN2U2ZDlkMDJkZGU5OWMyYzQxMWIyODg0MDcwN2RjMGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdkNWI2NGFmY2ZjZjMwNzMxYTQwNGYxMmY5YTQ4NzZjNmQzZjY2OWNmMjFiYTRhODg1OWJkMTE4M2I0ODU2YTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b1bc0cb1b8504ea79f5f26565e4000a7",
+      "statement": "The default pytest lane excludes slow, paid-tier, integration, and API-key tests, and an autouse network guard blocks external DNS and socket connections for tests without a live-network marker while allowing loopback traffic.",
+      "evidence": [
+        {
+          "resource": "repo://pyproject.toml#L170-L196",
+          "version": "repo-lines-v1:sha256:2034f9d41bfddd3ccfad5bb62e34d6f1733ed578b01cc08540714e77319d707b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiYTI4NzYxMWUwMGFkMjQ1YzRiZDQ0NjIyOWQ3OGYzMDJlYmEwYWNlOTVlN2M2NmM1NGE0MzIxY2U4NjM2YWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxMDg1YWQwOTA0MjU3MTFhZGI0ZjE1ZjI4ZTI1YzE3MTA3OTJjMWQ0NWRhNzM5NGVlOTEyZTAzODE5MDQ1OTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY4MTk0OTQwNWZkOTVlMmZhZjA3NTdmOTZmMDIzMGFhMzg4OTVlMTAzMjAyMTIyNjA4Yjk2YWI1NDhkNTk1NTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM4ZmIwYjZlNTk3ZTFhYWQ3Yjc5NTUwMzAxMWIxYzhkNDYzZTdmZGQ1MDJhMTA2MTE5ZjQ5Mzg4ZjM4YWU4MzAifQ"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L16-L18",
+          "version": "repo-lines-v1:sha256:d609419462f93f3034d389df4cc2dc979ec084bc844348fad65c2fdbca6c60c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGE3YmNjNWJjNGViMDJiOTgwNTdhZGE5Mzk0ZmJjOWNkZWVjOTBjYTAyYmZkYzc1YTI1M2RkZjk3MWFmNWQ2ZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOWU5OGNkMjk3MzgxOGUzZTNmMDZhMTQzNzg1YzE5ZDdiMTM0ZjA0MGVlM2M5NTZiMjRiMWJhY2ZkMTYwNTMwOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjFmNWUxMGIyNjRkNTVhN2ViN2M2NWU3YjM0YzBlNTNlMzZhNmFiNzMzYjVhMzJhMjMyZWJlN2M1ZDIxNTgwZCJ9"
+        },
+        {
+          "resource": "repo://tests/conftest.py#L51-L122",
+          "version": "repo-lines-v1:sha256:0bdab11c3e7091a94f5bd59f9ab2e656e6d4aee5253118928e9f5d6f3cf57aa7:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiOWFjZDJkYTRkNDhiMjIyMjAzODgyNzU2ODk2NjFlZDVhZjUxZGQzMzBhMmFlZjc3YjdkNjlmODI3NmQ2YWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjYzkyZGYyZDgxYjdjMzAzNWU0OGMxMmU2NjJjZGNhM2QyZDhmMzQ4YjllMmExNmM5YWQzODAxMWYxYzA5OTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1ZmVkNDAyN2JjMGU4MWUzNTdlN2RhOTIzZDM2ZDgzMmViYzk0ZjlhZGRmMWVhYTMzNDc5MGNmOWQzMmE2MjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM5ODQwNjA2NGYwNDYyZjc4YTZmMTIxNThjNmI0OWMzYjUzNWY0NjNkOTI1ODVlYmI4ZmEwMjE4ODY4MTZjNDAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_adc03cbb62834c01a0e34ed63e30ea48",
+      "statement": "Supported storage writes publish complete immutable generations, and the removed `use_transactions` option is rejected rather than enabling non-atomic behavior.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L128-L131",
+          "version": "repo-lines-v1:sha256:1d71eb0edc79a2c20b63b7b6fb9fda169b1213d37837133280f018a20769bed5:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDM2NDBiNzg0M2U4ODU5Njk4ZGRjOWE5MTg0ZGNhOGYyMjhhNjk4MjczZjdlODU5NmM2MWFlODExOTIxZjU4MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjkzNTRhZGRmZmFkMjk3NjBiY2VjZmZjMzA1MWI2YTExZjUyZTM3MDVhNzA5ODM2NTA5MmNiNThmMWI4MmIwYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODZhNjY3OTc4ZjcxOGUyODcwNjgyMTQ0MmU1Y2MzZjE1M2E4ODhiMWVjMTc3YzIzNjJiNWFmNzZlYWY4NzlhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTkzY2RiNmEzN2I4ZTYxMjVkNTQwZjFkYmZmY2JmMzM4YmNkM2M5ODQyMzhkNTQ1ZjllMzI1YjM3ZWQ3ZjUwYSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L91-L98",
+          "version": "repo-lines-v1:sha256:96d494c6decb5bb47a90328eced509f72cab1e1598abfd1e1ba3ad63543e5082:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2Q3YjU3OWM5YTE1Zjg3MzE0NDc2NTM0ZTFhMzkzODc0ZDYyZDA0MmUzYzRiYzAyNTk5ZjI5OTRhNDExMTljMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTUwMzJlOTY0ZDA5MzIzNTFlNWQxODUyNjkyODFiMTcxYTNhMDliMDhiMjg2ZTY2MWVhNDcwMzIzYzgyZWI0ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDVlY2NkYWY4Y2I2MDdmMGM1Y2RmZjdiMGFjZmE4MWY1NWUwZjgzYTdiZmViMjk5ZjQzZDAzYmE0YjAwZjYxYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGJhYWYyMWFhMWUwZGMxMjMxYjNjNzJhYWRkYWM5ZGJmNjY3ZmVkZDc0MWViYjU1NjJmMDhjNjM1OWUzODBhYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_df682d9b07354984927f7f5f62a1b369",
+      "statement": "Exiting a `DataManager` context clears its routing cache and closes cached provider connections.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L523-L527",
+          "version": "repo-lines-v1:sha256:2ba84dcb500e6f3f40e9cbe03be187ff0d3b0defff9a69afcd50461634bb0ca1:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTRjNGFjYTJhMjVhMzJkYmFjYWE1YTg3NGU2YjkzMDgwYzRiOTY4OGY2ODViNWM3M2MwYTM3ZDUwODcxZDA0YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMGJkNmNjOTJhOWViMmNhYzYzZjdhZDllZWM3N2Y3YTc0NWVjODA2YTc5ZDlkYjYzMGJiMmQ3MWZlYzk1ODcxYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDFmOWEyMTQ3MDNmYjdmOWVmZjE2MmI2NTZjYThkNmY1MWY0ODFkMWMxNTBmMmMwZTZhYTNiZjQ2NDI5YjJhNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWU3OGIzMDA5ZTE4YjRhMDU3Y2M3OGRlZjRlMmIyZjljZmQ4MDQ0Mjg1MThiN2IzYmMyZGE4Y2RkMGViZDU1ZCJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L577-L583",
+          "version": "repo-lines-v1:sha256:ab4cd9164e4a366ff97f280699f4c5d262dcb1cc7667054b5405a95a34d8c54b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjA3MjlmZWRhMmRjNTEyMjcyZjQxMDZhNzI5MzkyZDMyZjE2YzE5OTU2YjJkZDgzMzk3YzRlNjc4NGVlZWIxNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTg3MDRmNzc4NjI4M2VkOGQwYjhhOTBhZjhlYWU0OGQ4ZDI0NTMyZTQyMThiMzljMTk3NDk4ZDRiNGIzMzNkYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzc0YTAyYjE3Mzk3ODcyODdhZWIxYTkzNTAwOTZlZDRlYzgxODk3N2I2Y2MxZDAwZTAzY2Q1ZDk3YWNkZTg4MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmNmODA2YWI0MWM1ZWFhYTFhZTExZDY5ZWE5ZDEyZWFjMTFmNmJiZTE3NTA3Y2I1OGVkMjY4MTYyYTdjYzVmOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9ef9ccf7f154409688582a9c2dcefa75",
+      "statement": "Repository quality gates include lint, format, type, offline test coverage, resource-warning, strict documentation, and package-build checks, with coverage configured to fail below 85%.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L50-L66",
+          "version": "repo-lines-v1:sha256:6af63865fd7e32a82be08110a6299f08d38317c5717780f56d2516d21528469d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRiZTYyNzk4MjA0ZjFlNzQxZDBiNGE4Mjg4NWIxYmFiOWUzMjdhOTg0OGEzOGQyNmQ1NGI1Y2E0NTlkMDdkNDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4MDcxNjY4ZjI1ZTc4NTRlODhkZmQ4MDYyODBmZWZiZmNkMmU5MzQ2YTY1YzRhODgyZmE4NDdiMzBmOTU5YTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY3YjkwMDc1ZTAwZjZmNDU3YTJlYjI4YmYxYjM0ZThhNmRkZjFiZGU2OGFiY2MxZTljNjhhY2NkMzY3ZDYzZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5YTVjN2NhM2M4OGQyYWIzY2JkM2QyOGI5YzM1ODY4ZDdjOTYxYWI0OTJmMGNjMzk4M2VmM2UzOTYwYjExMTgifQ"
+        },
+        {
+          "resource": "repo://pyproject.toml#L302-L319",
+          "version": "repo-lines-v1:sha256:0501100a4e67cf6cbebecfedc338adfa8784aed0a5ce3bd0f4fdde43cd6f92f6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ3YjExZTljNDA0Y2FlMjg3OWRiZjUyZDQzYjgzMWYzN2Y5NzhkMWRhOWZiMzZkODNkYmE2YTU2ZTE0Y2MyY2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5NDE2ZTA5Zjc4YmEzMTZjMDMyNTY4MjEzYjg1NWVlNzU2ZTQxNTY1ZDkxOGYwOTUxOWM4MWZkNjIwZjQwNjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZiNWE5NThiMTM3ZmU4OWU2NjkzMDgzZWMyMWYzNDExOGZhY2ViYjU2MWNlMDc1MGMyZTY0YmY5ZWMwMjM1ZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5074fbd2bcbc4b2b8c095f4cb4c75969",
+      "statement": "The synthetic provider is the deterministic, credential-free, offline reference workflow exposed from `ml4t.data.providers`.",
+      "evidence": [
+        {
+          "resource": "repo://AGENTS.md#L29-L35",
+          "version": "repo-lines-v1:sha256:5a377ba7319bdda1d482211af122bc6c1a82e3204f55e93a654e5ba0955f22b8:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDdjMDZjNTYxZDVjMzI3MzQzNjg1MjY4YTQ2YjMzOTFmMzk5OGVlZTg5MGQyYmU1MWYwZDIxY2M0YTUzYWU2ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTJkMWI3NmIxYTY0N2I0MDg5MmQzOWM2MGE0MTNmNjQ5ODhlNmRmMWZkZGI4MTBlMjE2ODIzNmM3ZGFhZWM0YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWMwNWI2M2U1MWJlYTA3YTdiMzlhZGU1OTg5OGE4NDJhOTc4ZGIyYzRiMWNjNTk0ZGZiMzdkZDVmMGI0ZTg0YSJ9"
+        },
+        {
+          "resource": "repo://README.md#L30-L40",
+          "version": "repo-lines-v1:sha256:cab7e214aaa30deeb54e25566abdd08d261eeccd4a1a3ff4c7f07449026d3e0d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA2MDdkZjliNzY1M2ZmZDlmNjAxZjM0MDJiM2ZiMGYxN2JhMTliZGYxMTk3YjQ2NDg5YzkwZDI3YTgwYzRlMTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE2ZDA4MzQ5OTI5NGUxMzBjZDlkZTg2ZjhmNzhjZDc1MzUxZjRlZTgzMjQ1MDFhYWJiZTVjMjA1MWEwMDI2ODIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/providers/__init__.py#L135-L143",
+          "version": "repo-lines-v1:sha256:2089971ba0b5aa56f13d60f9ed08e8e595ae31195e7a0f93b5f0e46c1917eab6:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzk5ZThmZGFhMjZiZmE4NTI1NjViMTQ2Mzg4MzgyNzE1NWJkMDVjNzQ0YjljZDk4MmZkNzc3ZWU4YWVmMDBlYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGMyN2ZhMTc3NWQxNTJlNWE3MDEyNTlhMjRlODk0NDRiNTgwOGM5MzhlNDVlMjMxMzlhNDkyZTVhMjc2YmNmNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWNjNDg2ZjQ1MTBlMWEzNTA0NjliYmI2NDg4N2RjNTQxY2ZhMWEyN2JjYTZlNjQ0MTc2NWMwZWJlZWUzNGI3OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Y3ZjMxMTFmODQ5ZmFlMTRkMTk5YTQ5MGIzYWRhYzFjYTI1ODljZTBmZTI4MjU1MjgyNDExYTUyZDFjM2E3MCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}

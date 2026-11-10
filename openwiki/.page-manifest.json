@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/data-manager-runtime.md": {
+      "pageVersion": "sha256:00ab636e369c913872247a6ff7eca9a4154190374bb3b64fc353d1588d31b119",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/architecture/storage-and-metadata.md": {
+      "pageVersion": "sha256:4d4a484fbcd0ed4fe7500864904f932a80dc6413f0f94ffcdfa94facaeb4d702",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/architecture/system-overview.md": {
+      "pageVersion": "sha256:b591808ed26e6f899e160c92b71effe681db877d00886d7dd8069d67d8d3ab17",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/concepts/data-time-and-identity-contracts.md": {
+      "pageVersion": "sha256:dbfa8f98b3a987b6bebfb1720ed60f8b5da548b517be8a14c97cf2f0ff634160",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/integrations/provider-system.md": {
+      "pageVersion": "sha256:5fb0ca6030dbcf74d6239b9a72cf913c9fc7285057d697942fc3fc9eb1f6bbfa",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/operations/configuration-and-cli.md": {
+      "pageVersion": "sha256:7d40b8290bbf187d4a16051cf278caf88e0358156468484b8c12b449860ec7ab",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:f01fc7660a8c9cb5cb10b0b6cea9fcdb6d3b2699fdfb451892665b12e26257c8",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/testing/test-strategy-and-quality-gates.md": {
+      "pageVersion": "sha256:0f329711624ed6908ff96a711ac708b06dbc5535629cff351d5e9fd45f970db4",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/workflows/acquire-validate-and-persist.md": {
+      "pageVersion": "sha256:6a046c7aa1f8c2cfcb245b20bd45201356e2cd7823127edd7d7a1270772cc0ee",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/workflows/futures-continuous-contracts.md": {
+      "pageVersion": "sha256:4c1832e3663ddc378e31454860176acbdbf2c3475a1d0b31ac07966e415dd673",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    },
+    "/openwiki/workflows/incremental-updates-and-gaps.md": {
+      "pageVersion": "sha256:9bff3a2a0e670566d37210538b9a72630c6b946dd29e8c415da8ae22167b36e9",
+      "completedBy": "openwiki/0.9.0",
+      "completedRunId": "6ba3718d-a3ee-4f37-9c4d-5794070d959d",
+      "gitHead": "04531dc1e287073e409fa2d74a8b74d32407d2b8",
+      "sourceFingerprint": "sha256:e5f2bb08e072fa553adebd62c4bb9fd6b8748bae36803acba359cddc5fe17ce6"
+    }
+  }
+}

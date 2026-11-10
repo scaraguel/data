@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4c1832e3663ddc378e31454860176acbdbf2c3475a1d0b31ac07966e415dd673",
+  "claims": [
+    {
+      "id": "claim_fa2d8ebed4374c4299d104afedc0caed",
+      "statement": "The futures subsystem separates parent symbols that expand a product chain, individual raw contract symbols, and vendor continuous symbols; the three acquisition paths use `stype_in=\"parent\"`, `stype_in=\"raw_symbol\"`, and `stype_in=\"continuous\"` respectively.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/continuous_downloader.py#L255-L286",
+          "version": "repo-lines-v1:sha256:0f7c6c8e4183282017bbc4abf8c6c8ea2cd28b736bda0a566e9e068ac623be86:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyZjYwYTk0MjM4Nzg3ZjgzOTdlODE0MzFmMGMzYzg3Y2RjNmQ3NGE2MTVjMGFlZWU4MDVhMDBmOGE0OGVkYWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM2NjI4MGI0Mjg0MWZmM2MwMDk4YjU0Y2YyNmZmYTU4MmRjOGQzOTNiYmQxMjc1OTExNGQxOTU1ZjlmMWU5NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBkMTgwNTU3NTZmYTMyYTQxN2Y1MjRhZGJjYTc1YTAyNDQwZjdjMjFiY2U1NTMwNzk3MDQzOWZjMzRmNmU5MWYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/downloader.py#L172-L207",
+          "version": "repo-lines-v1:sha256:ba2b6e8e0468c9695ac1e7fc66b4cfb612294ef712384b308e7d9f43c44a453a:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwOWIzMDQ5ZDc2NTMyMDgwMzg3N2ExYWJiOTlkN2VmMTI0MGZkMDI0OWQxMGQ4M2ZlOWI4ZTRmZDQ4NTkwZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjMzAxZjBkMmFhMDg0YjRkZGRiNjMxYTczM2I4OTQ0NDhjYWZlZTY3NTZlODBlZjQ1MzhkOTZhMDUxYTUzYWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiYThlMTk4ODg1Nzg1YmRmMTQ2Y2M3YzNiNjgxYjVhYzgwZWI1YzA1MTBiYjBjZjUzYWE5ZTNiY2M3NzY4NzMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/individual_downloader.py#L253-L288",
+          "version": "repo-lines-v1:sha256:8771904ebc046cf4528e84b840ead076c74736840138f2feb69f7cf90b7f36c3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwYjc4NWYxOGY0NDFlZWJmN2I1MjU5NDM0YTFlZWM1ZWZjZWNkM2I1NzYyZmJhYjg1OTUwOTFhZDI4ZDAxMWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlZTAwZjNlMWE1MjllOGExMzFjNTQ0NzkzMzU3ODUyYjNlNzkyNjJiNmVhYzg0MjZmN2ZkYmI4M2ExYzc4MGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQxMDhiNmVmMmIwOThhZTA1ZjA4MDkyMmUyNDhhMTU2Y2YyZTNhMjM0NTU0OWM2YjM3YjdlMTBlMWY2MDZiMjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8d0067746cef4895b5855ebbe1927591",
+      "statement": "Databento-backed downloader exports are optional: the futures package catches a missing Databento module and exposes actionable installation errors while retaining non-downloader futures APIs.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/AGENTS.md#L21-L27",
+          "version": "repo-lines-v1:sha256:da76eb69de074c83edfde8569816671bc7ec8b17bead9907af5b4c0eb7348cde:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzgwYTE5YmI3OWJkZjM1ZDU1ZWY2MTA5MjZjZGY5YzNiNjEzYWI1MDlhYTkxOTQxYjhiY2IxMmFhMjBjZDE4MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzkzMzM4ODY1MWY1NTJkZDZhZWMxNzdhYzBjMGI5OTc0ZjkxNTY0ZmE2ZjQxMGQyNDEwNDhlM2IxZGMxZGI0MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDVkZDYxMzIwMTg2ODU4YTk0ZWVhNjc4OWE2NmVjYzA1MDFiN2Q3OTc4Mzk5NjliMDY2ZmNkYzFhZTMwNDY2NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGUwNTk1NDZkYjgyMzdkZDBmZWJhZTU4Nzc4OTJkMzM4NTVjMTk3NTMyZDY0ZmY2NzczYTIwOTFhYzNkOGNhYyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/__init__.py#L67-L116",
+          "version": "repo-lines-v1:sha256:6e942199b170129c7897e98504d618881da058d59b4adceccfb720745e47d8aa:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhZmJhMDUyN2MzOTUzYzRiNmUwZTViNTczOWJhODM2MTJmODA1M2JjZGM5NDY2NzMwMTkzY2QxZDU5MGI0MDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3OTFhYjRmMmE1NWVmN2MzNTk3MzJmNmE1MzM2NGFmMGMxNWMyMGQzYjNmY2RmMzU3MjNjNjQ1NTRkYzQ4NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVhZGYzZWFhNDJhMDQyYzYwMTI5ZGVhYWU3NWMzMzIyY2ZhYjk4YTRhOTFjNTllZjE4MTAxOTc0M2Y1N2Y1NTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMTUyNGMyMTg4ZDE5NzdkNmEyYWRiMTNlZjhmODNhMjMxM2ViMmJiYjk4NDRiNjFmYjZjMTJlYTgxNDU5NzkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_20ff63378e5646e2995d0d748579d432",
+      "statement": "`ContractSpec` owns futures quote units and economic metadata and validates supported units, mixed-unit declarations, increasing mixed-unit bounds, and consistency between tick value, tick size, and multiplier.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/schema.py#L67-L164",
+          "version": "repo-lines-v1:sha256:9ae2437346f5d3d8c1978f7396c5ee986a1cfd7af85ed4f5acd067ba86fea190:eyJzZWxlY3RlZExpbmVDb3VudCI6OTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE5NzdmOWM5NmI1OTIyZGRhNGM1MTQ5M2RhZDZhZmIyOTJkMTU5MDI0ZDQ1YTA4YzQxM2I4NGZmNjE2NjExZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmMjgyNWNhYzBlYTNmNDBiYTc5ZjdkZDhhZWI2ZmU2ZDg4YjFkYWVkYjExNDMxMTdhZTlkYmNiYWExZjI2YzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFiMjAxMWEzNDk3MmU5ZmJkODM0ZjU0Y2MwZDY2YTdkNTFmNWU2YmVjN2U2ZTI2YWU3ZThjZTYzMjc5NWE4YTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIyOTVhYWI4M2YyN2VjZjJmNzk5MWQ2MjI3NGI0MzA2YzcyODE0OGFiMmE1Y2FlOGE5ZTllYmNiMWY4MjJkODkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_57103ee98f7b4639930293a3f7645514",
+      "statement": "Contract symbol parsing supports one-, two-, and four-digit years; truncated years require a reference year and must resolve to a unique nearest matching year, while chain construction uses definition expiration years and skips invalid symbols.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/databento_parser.py#L538-L574",
+          "version": "repo-lines-v1:sha256:50f2990b50bab3f7017cec9d66471c61181b2e4fba32012350324e14560a272e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzNjg4ZDFkNjkwYjAzOGU1YTA4MmRjYzRkMzFlMGJiMGE5ZDU5M2Y5NThlMTQ5ZWQ1YWIyMjVjMjZlZjc5MDIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM3ZDU2NzY5ZmMxNzdmYzQ5MmVjOGYxOTNiNWRkNTJhMzk0YzIzMWIyZDg2ZWIzZmZjZWZlNzY1NWRhYWY4ZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjViNDlkMWNlOGZhNDY2ODI3YzFiYTVkMTAyNjAwYzkxYzg2YmNiOGJkNGU0MDcyNzI0Y2E1NTYwZmU4MGI4YTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg2NTkwZDM4ZDFkODcyNDBlMDcxMDhmNTA3ZmM5MzQ1Y2QxMzA1Zjk2NDk0NGI1OTA1MDNjNmM0ODMwZGVlMzUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/databento_parser.py#L54-L139",
+          "version": "repo-lines-v1:sha256:28c717022ba4be43823ed77ec4848e9d4d1ecb84e553374a46bbe5b331ffa11a:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1MTYzOTM1YjQwZjBmZjJjYTBkMTQxOWZjYTBkYTkzNmMzMzkyMzgzNTdiYjBjODBlYjJiZjc0MmFlZmM4YTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhOGExMDViN2RmYzliMzkyYTA0MTY4Nzc2OWU3NzMzODM2OWI0OTBlY2MzYzg3MTljNjI2ZTAzYWRjZjNkZjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxZDM1ZDMxOTFhYTZiNmQ0ZjMwOWM5MGI2YzJlMmVlMzgyZGQyYmE3MmVhMWY1MDc5ZjVmYmE4NGMxNTdjNjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMxNWI5OTkzYzM4NmIwMWZkNGNkNTZhNTFkZGEyZTBjYWU0ZTlhNTM0YzZiZTY1YzM5OTk2MjU4Njg3Yjc0OTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2792aaabf3d048a58c0983b86435caa2",
+      "statement": "The parent-chain downloader queries all configured schemas for `{product}.FUT`, filters spread rows from OHLCV and definitions, stores schema/product Parquet files, and incremental updates align and deduplicate existing and new observations before writing.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/downloader.py#L103-L120",
+          "version": "repo-lines-v1:sha256:13f3404c374ae5c4c10eff4269ba4ec712132c84ce84bfcf42755e7415c32ce1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1MWIxM2ViZjBhZWE2OTk1OWQ4M2E0YjE0OTI3Y2Q2Y2Q0Y2ZmMDI4Y2Y5NzE1NmZlNGUyOGZiZjY5YTU4MGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMTI4YzBkMjI5ZmE2M2JmMzhlODNmMTAyMGZkMzhhMTNkZjM1Y2VjN2Y5ZDQzMWNkYzk2YzJkZmIyM2ZjOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhYmZhNDQ0YTAxMzdiZTFiNzJjZjNjZjk1NDg0NGI2MTQ3Njg3OGQ3MjYyNzZjZTdkN2FjNzAxZmIzZWE0NTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1NGJjMTQ2OTU3Mjc1MmU2OTNjMjM0NjRmOGNkMWIxYTFmODhlZThjNTkwYmM5MDUwMzMzNzU1NDYxOWNiZTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/downloader.py#L172-L262",
+          "version": "repo-lines-v1:sha256:32879bbc76a3d48006a5fdfcae0dfb929123130d4a6e17e651d7aa2913085fa5:eyJzZWxlY3RlZExpbmVDb3VudCI6OTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQxY2I0MWFhZWUwMTlkMzJlYTUwODJiODY5Mjc4ZGVkMDBlMjkxMmVkMzA2MjljMzNiMzA0NWI1MzM2MzkxNGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjMzAxZjBkMmFhMDg0YjRkZGRiNjMxYTczM2I4OTQ0NDhjYWZlZTY3NTZlODBlZjQ1MzhkOTZhMDUxYTUzYWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA0OGI4MDJiOTgwNDkzODgwYmY0ZTlmNzk2ZWZjODRmNjY0NzUxMDBiYmNkMDhkNjY5ZjM2ZGMwNzJkYTgwZDUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/downloader.py#L741-L835",
+          "version": "repo-lines-v1:sha256:8fd25e3263edee88edf5dff2bb915d4e161a0f16f4eb10b722ba1c33eab1da0b:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyNGVkZjY3ZGQ0YWUyMDVhNjUwNWRhYzlkZmE0MzNiNWRkYzc1NmQxMWVlMzM2MmQ3YjcyMGRhNDQ5NmU2MGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2MDFlYWZhMDk3NzRjN2IyMTIzNGI1ZDE5NzU2MTE3YTZlNzRhMmZmYTMxNzFmNjQ3MGUzYzdiOTM2NmJhYjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxODZjYTZhYTk1YzhhYjEwZDNkYTk3MmY0YmIyNGUwN2EyZmUwMzc5NDhhNzU4M2EyN2MzN2EzMTI1YTM0YzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlMjVlYjNiM2M2ZGM3ZGRiMzM3YTE1N2Q2NjQwMTIxMTcwYzM4YjFjZjU5NDE4Y2ZmNjAyZTM1NmQxMjE5ZjYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_49af781fcb6440dba1acc99a0f18983a",
+      "statement": "The definitions snapshot workflow downloads one dated parent definition snapshot per product/date, filters spreads, preserves raw snapshots, and produces a latest-snapshot-per-symbol product definition file plus an optional merged file.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/definitions.py#L154-L239",
+          "version": "repo-lines-v1:sha256:74be3f6b0a5b02a024f180f26fa1812568f4e7d8198a117fce53b5663459c3b1:eyJzZWxlY3RlZExpbmVDb3VudCI6ODYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzMDU3YzNmNDFlNDE4YjYzNTIyNWZlZmVlN2FmNDFmNDczMzM5NjljZTcwMjZiMmFhODhjNzZiNjVkYTZlOWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQyYTdhYTI3MmViNzlmOGY3OWVlM2M2OTE4MmFjMjViMzA3ZjlkMDEyOTNmYzE5OWU4NGZjOGVmNjc4MjBiZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxODE0ZTVjMmFmMGYwZDcwZTNjZTE5NDliMjg2NDE2NTVkNWVjOWU1YTc0ZTBjNjFiZTU3MmU3MTNjOWZmZTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE3MTk0MzM5MGRhY2NmNTE3ZjBlNTVmZTg0ZTk3MGYxYWM5YzI0YWQxNWMzN2QzZjk0YmNkM2FmYjZmOGNjM2YifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/definitions.py#L71-L129",
+          "version": "repo-lines-v1:sha256:9ceba605fa332176d1a2a258455b992fd29c74d5414b7cfeb9dfb25a89d300c8:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwMTA0OWZiNzczOTZlYWZjOGY4ZTQwYTFkOTUyY2I2ZTliMWYyZTA4ZDgzYmMzYWIzN2FlYmEwM2RhYmNhYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwZDQ2NWI1ZDJjODg1OTYyYmYyYjk2ODIzYTU3NjQ0ZGYzOWU2NmZlZWY5NmE0YjYzMDYyYWJmODkwYjIzMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMTQyYzkyMmMzNTQ3ZDU3ZjQwZWRiM2VlYTQxY2E3ZDI3YzBkN2Q0MGFkYmVhMzVjMDg0ZjBhZjYxM2I5NGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzNjg3NzdhZWQwMWJiNmNkOGYzOTNmOGExMjQ3ZjZiMjdhMTBjODRiNDIwMTZlNGVlOTNkMTM2YzBlOTM5ZGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c83348849bbb43a981331a7f9f804ca9",
+      "statement": "The legacy CHRIS parser reads only local Parquet, standardizes prices with settle-to-close-to-last-to-open fallback, normalizes prices from explicit contract quote-unit metadata, and the raw form preserves contract symbols when the source has them.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/parser.py#L172-L213",
+          "version": "repo-lines-v1:sha256:39dd452fb9db064dd5b754210c42a246a82d8def47c15693e4ddd6f9af13de66:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjN2Q2ZmIyMTU2MDE2Yjk5MGE0NjJkZGFjNmM4MjM1ZjFkMjAxZmI2NGMwNDcwM2Q5YTU2ZDJlNjhjZDgxOWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmNDcyYTYyNDk1NjAyNzQ1YjU4NjliMWNjOGU2MzU4MDE1NjA2ZDRlZDRmNmM0MTgyYzc0ZjEwN2VkYzA5ZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYwMTZiYWI3ZjYyM2UzYzljMjJmNGE2NWIzMTU1Njg3N2YzMDk5ODVkZWE0ZTA0ZGIxNzJmODkzOWQ1NjM1YTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiNGQ1YTcyZWJmM2I5OGVmZTEwMTg5OTlhMmU2ODU3ZjY5MWQwYjUxMTdmNTkwMzk4MjA5MjdhNmVhMDMwNGIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/parser.py#L20-L42",
+          "version": "repo-lines-v1:sha256:fb68fef6be714ed35ad62250bcabe2031578e98bbfe2e02a7eb988f9a6ea12a0:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlNDU2MzNjZTA0NDg3MWQxMTVmMThjZWQ2YjI2ZGFhNmIxYjIwZDRlNjY4ZWJjMzNmOTczYmI2MjAxYjBjNzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQzNjU4Yjc0MjQyY2E2MzVhNzk2NGI0ZDdkZmIzZTBkNmI2NTUzOGZhYmYyOTJhMGEwMjkwY2E3NjllM2YxNjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/parser.py#L232-L296",
+          "version": "repo-lines-v1:sha256:6c25516ae1c5d94211a34b93f5877ce80d0293c36a1fcc185983141175bc1f4c:eyJzZWxlY3RlZExpbmVDb3VudCI6NjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyZTBmM2MyM2RhYTZmZDg2OTBjNzZmOTgxZmQyNDY2OTZmZjFhNDJjYzJlYjA4MGRlNjg3ZTQwODRjMzU4NjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjllYzIwNGEyMTczZDQzYTlkZDYxYzI4ZjQ5Yzc5ODZjZTI5ODhjMmZiMDEyN2IyYWRlZDc5ZmVhMjQ1ZWM0NTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MjIzMTA2ZmQ4NzQyYjcwZWEyMzNmOWRjMzU5ZjRiMDJiYmIwNjliNzI4M2VlZjc2MjQ5OTUxNmJkN2I5YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVlMjZkZTU0NjZlZjlhNzA4ZDA1YTA2OTc1ZjI5ODZjMDIwNzQ0NzIyYzEyZWIyODJkYjVmNzgzNWJiODYwOTkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/parser.py#L45-L106",
+          "version": "repo-lines-v1:sha256:530ca36ec48cd13f5b0f9258c32737f11e60dbd4aaaf4da1d7beb42ebe2b4e84:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4YWIyNTdhNjhmZTAyOTk0ZjhkMjIzMWQxN2VhY2IxOGZkNmI0NGYzN2Y0YmRhZmM0NjMyOGYyZTM3YzU2ZmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhMTFjMDU2N2QwYTVmOWU5YjEzNWY2NWNkMjUzNzJkZmQ2Mjg3NzVmN2MxZWQyNTNmOGJhZDQyZGQyZDY2NjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3ZGIzODlhYTg0ZTk5NWZkN2Y3OWRkZjQyOTQwOTM0ODQ2ZDI5YmY2YzZlMTRlMmI3ZTBjMDYyYjRlOWVkNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmY2QzYWQ2NWUwY2E2ZDRmMDkxYmIzZDU5NWU3MjJiMTA1OTAyYjU1ZDEyY2M0ZDI1Mzg0Y2Q2ZmQ0ZjU0ZjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d5b32d6003f847e49a3b44f42ddf1ad5",
+      "statement": "Continuous construction parses a multi-contract source, obtains one `(date, symbol)` selection from a roll strategy, verifies every selection maps to exactly one raw observation, builds paired roll events, applies adjustment, and marks only effective switch dates.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/continuous.py#L46-L152",
+          "version": "repo-lines-v1:sha256:e9e7d7afeb3ebc47d117d8328ee495cde3338c60002c3b0abeb7478331cbbe25:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA3LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1MGRlMjU4NzE5NjE0OTI2MDcxYzhmYjE5ZmQ4NjYxNTA1NTVmMWIwMTM1NGY4Y2QxNjAzYTEwOWE3ZGRhZTQwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyMzRiNGIyN2MyZGQwYTFjOTY4MzFhMzI0NDgwNDY2YjdmOWZiMTE1ODQyYWY1Nzc0Y2U4YWFmMGE1YmVlZTFhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIxMTZjNDQyYmY5NTBmZGQ0MzI1MWI2ODBlNWYxZGE3YzdjZDgyZDA2YWYwYzc5YzRhNWI0NmVlMDYwMWY0ZjY0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4MjdmOGViNjRmMWVkMzFjMzQwNDU0MGU3MmNhZmUxZTFkZWZjYjg4ZmVlZjRmNDU1ZDEyNmNlOTQ2NjZhZTNhIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/roll.py#L426-L466",
+          "version": "repo-lines-v1:sha256:7619f8d703b69ada0a6c3db52ab0848c8753d9fe67a5da698b0625bb419632a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyYTcyMDg3N2UwZDdkNTA1NDcwOTMyNmE5ODIzZTdmZjAwYzFjYjQ5NGI3NzZhNTUxOGIxZmNlNTlhMWE0NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3MWIyMWUwMWYxMTgzYmJjNTY4OTEwN2Y3Zjg3ZmY0ZWUzZGU3YjZiODJkNjNhMjlhYWIzNGVmMzg0MmU4YzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlZDIwZGM4NDM0MzgwMTg1YmY2NGYzYzg4ZTgzZTA1N2U3NmZkYzFhNzk1MTA5ZjY5ZDg3ZmM1YjRlZGRjNTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjMGEyNzVlNjc0ODFmOGMyM2UyZTBkMGVlODBjNGMzMGZmZTViMTExNjMxNTYwZTEyOTE5ZmZmYmM4MTM0NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ce1da994011941dfb56fef6d192d257f",
+      "statement": "Volume- and open-interest-based roll strategies use confirmed prior-observation rankings, deterministic tie breakers, and only contracts observed on the effective date; expiry-based strategies require explicit lifecycle facts and calendar or civil-day policy.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/roll.py#L101-L172",
+          "version": "repo-lines-v1:sha256:20230f8ee7311cbccc61aa2ce1fb7e07c8bad999e56f8c92260f6a72f509d59f:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQyZWQ0MjBhZGU1NmI1MDE3ZTIwNmMwNGI0Y2ZiYzkyMmZkYzU2ZGJiYTU2YjkwY2JiOGY1ZjdmMzJjYWI5NDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVhYjE5ZDI2NGVhNmZmNWI5ZTNjYjg0YmE4YmY5MWNjNGYyZTZjNTVhMDhmYzMxYTRjODFjMzE3NTUyNDhmYjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0OWJmOGQzYTdkZGU4NTMyMzQwNzQ5N2JmYTcwYjU4OTNkYWUxNjgxNDE5NGY4NTZmZTU3MjkxMmUyNjYyMDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyNTYwNmI3OGFjYzE4ZjVmOWQyOGMyYjNmYmFlNTEzM2E4YWY3YWU3OTEyOTYyNjU5YzkxMjQxNTcxOTJhNmQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/roll.py#L350-L425",
+          "version": "repo-lines-v1:sha256:ae332ad5318be5058617d3235a434248efde3b17d16f042fae23c9ac2a869469:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRmZmViMTIyOWIzMmM4NWY0M2MyOTQwMjdlYWJkZmNlMDBkMTIzNWZmMGY2ZTAzYjhiYzA1ZmQ3OTc0YTM2MzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwODgyM2ZmNzIwNzZkMjIwYzEwNmU3MTMxNTgzNDhiZDNiYzYyMjU0YjFmMzU3Yjg5OTMyODlkN2ZjMmQ3NjciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyY2ExZTNkNjhmZDNlNTZkNDE5NWQ1YjZjMGExZWUxNjMwZWZkOWU0MGE5MGQ4NzNhZGM4MDc1ZmZjNDY2MTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExOGRhYmJiZWNhZGZiOTZjZjQxZGUwMWVmMDRiMDQyZjc3MjllMTVhY2U1ZGRhMWU1NDZmZDJmODMxZWNiZjQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/roll.py#L47-L98",
+          "version": "repo-lines-v1:sha256:5dbc9bbbcbe642aa4d12b0a3504305900a5269c2ca8adb8912feebf9ca724f82:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhMWNkNWUyMzk0NGMwNTM4ZDEwYjcyY2Q2NmJkZTlkMzYwMmE0NWRjN2E0OTY3MGIwYTEzZGMyZjE0Zjc1OWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3MDgzMGU3OGUyMjUwNmI1YmQ3ZGExMDY5Y2UxMTczYzQ1NTk2NjExOGNkYjM0MzhkODczNmIzZmNhZDRlZDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBkZDFkMzdiYjBiYzg1ODA3NWNmNGNhMWFiODA1YmQxZDkwZDI0M2QyMWE1Y2Y5OTg5ODQxMWE3OGE4ZjQ5ZTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAzY2RjNzM1ZjAyOTllYjFlNzFjMDY4OGE1ZmJjODRlN2Q0MDYwZTA0NGIzOGMxMDU4YWIwNTVhNDFjNjhjZWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e951321e88094ebb8f0362285965a73f",
+      "statement": "A roll event requires exactly one finite close for both old and new contracts on the switch date, preserving both contract identities and the same-date gap used by adjustments.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/roll.py#L426-L466",
+          "version": "repo-lines-v1:sha256:7619f8d703b69ada0a6c3db52ab0848c8753d9fe67a5da698b0625bb419632a3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyYTcyMDg3N2UwZDdkNTA1NDcwOTMyNmE5ODIzZTdmZjAwYzFjYjQ5NGI3NzZhNTUxOGIxZmNlNTlhMWE0NTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg3MWIyMWUwMWYxMTgzYmJjNTY4OTEwN2Y3Zjg3ZmY0ZWUzZGU3YjZiODJkNjNhMjlhYWIzNGVmMzg0MmU4YzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlZDIwZGM4NDM0MzgwMTg1YmY2NGYzYzg4ZTgzZTA1N2U3NmZkYzFhNzk1MTA5ZjY5ZDg3ZmM1YjRlZGRjNTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjMGEyNzVlNjc0ODFmOGMyM2UyZTBkMGVlODBjNGMzMGZmZTViMTExNjMxNTYwZTEyOTE5ZmZmYmM4MTM0NmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3348833b8df3427e9d504e9704d4229b",
+      "statement": "Back adjustment adds each new-minus-old close gap only to pre-roll history, ratio adjustment multiplies pre-roll history and rejects zero or opposite-sign closes, and no adjustment exposes unchanged prices through the common adjusted-column schema.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/adjustment.py#L24-L74",
+          "version": "repo-lines-v1:sha256:7322fc32dd47a7ba56485f05bca1f2e0daba01fdf00da486a154d3a82b3038ce:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0NzY1NzM2MzQ0Y2JmZjdmNjBkNjdlNTY5ZjRkNWIyMTc0OWM3MmJjOTBlNjM2ZGRiMmJhOTQ5MzljZDJkOWIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxYjFiN2I4MzJiNTRiZTc3MGQzNzYyNDdkNTk0ZGQ0ZDY4ZDZjZGUxZjNlODJmMjU5NjIyMjMwODA0NGJkZmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjRjYjg1NTJjNTg0NjI0MTRmMzM0ZDI3YzM4MDFlOWEwNDU4ZTcxY2RmN2JhNDNlMGQ2NmZlMzkxNzI5MTFjYTAifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/adjustment.py#L76-L115",
+          "version": "repo-lines-v1:sha256:90431c1e85f9ba31fc0ea498befb5c8e90fcda51db5ee2ca6948eb5fcae0966b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjNjU1ZDVjMzBlOTc3ZWM4MWEyYmEwNDc0ODdmM2I3MDcwZmU3NzY2YWYyNjg0NDYyNjNhMDVjYzcyN2FkMGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlhN2Q0NjFlOTdiYzg1MjQ3M2M1ZDAyYWE4MGNhZDViNjQ4ZTFkMjk1ZDZiMDU4YzdhMjNjZjI3M2E5NGVhNTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZjODY0YzU5MzU2MGRjNmJkNzk5MDQzYzZjYjQ5NTY3YmI5NDYwOTAwYzk4NDY3NzcxMTE5YTU4ODdjMDRjYTciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3cbbf27d50f644fa94acd7af7effd2fc",
+      "statement": "Databento raw parsing produces identified multi-contract rows with OHLCV, nullable open interest, and nullable expiration; the convenience front-month parser instead selects highest same-day volume and drops contract identity.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/databento_parser.py#L341-L499",
+          "version": "repo-lines-v1:sha256:00b46d14ae45408f6804110ac6b1ddbd814956f0e5039748ef69275fd68e36cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTU5LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4ZDgwZTI0OTRiOThhZWNlMjY5ZGIxOTNjZWI0Y2E3Yzc4ZGUwNzUzOWYzNzFmYjU2OTMzMWNjMDE5NTFkNzg0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJmMjJjMzNlYzA5NjNhNzU1Y2RmZWI2YzMxZmU1MjI2Njc4ZDIyMjQyY2E3ZmJhNTgyMjU2ZDk1NDlmYWQ1ZjVjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJhYmE0MmVlOTJlNDM3NGQ3MjRmNjE5M2FhODAxNDFjYTQ4NjVlMGJkMWJiOWVhOTgxN2JhMWJlYTNkYjU3NDUwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0NGJhYzY4MDRiODU2YWU0YzAyYzk2NjEyOGY0MzEzZjRiYWQ4ODBhZjdjOGEyNjY4ZWQxZjk5MGQwOGRiNmE4In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/databento_parser.py#L501-L536",
+          "version": "repo-lines-v1:sha256:3310607e91ecda986c9b05df05de8a083f7faea7fc014e4c636b2e0954d2dc00:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmNGQyOGY5NDFmN2VlZDE2OTVhY2M0NjgyNzM3Y2NkMGE3NGE3MzcxZDQ4ZjdlYzZmYTk3ODYxMTUzNWY4NmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFkNWM3NTU2MmNlOTFmM2E3NDg0MzE3MDYxZGFhYmZlMTJhYzEzZTBjNGQ0ZTIyNDBhNzJlMzQ3Y2Q5NDhmZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjNGU1YzliNGRjNDYyMDhjOTdhMzRmMDlmZTllM2NlZjA1Yzc0MTY5N2IyNDEwYzc5ZWE0M2Y2NGM1NzRiMjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9de03874a93f4b4f976f9b7a569eb931",
+      "statement": "`prepare_futures_inputs()` is a revision-aware research boundary that filters source and definition facts at `as_of`, qualifies volume and open-interest publication separately, selects one current decision per root and exchange, and returns raw/normalized bars, used definitions, chain, metrics, selections, paired roll proposals, coverage, and policy metadata rather than execution fills.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/inputs.py#L349-L449",
+          "version": "repo-lines-v1:sha256:7c1834d3d0e6d4ea4f9153527ae030bed3c2699a7670a6b5eb363c8711d581ef:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmODJhMDNjNTA0Yzk1NGYyMjFmZWFjMzkxMjI5MDlmMjRhZGE5Y2RkOWI2NGZjYTZkYzU2NTNkMDFkOWY1Y2Y3IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1OTA5YTUzYTYxOGQwMjhlMWQzMDAwYzBhN2FiY2VlY2JlNWZiMzdmNGU1MTFlZmU0NjY0M2ZhZDZlNjY4NzJmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4Mzk5NDZmNTViOTg5NjUzNzk4NTk4MThjMWI3MzQzYzRhZDMwYmEyN2QyODIzZmUwODE4ZjJlMDM3YTFmZWIxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhZWY3OTNmMjQwMGVkMzkwZmU0YzM0NzA5ODY0NTlkMDUxNDUxZmFjM2UwN2U0MWE2NDEzZGMzNjEwZTQ3MzY5In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/inputs.py#L451-L678",
+          "version": "repo-lines-v1:sha256:a154e2f6945c125417cffb972ae896f565a7f79b67a8a8b936b042e42f77bd1f:eyJzZWxlY3RlZExpbmVDb3VudCI6MjI4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJlODZmN2U0ZTUzMmMwZDQ5OTA5ZDAzY2YzZTVhZDNhMWM4NjMyYTNhOTMxM2FlMWI4NTE1YzM2ZWFlZTc5NGQ2IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIzMGMxZjE4OGYxNDJlZDdhODI0NjgwYjIwNzE3MmM1NTE5YmM2MTRhNDhmZGE3Y2YxNjdlZGI4ZGRmNzk5NTZjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1ZDg5YmM0NWQ2MTE3ODAyN2JkZTkxNjQxZGFiODEwNDI0NjA1ZThlMTE0MDlhMmQ5NGJlODI5ZTc5OWY1ZjUxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/inputs.py#L48-L70",
+          "version": "repo-lines-v1:sha256:a6d9afa123cc22cd64b0f893a9b395ddc3b43a1ab6d003e381af48483db07377:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJhODcxNTFiN2FlNjZhZGQ2M2RlYWIwMzBmMmY3NmM1NGI2ZWNjOWY4ODE1MGY5NWFkNjM0ZDdlNGEwZDUyOWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwMGU1NDE2MDhmOWM0ZTlhNjg2M2M2OGNhZTM2MzgyYjA5YzBmZTdmNzE4MzgwMGZjMTcxNjc4ODljNDAxNGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE3ZDgxZDE5N2E5N2UxNjNlMTUxMjNjZTkzMjZiZjE0NzUyYWFiZWU0MjhkNTI3YWU2M2I0ODJiYTQyNjllOTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjllNWI1Y2Q1ZjdhYTk4YTI5MDFkYzYzZGRiNTZjNTk2MWNmMGZlYjI2NjY5Y2VlZDYyNzkzODZlZGNhZDhkODQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_df85f0693e1c4a269142b93c388b7b7d",
+      "statement": "Storage defaults resolve through package data-root helpers: parent data is schema/product partitioned, individual data is one product file, and downloaded vendor continuous data is partitioned by product and year.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/futures/config.py#L57-L84",
+          "version": "repo-lines-v1:sha256:305f883153cf57b1dd1716a2c0a7f4aac3a94fc145cefcf6a5dfc44c44802b3b:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MzYyMWRkZDFjOWNlMTM5Y2Y0ZDU5YTM5OWEzZGZkMjQ4M2RiNTFmYjczNTNmOThiY2FlMWYyYzZmOWY1ODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIwMmFjOWM3ZGVmNWUxMTU2N2Q1NzBiNjUxZDE4OTQ2ZjkxZDJjY2FmYjViMTUyZDViOWM0MjJlMTE2YmZlM2YiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzMmMxZTIwYjQyMDdmY2JlY2EwNGJkNGYzOWU5NzNhNDA0ZDAzMWNhYTdiMTdhYTRmNGY4MzhhYjRiYjg4NmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImExMjg1MmYyY2EwODNhODRjMjMzNGM1NWEyMTUzYWVkNTVjZWIwZWYyYWNmNzlkMGI5MTYxZTgxYzJhMTM3OTQifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/continuous_downloader.py#L169-L184",
+          "version": "repo-lines-v1:sha256:9310ed8bb6aa91a735bc9cbb4abc58cb9977e26f2010949a51fc3405d560742b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBkZTgwNjhiNGE3ZmZiODc5NzIzNzdlMmNiYjQ1OGI2NjdlNDY2ODU0MGU5MDk4MjlmYTM2YzQ1ZGY1N2RiYmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU3NTllNDRjODgyZGFhYTYyMGExODRiY2ViODc2NTgxMGIyNDAzOWI2OWE5M2M5YjNmMmQzY2FlYWQwYTU5ZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4OWVlYTEyYmQ4MmM3ZTIyODc2OTExZDBjNzQ3OTljYmZlNzhjMDQyODBlOTZkYTA4NGM4OTA0ZDVkODM5YzgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/continuous_downloader.py#L229-L238",
+          "version": "repo-lines-v1:sha256:c39b51a78a46ab96543f66f81c3f83d220aaa335071b911e21d315145d53cc4a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlNDg1ZjhlNjE5ZjFlNGE4NmZjZmMwZGI0Mzg0ODNlNWUzOGE5YWRkYWUzMjAwNzU3YjcxNzRiMzk5OTQxNTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmMTFlYTExZWYwMWUyZTk2OWU1ZjRjNjI3MmYzZGI2NmRlNWY4ZTU0ZDFjYWFhNGFmZWYyZDIwYmJhMmVmMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQyOGI1YTU0N2I5NDJhYTk1NWNhZjA1OTEzOGNjMWU0MzkwYTQ4N2E4MjlmZDkyMmExOWE3NGFhMjYzNDFmYTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUyMDE3NDg3MDI5N2IyZTkwM2Y3ZjA5MGVhYzA0ZTEzNGY0YTFhYTY4ODIzZWFhN2FmM2Y1NTUzNjc4ODVhMmEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/downloader.py#L103-L120",
+          "version": "repo-lines-v1:sha256:13f3404c374ae5c4c10eff4269ba4ec712132c84ce84bfcf42755e7415c32ce1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1MWIxM2ViZjBhZWE2OTk1OWQ4M2E0YjE0OTI3Y2Q2Y2Q0Y2ZmMDI4Y2Y5NzE1NmZlNGUyOGZiZjY5YTU4MGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczMTI4YzBkMjI5ZmE2M2JmMzhlODNmMTAyMGZkMzhhMTNkZjM1Y2VjN2Y5ZDQzMWNkYzk2YzJkZmIyM2ZjOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhYmZhNDQ0YTAxMzdiZTFiNzJjZjNjZjk1NDg0NGI2MTQ3Njg3OGQ3MjYyNzZjZTdkN2FjNzAxZmIzZWE0NTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY1NGJjMTQ2OTU3Mjc1MmU2OTNjMjM0NjRmOGNkMWIxYTFmODhlZThjNTkwYmM5MDUwMzMzNzU1NDYxOWNiZTcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/futures/individual_downloader.py#L166-L179",
+          "version": "repo-lines-v1:sha256:a6f78fcf7e20184916bcee9f47be87866cf757c94432608d1fc1785e7682a276:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkzYmE1NGIxOGNlMDZjMDA5MDFiMGI2YmUyN2Y1MDY0OThkYjIyMzliMTVhNzU5Y2Q1NzM5OGEwOGU4YTdlMzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0ZDk3NWM4YzgxZWNlODJkMjk0YTMxNDY4MTYyNWM1NGFkZTAwMDJlOGYyYmI2ZTMyMDViOTJiY2YwOTMyMWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI2N2NkZjhkM2VjODA3ODQ1NjhhMDlmMzZjZGRlMDRkZTFiOWRmMWUxYjRhNjIzZDFiZTJjMTRkOTEzYjM1MzYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9b4f6ce0dfe046c3a1add75e1b5ff818",
+      "statement": "Targeted Databento acquisition rejects parent or universe-expanding symbols before a provider call, preserves exact aware timestamp bounds, and keeps the resolved exchange contract separate from the requested continuous symbol.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_targeted_databento_acquisition.py#L128-L138",
+          "version": "repo-lines-v1:sha256:deab8881c35dda9507003293633808db005b688f1c8d3325d7d392e22559ae91:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5YTEzNDRiMjhmMGY2ZTZhZjgxNjcwZTZlNzRkYjliMDZjZThmMTc5ZGI2Y2YxNDAyNWZjMDkzZGQ0NTYxODUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJlOGNkOTllZjM5NWRkNTdkM2QzNmIxNWVlMDI0YWRmNGJlZTY2YmJjMWIxMzhkOTdjZjRjOGY0ZWFlZWNhZWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1ZGE5YTZjNzFkODIyYTAxYjI0NWVkOGY2OTU3NTNhN2ZlM2VkZDQ2MTRhNGVjZGMxYjc0ODcwMWY2MjZiZDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2ZTQwZTlmOTBmODI4ZWZkNDAzYjc2ZTBhMDk0OWUwNjZkNjhlZWI1YTAzMGVmOTQ1NTQ5MTM0YjEzN2YwMGEifQ"
+        },
+        {
+          "resource": "repo://tests/test_targeted_databento_acquisition.py#L266-L281",
+          "version": "repo-lines-v1:sha256:21053dfa83780ce813b6fd55192aad8796063e62846456905adee0558fa5d66b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU4YTA3NDhhZTQ5M2ZhODdjMjdhMGMwM2QzNWIyODRmMTkzODBmZWFlYWVhN2MwMjc5MjMwNjVlMjAwYzM4YWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFiZjc4NzY0N2VmMzY0MGI4MWY1MmVjY2YyZjA3ZmEyNzkzNzdiYTQzNDBmZjRhMmE0ZjYyN2Q0NzZkMDIwMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY4YmUwYmE4YTkyZTc5ZGZjNWQ5OGJlMmM2OTQ0MzQ5MGYzNThlNzBmOWRmZTUyODljZjhjOWIwYzE5MmM4Y2IifQ"
+        },
+        {
+          "resource": "repo://tests/test_targeted_databento_acquisition.py#L54-L82",
+          "version": "repo-lines-v1:sha256:fc985b6d29a42b3ff5015a834cda762fe958f7ff467bac360ed96227059dc583:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjM2E3YWE3ZGNhYWNkYmNmMzRlOTQ0YjZlMzk0ZTQyZTM5ODNhZTg4YzI5ZTA2MTJlZTZiYThiZjI4YTE4YzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjllN2NjMjY0YTVhMDRkM2E3YjQ4YTQyYjA2NDIxMGI1N2VmMDYxOTg3OWVkZjk2MmE0Yzg1ZGQ0ZTRiZWEwZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0N2YwODZiMmJjMWU5MDA2YjEwNGMxNTZkNjYxNTFiMWJlYmI0MGMyYjdhNDY0YWMxNTY4NzY2NjAzOTQ1NDQifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}

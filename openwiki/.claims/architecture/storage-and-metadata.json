@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4d4a484fbcd0ed4fe7500864904f932a80dc6413f0f94ffcdfa94facaeb4d702",
+  "claims": [
+    {
+      "id": "claim_ada4d21bded24f57815009c15c0a3e49",
+      "statement": "`create_storage` constructs the Hive or flat `StorageBackend` selected by `StorageConfig`, while the storage root default is delegated to the shared `resolve_data_root()` configuration helper rather than defined by the storage subsystem.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/AGENTS.md#L3-L4",
+          "version": "repo-lines-v1:sha256:40c4b76274813d8ce3fbed268a64dcc2c5c4e3ced53f64fb0226cdaee42f7f3f:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNiY2Q1M2MyOTZiMjZmNGJiMWVkYTAwMmRlN2I1YTUyZjk3NDk0ZjQyNTgzZWUyZGIyOWIxZGFlMmU5YjhiNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmVjZjE2MjQxNmQ1NGYxNWNhYWEwZjJmY2RlYzJkZDkwNTk3NzVkOTY3MmU5MTg5M2NkZDMwNTM2MTM5MmY2YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmE1MzZlMzJmMWM0YzhlMjVmZjgwNjVhZTc2MGNlOWVhODI4ZTI2YjExMWYxOWY3NDdjYWRlZGJjNGI5NTBlYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTE4NTY3NmQyODgzZDg1ZGNjZjEyYWU5NDU0MjIyZmRmOGUxNTY1ZTFlZTg1OWJjOTM3ZDQ0NzM0MGNjYTVhYyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/__init__.py#L30-L69",
+          "version": "repo-lines-v1:sha256:028177d7654204663ce0d46d1a95b3b6ad1cdb0c2ced73244e5651b4f5db3618:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiZjhlZDA5ZmMxZDA4YzBiY2FmNmU2ZjM2YzcyZjlhODVjMzU1ODA4ZjMwNjAyMmM1ZTI4YjQzZDlmZjhmYzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ0ZjY1ODQyZmU2Mzg1MDA0ZGQ0NTY5NjIwYjhjY2Q1ZWUyZTc4ODFjZGU3ZGYwZmY3YzRlZGMwMWZjZjMyZWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMwMTIxMzE1ZGIwNDQ2OGU0NWNmNmI5NjkzYjAzNzc2MTNiNjhkZTExZGRjM2MwY2RmZTk0ZGE1NmVmNWQ5YjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiMjM2N2JkMGRmMGE2MmRmYzNkMTIxOTkxYjI5OGZlNGU5YzNkMzI2NzUyZTY5ODU1OTQzYjZjZjRiMjQ4M2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/config.py#L11-L17",
+          "version": "repo-lines-v1:sha256:946cbaaeba429c83139399b8fa7585888aabe720c3b8fc1a137426455ab84b57:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTJjZDRmODE3MTQ2NzZkZmY3ZmUyMDk0NDEzZDc1NzNkYWE4MzU2Zjc5YWI1ZGYxMWFkMjliYmJhNWY4YjNjZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTA0ZWExN2FkN2U1OTIyZDlmMDkxYTA4NDUyZWQzOGVmZDhlNGI2MGMwMGYwNDM2MGVkNzlhNTg1ZjYwYTI2YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_d10bf2a4eefd45c29b32ce48f44f3691",
+      "statement": "Logical storage keys are validated, canonically encoded as a single portable filename component, and combined with filesystem roots through containment checks that reject path and symlink escapes.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/keys.py#L24-L83",
+          "version": "repo-lines-v1:sha256:d58e67454c4f9c4df218020d6668c6d2ff60dd185bf74bffd6f5af0eb41e8e06:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1ODBlYmZiY2FmMWIwNTk2ZDdkZjE4M2M5MDYzNmZjZDQyMjQ0ZmVhMTY4MzBhYWNhM2M5OTAzNmE4MDc5NWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5ZTFjZGViZjkyN2I4ZmMzYTllNGYyODNjY2Q4MzIyYjJlNzU4MzBmMjMwMDZhNTQyZGFkMTUzZDRhMWY4ZWMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg5OGNlNzY1NDZmZmZiZTc5MjE5ZTk5YjcwNWQ2NDU4NzUxMDBiYTk3MDllNzg0YTcxM2Y3NDkxZTc4ZTUwZGYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliNTg1Yjc3ODkxY2UxN2Q1N2JkZmM0N2E4ZTdiODViYmM0NDQwNjk1NzU2ZmM5MjQ1ZDExODI1NjgzMzFmZGUifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L258-L280",
+          "version": "repo-lines-v1:sha256:c38f36775013a2c9f6bf5c95e4c03015218ad92befd2e95846726de0da5b986e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhMDE0NDcwYjAwZDBlMGQyZjZiYTM1NDIwYTNhZjQzNDgwMjgyNzEzZThkMzFjMThiMWY1NDcxYzU3NDJlMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ1Zjc3NmRkYWU0ODdiYjczYTZlYWYwNjU0NDhmMWZiN2U0ZDgzY2MzNjA3ZWY5NThkM2E2NjQyZDg3NDU0NjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmZTgyMGVlOTg2NzljYThjZWE3MmQ2MDI0YmVhNzIxZjU2N2ZhMmQyY2RkMmUwMTc5MzU0YzRlMTFhMmNhNmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1NTY3NTE5ODE3NzVkYzU5ZDk0ZWE0ZDViY2JkOWJhNzA0YjI3Zjg0MjVkZjg2MjNmMzFiMWMxZTY4YmY1M2IifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L42-L75",
+          "version": "repo-lines-v1:sha256:cce77bfb859b644206c855debb61c1e861ccfd226872d12a38db1534febff87d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY1N2RmMjAzZDU4YWE2M2ViNmU1ZjAyYzFiOGNlNmNjNjliZGMyN2NiMzhhNWQ4N2E4MGUyOTIzNTIzMzRhZmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhYjg4ZDhkZTlmZWZlMGYzYjUxYWQ5NmUwZjA5MTBkNTAyYjU2ZWIyNTNhMTYwN2VjMGZiMzljMTE0NTEyZDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0ZmJjYmNkNDkxOTRlN2YyZDhkYWU1MjVkYjUzMzUxNDU3NGM5MjFjMzY3ZmFjMzg2NDNkNDBjM2U1NGIxNjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2YzA0MjkwNDM4ODUzYmI2MGJkY2FmMWE2ZGVkYjRkMjhjMzY2YzQwZDM2M2IzM2FkNTI0OTM5ZWJlOTM0OTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_38586420fb11418db6f9040b6df97867",
+      "statement": "Hive and flat writes serialize each complete key mutation with a per-key lock, build data in staging, rename it to an immutable generation, write an immutable commit manifest, and make data plus metadata visible together by atomically replacing `CURRENT`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L196-L267",
+          "version": "repo-lines-v1:sha256:c247a6d9ab78f46f286f16edb270b54a1283c55912aa5cc2e338a786df60818c:eyJzZWxlY3RlZExpbmVDb3VudCI6NzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyY2U3ODA0OTU2MDcwZjY5ODYwYmNlMjczODQxMDQ4OWNjMjM4ZTQ3Mzc0ZWExZmMyMWRlYWZhYzhmZmJkMTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmYWJiNDIyY2ExZWE1MTI2MTQ4NWIyMTM5NmUzNGQ0YzJlYjY2NWUxMzY2MWFmZDgyZDNmY2E4ZTc1MjllYTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxZmZhMTI4NjYwNzk5ODcxY2ZhOWNhZDgxNjllNzEzYjJjYzVhODNiZWI4ZTA3NjllYWUwYzIxYmYxYTFkYjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3Y2YyZmRjYTEzMTQ3M2UxZGFlYjE5NDRiYzczYzMzNDNlNTIxY2MyMWE4NTdhZjBiZmNjNTU2YzFmMzZjZDMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/flat.py#L38-L88",
+          "version": "repo-lines-v1:sha256:88296a9e06ad6ca21a1cf0bd550920487d9f53fd2681455c7e0d1a5a1c3b202c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExMzUyNzE1OTEzMGE4MjhlMjU1YzQyY2FiMDY3YTBhZTI1ZDA2NTZiNzg5YzJkNTg5ZDIxNmU3MDgzY2Q3NDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzOWMzNTBlNmEwZTY3ZTQwZjgwNGZhZWNkZDMwNTVlM2E3ZTY4MjQ1OTgyN2Q3MTg0YmM1YTcyYmU3MDMxNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2NTczNzY5ZDE0MTI5ZDNjMjcxYWRiMzY3MjY1NDA1MGUxN2QwNjc1OGEwMGFjZGI5NjY0MTgzZDUwYWJjYTgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/hive.py#L256-L322",
+          "version": "repo-lines-v1:sha256:fd3c299955b7e4824fe3aeb445d192939076caa71aebdfd6bce2f71dd28d67c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY0Mzk2MTRlYjNiM2RjNTQ2OGY2ODU2ODQ3ODZiY2ZiNDA5YmUxNjQwMzEwYmE5NzVkZWFlYzM4MTUwNTllN2UiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NDJkY2M1OTBkNzY5ZjNiNjdlMTZhZjQ5ZTZiYmU3NmVkY2JjNWYzOGNmZDM2MTZkNWU3ZTA3NjQwZmNlZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZlYTU0MjZlNzllOTgyMTllZGY0YWMyYTYyZGE1M2NkYjRjZmQ2MTJmYjM2MzI1NmQxOTg0M2IxNTZmN2JjMTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlZTMzOTNkYzlkMmVkNzNmZGVlYTRlMTU0MTk1NjBhMmM5MmE5YjM5N2EzN2E4YmVmMzQ3ZWI3OWE1MDNiNTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b36575c0f19f4abbb21aed393ad89064",
+      "statement": "A Hive or flat write failure before `CURRENT` publication preserves the previous visible commit; failed staging is cleaned by the writer, and stale staging from interruption is removed only by a subsequent writer under the key lock.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L211-L224",
+          "version": "repo-lines-v1:sha256:bc50c294c196dac039da5780dbc3c54297c3b4cc46d23748c209859339686ce4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI5MTU5MjIzMmE1NzgyZTllYTNmYTA0OGUxZmMxNjc4M2I5NmUwNDNiMDdhMDBiZjYwODQ5OGRmY2Y5ZGM4OGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE3YTQ0OTVmNGI3NzNmZTc5MmVhZGU3MjE2OWZhOTJhZDlkZDFmNTFhMTg3NjVhNTUzYjNkNjc4OGVmODg2MDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQyZDM0ZTQ0YmFiN2YwNjczOTk2N2VjYzM0NDZkNzU1Njk1ZmY1MzI2OGY2NmIwOThhMGJjYmZlNjRkMDcyZjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L91-L98",
+          "version": "repo-lines-v1:sha256:96c29d0da97cb7ccc9e3a8161001b18471ae70cdc62d59080da7dde783eb5a6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2RmMjlhYTI0MzVjZjYxMzAwNjQxNTMwZTA3YmZiNTAwMWU4ZmI5MTk5NjE3N2RiODRhNWQ4ZGU1MDc5Y2IxNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWUxMWZjNDFjZmFiYTZmMjY2M2NkMTk4NzIyZTlmZDVlZmRjNDBiMjA4ZGU1NmUxOWEzOTMwOTgwNWI3ZWYzNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDQ3Nzg0ZTI0ZWJiYTU0NmI5NmFlYThhZTlhNDhhMTIzNWJkYWY1NTNmOGRkMmVhNmExZjE4NDA5MjdhM2MwZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWY0OTJjYTM1ODAzYTA2OWYzZmQ5M2M1NDczOTU0N2QwNTEyNzFiZWI0YTBlMmY4NmU4OGUyNTQ3MDU2MDE2ZSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/flat.py#L61-L85",
+          "version": "repo-lines-v1:sha256:bda6a648e114ade09825b1b3292c92aee400dea8bb31b687293eb026f300f8ed:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAwYWQ2NmFhOTA5Njg4NDc3OThhMjdhMGIwZTk4MzJmNjdhOTMxZjBlNTUyMmZmMGQ5NzRmY2UyODNjMWZmNjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMTZlNjZhOGEzYTlkYTMxYzcxNTdhZDI2YWM2ZjhlMDdjZGQzYzdjNDg3MmI2Yzc4YjAyYWU4M2M2NGJmMTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjcwNDg4MDkxMzJlN2JiYzc4MjdjMDFhZmZkMDExZDQ2MTM4YzRlNTQ3YzEzZTdjZjY4OTEyNWNkYjA4NGM5YzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2NGFhYzAxOWQ5MTI2MDQ5YWYxNGI0MmIyNDM1MDNiMGMyZTczOTUzODUxM2ZmMmRkNDJkMWM5YmZkNmY3ZGYifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L343-L419",
+          "version": "repo-lines-v1:sha256:99bffa8874a0007abc1d13d570eb44ee6a0c28393f31cec7518eb5a9c30d319c:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4ZTdlNjg1NmZjNjNhNzEyMjZhZjQ5ZGE5YzM5YWY0MTNmZTNjZjVmODVjNzQ1ODAwNmZkNzRjNmU3YTYwYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwOGFkYTE4YzliODI5YjE4YjNiMzU4ZDQzZmI1YmUyZmMzYzAyMTE0MmVlZWFjZjdhMjM2YWE2ZTBlZmE1YmEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzNTYxMmY1NTFkN2JkNDdkNmJjZDU1ZjJlNjc3MDZjODIwZDZmOWI5MDVhMDc4NGI5NDBkYWMyZWRhMDNhNGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2ZGE4NTRkMjVhZDdlZThiMDIxNWViMThkZjE0NmMxMDhiZTgyNDRjZjMyYWIwNzk3MTUzZjQxNmViZjk0MDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_817effd1a21c44cda425e375dc950e9e",
+      "statement": "Readers validate the commit and referenced generation selected by `CURRENT`; if that commit is invalid, they can fall back to the newest retained valid commit, and post-publication pruning bounds retained commits and generations to three by default.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L269-L355",
+          "version": "repo-lines-v1:sha256:a43d679addfed1ded2c40a158a95966c8e00040ce3ab771ad6490d53ed721d93:eyJzZWxlY3RlZExpbmVDb3VudCI6ODcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlNGNjY2NhNmY4YTY1ZDYyZWZkM2RlMWNjODExMmNjMzVjY2ZjZDkwMDhjN2Y0ZWQ0M2U2ZTUxMjc4ZDk2NGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU0ZTdhYWQxOTUxYzg4MjFmMzQwNGYyNzMxZjMzMDE2NGNkNjkwN2MwMjY3MmIxZWJhNmY0ZTI5MWFkNzc2NjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQyMTA5NzYwY2Q5ZDYzOWJjMzNhNTkyNGY2NzVjZGZkYmU2M2I1YzIxZGIzNjc1YTNkYjhmMzdmMmMxNDkxOGUifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L439-L459",
+          "version": "repo-lines-v1:sha256:1c716b4ab817cf13aa687f28588d08f99f6d29f63dadd8a9eb836826ac2d005c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjY2YzYmQ2Yzg3YmFhMWM0MGIwY2JiOGQzMzAxMzQ2NWEwNmU2NGY0MjlmYWNlN2ZjMGYxYzRkYzI0ZDcwZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFmNjU3YzY0ZTdhMDk3OWZhYjA1NTY4ZGQ4ZDU0MmRmZDBlM2M0ZTRkMTA3OGJiMGU0MTk0NmVlNTZkZDAyMzQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZkMjdhMmVlZmU4NzAxZTNmODA5MWQ1NjM2OGRjMTU3OWFhN2JmNzgyZjA0MTI3MzE0YWJmMWQzZjJhZDRjZDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjYWQ4Mjc4MWYwOTlhMWE5NjIwNzYwOTI1MjIxMjA5NDE3ODU5YzRjZDEwNDRkMGQxMjVkNDEzY2E2NjFmY2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_37eee91115064bff9e05f56a13f41ce4",
+      "statement": "`FlatStorage` stores one Parquet file per generation, while `HiveStorage` writes configured time partitions and prunes partition scans by requested dates; both return Polars `LazyFrame` reads and apply timestamp filtering before optional projection.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/flat.py#L38-L116",
+          "version": "repo-lines-v1:sha256:2d609564d7c0efc530110856ede8303301602193e0f6ea0620aa602ca55f88f2:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExMzUyNzE1OTEzMGE4MjhlMjU1YzQyY2FiMDY3YTBhZTI1ZDA2NTZiNzg5YzJkNTg5ZDIxNmU3MDgzY2Q3NDEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzOWMzNTBlNmEwZTY3ZTQwZjgwNGZhZWNkZDMwNTVlM2E3ZTY4MjQ1OTgyN2Q3MTg0YmM1YTcyYmU3MDMxNWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFiZjNmOTRhMGNhOTk5ZjI0MzhlNGEyY2Q5ZWU1MGFjOWI1ZDllMTQ0OTcyZTFlZjkyZTdmYWIzNGZlYjcyN2UifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/hive.py#L324-L399",
+          "version": "repo-lines-v1:sha256:4349710da5604f33b02754fb17388ed3aca25f8f512f60478badac37cc30f78f:eyJzZWxlY3RlZExpbmVDb3VudCI6NzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlODU5N2Q0ZjhkOTAzYzlkNTg4YWQ2MmEwNTcyYjhhYmMzZDFkYjlkNTk5NWU1M2U3MDQ1MzU4NTg5Y2JkZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA5NzgxYzRjZjFjZGQ1ZjM0ZjE4YzY4YWNkNzBiMmQ1YjQ2NDVkMTM4MGM4ZDFhMDg5ODgwNWE1ZjM2ZDE1YTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVlNTEwODhhZmE0YjU1ZTFlNDA0YTFiNzVhNjk3YjM1NDdjNDJlZGY2OTMzNmE0Y2U0Y2RiNTM3ZDIxYjE1NmUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiOTI2ZDIxZGZlOGZhYjEyZjliMDVmMDY3ODhlYjczOWFkNTM1NWZhMjUzODM3YzZhNTY1NTExOGVjMTA5YjIifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/hive.py#L82-L99",
+          "version": "repo-lines-v1:sha256:16e6f4537af2958a1d7f34003ff09b358d8cbf1b452f60d136c3ef217d72cb55:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhmOWVmODUwMjNhOWNjMWI1ZDE1YTM3M2VjZmMyNmVkZGRmMjlhNmJjMWVmYmE1ZTljMDFjY2MxNDdkNTY4ZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlmNGYyNjNkNDk3NmRhNjQwOGQ3ZjEzYjA0ODBlOWE3ZmMxM2RhNDNkNGJjYTg0NDFlZDExNGZjODg5MjdhNjMifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L487-L499",
+          "version": "repo-lines-v1:sha256:7044a5ca08ed8e245432724fe1ad4dad4491201db11b649d4419cc4ef586abe2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxYjgwNTQ2MDMwYTgzZGJlYTI0NzI0ZTQxZjI4Yzg4MjMyNGNiNTFkNzFlMDAxNzNiY2E5ODc5OTM5MzAwNGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MzcwMWYwMzM2MTIwZjY4MDdkMWY1YTcxOGJiNDM0ZWE5MmQzZDAxYmNmNjIyZDE2NDMxMmZmYjMzMzI1NjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI5OTBlNWZlMjhmYjIyZDBjZjcxZWQ2ZTZmOWQxNTYzZWYwYmMyZTI2YmMzODdhOThmMDBkMDIxOTM5ZGNjYzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNjZjZmNmFkZjQ4NzI0MWQ3ZjUyYmQwZDI0YTEyZjgwMGUwM2I3M2QyM2RlMTQyNGRkMDM2NmU0ODE3MDgyMWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2c288e4236ee4609aa34c10652c821c8",
+      "statement": "Writes to Hive and flat are full replacements, and both backends preserve an empty dataset by publishing a schema-carrying root `data.parquet` when Hive has no partition groups.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/flat.py#L54-L88",
+          "version": "repo-lines-v1:sha256:7afbece97525a42fe65b10a56b20e704cfd5783c9424e3e2e210e7da9c760bb9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5Y2JjODE2NjBjMGM4NzhlMDRmYjQxMWQzMzUwZDkwZGJmNzQ0MTU0YjM5ZmZhZmU0ZDM0MTQ3ZGE3ZjkyYzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ4YjQyYWU5ZWJmNDE5MThlYzQyY2E2Mjk5ZDFiNTc1NGQxZDE3YTY2NzkyZjEyZGI5ZTZlOGVlZjRlNzJiMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE2NTczNzY5ZDE0MTI5ZDNjMjcxYWRiMzY3MjY1NDA1MGUxN2QwNjc1OGEwMGFjZGI5NjY0MTgzZDUwYWJjYTgifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/hive.py#L284-L322",
+          "version": "repo-lines-v1:sha256:0cd7f48ea214e5be9839df61d096e03efa6679a78bfda7438548d15a314c9b23:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ZTYzYmVlNzZlMjlkNTE5NzBiY2EzNjYyODRkNDdjMjMyNGQ4ZjhjZDJlZmM0YmQ2YTAzZDQxNzQzMmYxYmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg2NDJkY2M1OTBkNzY5ZjNiNjdlMTZhZjQ5ZTZiYmU3NmVkY2JjNWYzOGNmZDM2MTZkNWU3ZTA3NjQwZmNlZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA1NGI1N2U1OTM2YWU2YzcxNzNiYzAwMTY2MzEwYTdmNGRhMWVhYmFhMjQxOWEyYjkyZTIwOWIzMmNmZTFlYjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZlZTMzOTNkYzlkMmVkNzNmZGVlYTRlMTU0MTk1NjBhMmM5MmE5YjM5N2EzN2E4YmVmMzQ3ZWI3OWE1MDNiNTMifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L320-L341",
+          "version": "repo-lines-v1:sha256:1cdb9012a6135a7c32ab8d8589a38a21a9216d507cc19911aadb008aff698037:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlMThjNzJhNWEyMTU3ZjExOWRlYjk0NTNhYmNlMzE5N2FmYjIxMmY2M2RiMzFlMjI0ZDhkZjc0M2FmNzU1YzUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlY2E2MDIxMzdhOTUzZjUwNDEyOWZkMWZmZDI1ODUyYWRhMWY2OWEzOTM0Zjk5ZGQ1ZWYxM2FkYTExZTU0MTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmNThiZDUxMmI2ZTNlZWIxNWI3NmZjNjY5NGI5ZGZkZGMyYzNkMjI5ZGUwZGNkOWQ3NDUwZDdjMzI0ZDA5MmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJhZjRlOGQ5ZjgwNWExOGEzNzk2NDI4YWVmYWZiMTc2NzA0NGU4MDI2ZmQxOTBkOTUyMTc3YmRjNGRkYzJmYWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_253a1dd158244e17811387e3d71b351f",
+      "statement": "`ChunkedStorage` is a separate `DataObject`-oriented consistency model: it atomically replaces individually locked chunks and a versioned index, merges existing chunks by timestamp with new rows winning, but does not publish a multi-chunk update through the immutable-generation `CURRENT` protocol.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/chunked.py#L204-L316",
+          "version": "repo-lines-v1:sha256:0acdecd8bc287974d7d4fde19e7bb4ce3c3be1f17aa075d41f72eed878e1e07a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1NTAzMmU5NjRkMDkzMjM1MWU1ZDE4NTI2OTI4MWIxNzFhM2EwOWIwOGIyODZlNjYxZWE0NzAzMjNjODJlYjRkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1NTIyYzQyY2QxOWM2ZDAzZDgwOGM0NTI3MjA1NTI4MjViN2VhMWM1YjQ5MWIyMTg1MTFjYWM3NDE1Y2Y5ZDliIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyYjNmMzJiMDdkODQ0YjJhMGYxZjBlNWQwNmE3MzQ4Y2IzNWE3YmRmNTJlMWNlZGE5MDg0Zjc1NzgyZGY1ZjM2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3Njk5YTY5ZjQxMjBjOTNjNmVjYTg4MDNkNWJkMjE5ODgwYTk3YTFkYjYzMjdlMjY2Y2U0MGJiMTRmY2JiYmI1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/chunked.py#L41-L79",
+          "version": "repo-lines-v1:sha256:5f16beb0f0c2bc0de7f00caa7232f83bf607839d100e4d6d45b5e6499d3956da:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5Mzc3NDlmNGE3OWVlMzFkNzc2Y2Q5NzI5ZjNlZmM5ZTg0NzM3NTMxZjQ2YmJkOGUwMmQzZDRiODIwY2ZiZWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwNWU2NmExNTk2ZThlMGVkZmI5MTUyZmQxN2E4Y2U0YjE4YjQ1MjMyYWEwOGExMGNmNTMyOGZiOWY5MTFmNDciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiOTRkMTZjMGEzMDM1ZTg0OTBhN2U5YTBjMjY3OTUzMzgzOWYzZTM4MWQ1YjVkM2I0YjM4NjIwZmIwNGQwM2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZjMDg5ZDc1MWI0MWJmNDg4NGZjNzA2YTFiM2UyNjYyNjAyZjJmZjNhYTBkMzhiNDc5NjRhMzA2NGRiM2E1OGEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/chunked.py#L519-L623",
+          "version": "repo-lines-v1:sha256:e4d9b967cd04602a01cb9e27debdcd6d810435378df74024df1a457b56f73033:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA1LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1MGRlMjU4NzE5NjE0OTI2MDcxYzhmYjE5ZmQ4NjYxNTA1NTVmMWIwMTM1NGY4Y2QxNjAzYTEwOWE3ZGRhZTQwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyZDM4ZGI3NmE0ZjMxMzk2MTIyNjIzOWIyMGJhZWIwNmZlZGFjYzkyYzNkYjc1ZGQ2NDMzZDNiZTMyMWMxZTI0IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwMTIxYThjY2Q3MjU3OTgwZWQ5MjY1NDEyMDliYTViYjE1MzA5MDBhNDZhMjFiZjU1ZGI5MjA2ZWUzNzY3ZGE5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIyMzE0MmE2N2E3N2JjMmRjNjJhNzA0MzM4ODMzMTM0ZmFiY2QyZjNmNzI2YTNmOWExMzFlZjRlMDg2MjQ2ZjM4In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc50b3aa209c4951b6cb0527c934ac0f",
+      "statement": "Tracked commit metadata nests caller metadata under `custom`; `preserve_metadata=True` merges that block under the writer lock, including a nested merge of `attributes`, and compatibility normalization flattens canonical or legacy metadata while inferring identity fields when available.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L100-L139",
+          "version": "repo-lines-v1:sha256:07993d497d2920356539059a848935d32db1e11af908d2755c6080c52ef34796:eyJzZWxlY3RlZExpbmVDb3VudCI6NDAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5YjBjMGFiYmMzN2M4Y2MyNWM4MTY2Y2YyMzQ3N2FkYjhmNjNmZTU2YjI0YzRiNjc1N2VmYjRmMDZiNzY3MmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyNDUxZDk1ZTY4NTdlMmFlMGU0NWJmMjczODQ2NzRkNzdiODA3ZjU2ODVjZDc4MTVhZjliMTI3NTU1Yjc3MDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg4MzJjN2Q0YmE4MDRjOTE3NjRkMmE5Y2VkY2ZiYzA2NWY4ZWU1MmI1ODllZWFmN2Q5NWY3Y2QwNDZjNGQ5Y2QifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L29-L58",
+          "version": "repo-lines-v1:sha256:24c976820a68fbb4adc936697d0b55b51e47c98690b94c048f3813ddbd6bcb50:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjMzViMjY2ODI2YTM4ZTAzOTlmYTBkYjgyMzIxMDE1N2FkMGNmNDM1YjE3MTJkYmE2NDc4NzJmM2FkN2QwM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkYjI4Yzk1ZTQ0ODE2MmYyN2IzYWM1NjY5ZThmMjU0NTllMjkyMzViZTIyOTFhZGMyNzEzMzkzYzQ3YzAxNGMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/flat.py#L60-L85",
+          "version": "repo-lines-v1:sha256:ae1686f5dffe1bee5989998386e38291fe5ca5a8322e2e77e9dfc6eb8ce5a43d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRkMTZlNjZhOGEzYTlkYTMxYzcxNTdhZDI2YWM2ZjhlMDdjZGQzYzdjNDg3MmI2Yzc4YjAyYWU4M2M2NGJmMTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVmZjBjYjNmZGQ0ZWNlYTNkNWFjZWY0YWJkNDBhM2FjYjBhNjBkNDEwYmEwMDFiMTkwMWYwMzI3NWNhNDNiZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ2NGFhYzAxOWQ5MTI2MDQ5YWYxNGI0MmIyNDM1MDNiMGMyZTczOTUzODUxM2ZmMmRkNDJkMWM5YmZkNmY3ZGYifQ"
+        },
+        {
+          "resource": "repo://tests/test_storage_backends.py#L134-L166",
+          "version": "repo-lines-v1:sha256:b2737c5b72c7c903d968e6935816e45a2768af9af79c13f3b0b94ea1919d417b:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5M2JhYTM3NmVmMmM0YzUwMzNhOTA5YzkzYTEyMmM4NmFiNzZlN2QxZmM3OWE4YmFiNWIzODQ5YjhmYTkxYjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImMwOWI5YzY0NjExYTUxNjIxZGViZTcwMmE2MDZkMDVkYzNhYjVmYTMwODc4YjEwYzg5Zjk1NTFkY2JhYWM0YTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIwYzRiNTc0Mzc4ZjY0MGE1YjFjNWUyNGZkMzZkMDY0ODZjMDA1YzkyNjQ5NzVmNDQ4MTdlNzhhZTJkZGZiYmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc0NWRmZjQzZmI4ZjM1YWM5NzFkODJlZWRlMWY1ZWQ0MDNhZWZlNzYxNjAwZjczMjcyNWMyNDdhYWQ2MmY3YzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7c3c19da4f6f484da991012962dcf819",
+      "statement": "`IncrementalStorageBackend` defines the structural operations required by incremental workflows, and Hive implements them by combining existing and new rows, deduplicating on timestamp, sorting, republishing, and recording bounded update metadata.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/hive.py#L513-L713",
+          "version": "repo-lines-v1:sha256:49fdd82363a7396b01b5b6abaaaa9fbe5a5da2248a92ffd9ec9316c8bc616684:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI3MmI1MjEwZTkzNzM5N2NkM2IxMmE5Nzk2Zjg3ZjY0OGE4MGJjN2U4ZWU5YjE0NDliY2FjZGEzNzNjZWRhZDA0IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyYTgxODViNmE5MTZlYmU4NzliOWY2M2M3MTE1OTg4NWRiZmY3NjNhYjUzMzBiNWIyZjA3ODgyZTFjNGU0ZGU1IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIzZDE5NjEzZmE4YmYyYzIyOWQwNWU1ZGJjMjcwNjgyZGY3MDg3ODAzMjkxMGViYmVjMGQwYmVlZGM3MzhhYzZlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/protocols.py#L10-L129",
+          "version": "repo-lines-v1:sha256:ee2f88732d00430e297d7b918d061de4c6c6bf27bef64bfe563bd02bfc7eac7c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1NjIwZDg1ZGU0ZWQ3YWI4MDIxYjRhOGRkNGZhMTVlYzUxOTI1Y2RmY2NkZTE4MDU4OTVhNGM4YTNjM2JhNDhjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJiMjBkYzQ3NDIxZWZlYjBhY2JjM2ZhNDc0OGU2ZjAxNzBhNGI4OGVkYzZhZTU1OGM5MmRjNTQwNDE3MDUwMTQwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_9f0e6c0f27c74543b92bc286db36e9f0",
+      "statement": "`MetadataTracker` persists a separate operational dataset status and update history under encoded per-key paths, caps history at 100 records, and derives healthy, stale, or error status from recency, daily range lag, and recent update errors.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/metadata_tracker.py#L135-L177",
+          "version": "repo-lines-v1:sha256:7cc17505134831ba736ce976113b5e6ea7fea6a735ce3317e0a7750e0d1763e8:eyJzZWxlY3RlZExpbmVDb3VudCI6NDMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwMzUyNjQ2MzZkMjQyMjJjMTJjZTRjZDBlOGJhYWZhZjY3MWJlZmI1ZmVhZTQxZWIxNjJjYmQ3MmQ2ODkwODkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzZGYyYWNmMDZlOGMzZjAzYzcxMzVjNmU4YWM1YTljYTU0MzJhYmUwNmE3NGFjYTBmZGQ5YTUzYTAwOGY5ODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjYWUwZjJjZWFhMTU5MWViY2Q3ZmQ1ZjRmOWNjNDcyMWI2MDVmZDUxZDY5NTg3YjFhMWVhNGI1ZWMyYzA0NTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/metadata_tracker.py#L178-L350",
+          "version": "repo-lines-v1:sha256:f0d4d5e783b32a55ae8943fc588d92275f305769046e3f73c03e771cb1a35f6e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTczLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIzZDQwNmE2MjdlZTI3Y2JmNWUzNjk0ZjhlYTQwMDcyZWI2YjMzMzJlMmUyMzcxMThiM2U3MTQyYWY0MzRmOGQzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlNTRmNTNmYWQ1YTVkZTA1MzgzMjA0YjgzYjBmZTEyZTJhZTk2Y2M5ZmI3YmQzN2RlMjEwZTE5YWNjYTdkMDVkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxNTgwOTVmMjVmMTA2ZGI2M2I3YjgwZTUwNmYyNTBiZWFmNWI0YzNjODM1OTdiNGRhNmE3NWM5YzhjNzJlYmMwIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_1e3e61fd8f6f44e1821825f91284df22",
+      "statement": "Storage-backed snapshot capture holds the source key's writer lock while copying exactly one resolved generation, and snapshot export validates required portable declarations, rejects machine paths and credentials, stages and verifies the result, then publishes an immutable destination by directory rename.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/snapshot.py#L178-L252",
+          "version": "repo-lines-v1:sha256:ba7dfae9d6f3392d7bb016ba7a50386fae5e6b638d2c38a665eb6291a9ffdba7:eyJzZWxlY3RlZExpbmVDb3VudCI6NzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1Mzk1NDNmMjc2YzVhZmQ5OTZjZDc5YzcwNjNjNjAwNDBhYjQ2M2NhYTQxZjcxODY1YTgzNzlmYjY2ZGIyOTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwOGVhNTQzY2QyZjRmNzMxMzlhY2QxODUyZmU5MTJmMzM2MWYzZTVjNDQ1YTg3MTk0Y2QwNDA4NzRjNTYyODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZhMGUxYWQ0NDQ5YjU5YzJjNmYyMTQyZjljOWMwNzdhODkzZjM5NjY4NWZiNmRjMzczZDQ5MDIyMmI4MTVhNzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlhN2M5ZjlkZGFkOTAxMGVhMGU1MzgxNDFlNWFhNTVmM2MzYTczNzQ3MWE2Njk1YWFjM2NkZDU4NjMzOGYwOWYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/snapshot.py#L255-L360",
+          "version": "repo-lines-v1:sha256:5f4aa651040ac6b23b07e9ed09301dcf91056af5152fb3962ff7d64968ee9ddb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4YjkzOTk0MjcwNDllNTJmMjZkNmJiZmQzMmY4YWFjZTE2MmIyYWFhY2FlZDc1ZWM1YTc1MDI5ZGM5YWRmMDhiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyMDhhODNmYWVlYTczYzY2ZmMxY2NhODllNDE3ZWRkMTdlMmY5NjIyYTMwMDVhM2FhMDhkYmU0NTBjMWZjYjBiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyODIyMWNhODVkMDBjYWE4MWIzOTVmY2RiZTdkNDViNzY2YmJhYTdhMzI4NjQ3YmRiOTJjYThiMWU0ZDAxOWEyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhNDAwNDliZDA2OTJiZjkzYWEwYWZmMjE5NjE3NmZkZDBiZmU4Y2U0NzIwZDEyOTA3OGFmYTM0ZWY2NGVmMDE0In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/snapshot.py#L57-L115",
+          "version": "repo-lines-v1:sha256:661e5dd3c14d5359cb8c85f338c58f4d5d95273f51e9e149858179899163fdaf:eyJzZWxlY3RlZExpbmVDb3VudCI6NTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0M2I5YTYwMWYyOGQxODA3YzczZDZjYmUxNjE3ZmFmNzEyMTcxZTU4NmRjMDk5ZGI4MTRkYmM4ZTdjZjQ0NWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA5ZTFmNWVkMDFlOTAzMDE4OGU0OGFiYTRiNTBhMzM3YzNkYjg5ZTZjZDY4NGIzNjk1NDQxODdmYjExMDk5MWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjgxMmNlYTcwMGM1NzQzMTY2ZWIzMTA1NjFhYzBmNTI5Njg4MjE1NTA3NzdkNTE0MTNjNTIxMTNlNTk5ZjYifQ"
+        },
+        {
+          "resource": "repo://tests/test_portable_snapshot.py#L367-L398",
+          "version": "repo-lines-v1:sha256:1003a6973454917128309877b38d7fa4ae2d88a2e0c6095961c43bf76e2dd09e:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhYTU2NzNlM2ZkYTczMTg3ZmIzNWNkN2UyNWE2MDI5ZGMxMzAyMGI1MDg5MDM1MWM4YTkyYTUwYzI1OGNjYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkMjU4MTE4YzQ0NTkwYWE5YTkyMGQ4M2EzY2ZkNDFjNDAzYWQwYTVkZDU3YjU0NzkwYzNiMjVhMjJkZmRjYjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIxZDA0M2Y5OGYxNGY4NmY2NGFiZjc3OTY2MmE2ZDViOGM2NDgxNTI1MWQyYjVlN2IxZTM4M2QzMDhiMzc4NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMzNjgxMTY3ZThhYWY0MDc3ZmUzZmZlMjEwYjE4YjExNzdlMWM3NTA3ZjRmNTk0ZTlmNmQxNjY2OTRiNGI5OTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9eb2bbcdf9ef49c6899d3d300a97d39c",
+      "statement": "Snapshot reads verify manifest checksum and content identity, enforce contained canonical symlink-free member paths, verify every file hash before parsing any table, and then check reconstructed schema and row count.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/snapshot.py#L363-L423",
+          "version": "repo-lines-v1:sha256:207fe10244de72ab7bcd0988642279155aec99ab4404ced6a087a65b392f6ad8:eyJzZWxlY3RlZExpbmVDb3VudCI6NjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhmYTQzOTUxNTAxMGVlOTI4Y2QzM2Q1MDQ5MzEyZjIwNmU4NTdiNTQ2NTJkNGJkMzQzNzgzZjYxOTYxMGIxOGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzY2NlYmFhYjNhODBiNzU5MjhlZmRhOTcyYzA3MGE4Nzg3YTYzMGFlNmJiZGQ1YjllNjZjMjE3ODViN2IyN2MiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3OWJiNTBkNTY0MmMxZjNhNDVkMjhjZTlhNTBjNjBlZTY3YTMxZTYzOTVlMTc0ZThiMDlkNTBjNmQ4Y2NjOTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/snapshot.py#L96-L115",
+          "version": "repo-lines-v1:sha256:fbe17200a8aafb0a3ef309d426b5ef5268001759ef160556af3067fb74748a1d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyNzVjODYxMzVjZmNjMzhhZWRmYjVmZmRhYzUwY2MxZjRiMTYyZjMxOWNjMzE5NjQ2NTg3YzZmZmYzZjcxZTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwMGU3ZGE0YTNhMTUzYjIzYjIxZmMxODUxYjYyNmU0N2ZhOGViNWY2ZWVhN2Y5ZGQ2NzkzMDFkYzVhMTc1YzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjgxMmNlYTcwMGM1NzQzMTY2ZWIzMTA1NjFhYzBmNTI5Njg4MjE1NTA3NzdkNTE0MTNjNTIxMTNlNTk5ZjYifQ"
+        },
+        {
+          "resource": "repo://tests/test_portable_snapshot.py#L214-L283",
+          "version": "repo-lines-v1:sha256:2321aba7d3353b11e96b1fbb149b60a01c9c6715e73c94dacea3e3400fc93a20:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0MTYzNGZkYjc1NGU5OGJhYzVlNDJkYjBiYjIwMWZkZWE1ZTY1NWQwYzM3OGFjZTE0NTRhOWU2ZWQxNmMxZDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExNjNhNzkzMGJmNjBkNDFkNzA1OWNlZDAwMmI4ODBiZTFlNzBlNzc1NjVjMmUxOTNhMDc2OWFmY2M3NzhlZWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhjYzRhN2QxY2M3OTZhYmEzZTQ2NzIzMzI3ZjUxN2U5ZjgxMTk4MmQyNTBmMDcwMjk4NmU0YjU3NjRhZDk1ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjI0ZjM3YTQ1ZDliNDQzNzEyMDU3NTU1MTUyYWQ2NTRlNjE4MmZlYjUwNWI1NTBmZWM0MmJlYjg4OWUzMGY1ZGYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2d7cc44cf5ab41189d192be0eb85150a",
+      "statement": "Legacy flat, Hive, and chunked layouts require explicit migration: migration inventories physical entries without guessing keys, requires an exact physical-to-logical mapping, refuses existing destinations, verifies all newly written data, and only then moves legacy sources to a backup with rollback attempts on failure.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/AGENTS.md#L23-L25",
+          "version": "repo-lines-v1:sha256:bb840fabc13c4a5f026a8fc036321382fe9431365575899e75d605f2f1301471:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGI4OTE2OTM5ZjA2NjNhNDY5YWM1YzgzMzkwYzVkYmMwOGQ4MTBhNjVhNmFmYzQwODBkN2Y0OGQxOGRiNTI2NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjcyN2RkMDU1YTAwZmJhMjMzZWIyMTUxMDA2MDgyOTA4OGVjM2VhZDBiOGRjMWYyODIyZjQyNGJmMDg4NTMxZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTc0NjA5M2YwYzBhMDNkOTg5NTAxNmNjZjY0Y2FjZjRhN2MxNDM3YjhmMDg0NDBkMzBiY2IxMmU3NWRmODQzZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWM1MWMwMmFjNTBjNzJjMGI0MjdmMjJhZDI1YmY5YWRlYjM0MjJmZWI0ODk1MWI5YzIyOWJkNTZkODNlYjhiZSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/legacy_migration.py#L176-L243",
+          "version": "repo-lines-v1:sha256:cff396a9f4bf6c1be94a24dbc40d8c384bcf47bcd59cfce6a33455661e3c6c33:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5MzE1ODA5NmVhNzZhNWIzOWMyMmM4YjFlMjQ3ZWE2NzZkMjU5MWI4ZDljYjAxOGUwM2RiMmY0ZjY1NjkwZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEwODAyMjAxMjY1ZjgyYjcxM2Y1OWY3NDEzZmRhNmE3ZTZhMjExODE4ZTA2OWRjYmEzNzkyNzZjMGU3NTZmZDMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhNjQxMTUyYWVhOWVhMTk0MjUwMzAyY2UyNDNlNzIzNmZkNDIzMjJhZDIyYTYzODFhMzY3MWQ1NzNkZGE5NGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2ZTJlZWQ5ODNmYjgxOTZkZGFkYTc0MTIwNDk2OTZiNDg2Mzc0YTRiNTE3MTVmNDcyYzkzYzkwNDM2Y2Y3ZjEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/legacy_migration.py#L328-L404",
+          "version": "repo-lines-v1:sha256:59ad0c615e238008e6ff4f0d8ec1ce0fe6026b9488e98b560b3322efca63bf79:eyJzZWxlY3RlZExpbmVDb3VudCI6NzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiZGZhYzM4ZTA5ZDRiYWVmZjk2MTA5NjM5Mjk2OWI4ZTkxYzNlZmRlNDU4MzNhMmQ0NzlhYzhmY2JkZWU3ZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhYzY2MThkMjhkNTI0MDM0Y2I2N2RjYzc3MDNkZTZiMDliNjZkYzhjYzg2MTlkY2M2YTAxOTk2MDNhZGY1MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE1OWQwOGVmOGYyNDYzNmYzNTM1ZjY2M2MxOTNiMTJkYmZjMDAwNTVjZTgzNmMyMzBkYWRlZjc2N2YwZDEwMWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzOWRlNmNmMGY0NTljMGI1MGRlMjc0NTgwYzZmZDBhMGIzYzAxZDJhZTlmNWRkNDE3OTczYThhZjg5NzU0YmMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/legacy_migration.py#L44-L111",
+          "version": "repo-lines-v1:sha256:bd053ce16cc8ccf2185224d881e5f13c02b27984b70c3f6cc3b8e8c74f6ba58d:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkN2QxZGY3ODMwNzFkODU3NWYwOTNlNGYxNTEzZTgwYzg1MTBmY2RhMTU5ZWNkZGE4OTg0ZTBjZWQxMjY0NWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJiNjRkYWQyMTk3MDA4OWFmODEwZTIzNTkxZjNmMDEyZGNlZWRlZGI0YWJlYzU0NTk2N2VhNmQ4MDE3YTk1YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyNDg5Zjg1ODg4OThiZmEwNmZjZTU3NmI4ZjQyNTY3NmQ1MjNiNDNmMWQxYWI3MmNkN2FjZjM2NmZmNjE5NTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZjOTk0M2VmNzJiNWI2OTkwZGQzMzFjNmU3YWZlZDllMDM3MzFkZDk2NzYzMmM0NTkyMWEyY2Y4YTMzNmM1ODgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_99066de3aa0c45178ea63d9309c2a1c3",
+      "statement": "`MigrationManager` runs registered schema transforms over Parquet files in version order, records migration state, stops on the first failed migration, supports dry runs, and permits rollback only when a downgrade function exists.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/migration.py#L217-L348",
+          "version": "repo-lines-v1:sha256:17df3cb63603afb593c720cb03b74f20dfa8a8ce54ec8f379007c46c19b7ec23:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4OGQ3ZmFkZDEyNjg0N2FiNGQwNjFhZjE5YmU4NjdjOGYxMzM3ZWI0NTE5ZGMzMDA3NTBkZjZiMTM3M2VlYTFlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1MmFhMmNkZGE0OTVjZTI3MDJmMWZiYWNjZTQwM2MzNGVjNjI3ZjBlYTZhYTc2YmZjOTZiMDRlNzM2ZDZlNzM3IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI3YTRhMDFhODk1ZWM2ZjliZTQ0OTQzMTcwMDNhNjJjYmUwNTRiYjY1ZGQ4MmI3N2Q4NGNkYzFmMzZhZDMzNTc4IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjYmIwNmRiMWM1MTFmMjk0ZmFiMGJmNjVhY2JiN2IzYTIwMGI5NzM1YzkxZDEwMzI4ODQ2YTI2Yjk4MDc4YjYwIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/migration.py#L47-L216",
+          "version": "repo-lines-v1:sha256:ccb167fbe5d0a86deb5bfa80e02dfb043f98ea228fe4d13a1cf6f5ff03aba071:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI2NzY5ZjZhZjFlZmJmNDExMTI0MWUxODIwM2FmYTlmN2JlZGM3NDE1MzIwMDIxZTIzMmVjMGUyZmRjN2IyZTRiIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2NmM5MWNlNGMzODFkNDYwY2ZkMzI4ODYxNGJmY2I5NDgxMTcxMzE5ODEzNDRjYmJmM2Q5YjBmMGU0MjA5YTk3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIxN2QxMmI5MGE5ODYyN2U4ZTA2YzdkMjZkMzlmZjg4ODYyZjQxZDM5MTc2YjdmZDhjZjIyMjdlMzNmMGM5M2JhIn0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}

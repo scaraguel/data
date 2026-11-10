@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:9bff3a2a0e670566d37210538b9a72630c6b946dd29e8c415da8ae22167b36e9",
+  "claims": [
+    {
+      "id": "claim_b6f91dc92d124289816a70fc5198edc7",
+      "statement": "The managed `DataManager.update()` path delegates to `StorageManager.update()`, which falls back to a provider-backed initial load when the canonical dataset key does not exist and bounds the default initial history by the provider's declared maximum unless the caller supplies an explicit start.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/data_manager.py#L397-L442",
+          "version": "repo-lines-v1:sha256:6afc9c38e2aaec09254d28d3f4b1b55e0cbe56b238f9ee5e9fee4595e77c1f11:eyJzZWxlY3RlZExpbmVDb3VudCI6NDYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU0ODZkZjNkN2E3NDE3NTY5N2VhNGMxNzQwMmQxYjAwMzk5YTAzODQ2ZmI3OTQzMmVjNzViOGI0NDUyMzg0MGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4MTRiYzgwOTgwOGU4NWM0ZDA4MDRhNzJjYTk3ZWMwYmUyYmI4ZmMxYzY0ZWI5OWM1YjQyZjdkMGZiNjA3OGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhkZDIwNTY1Y2ZkNmI2N2ViZmJlNGNlYzUwYTMwOWU3NzAyYzFlNjAxYzc0ZDU0OTI0ZDhmMmQ5NTczYjlmMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiZmE2MjIxY2YwMGQ0YWUyOGVmNjQ4YTBjMTBhMjljMDlkN2Q5ZjhhYzY3MGE4OGQ4NDViMDJlNWNhMGRlMjUifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/fetch_manager.py#L271-L279",
+          "version": "repo-lines-v1:sha256:474c05eb396eecfbac6f0c360ddbd4cbaa06d79794fe9ee4d47a844ed6c92da4:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmViZTI2ODZkYjBhYWYxMGYzMGUzZGVlMWFiNzEzNzQyNGNjOWY1YjdlMzViYzgxNTcyNGI3ODBlNjMyYzMzYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmNjOGYyZWIyODg4ZmZmNmM4YmMwOWIwMWZmZWRjZDcyZWRkMWU3Mjk1ZjA2Y2Q2NzBkYTgwNjE0NGViNjFmZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWJkOTgxZmFiNzA4NThmNjkwYWFiMGMxMmM1NzE1N2I1ZGQwYjI5M2UxNjYxMTJiOWUxMjYwMGRhYjQ3ZWJkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L527-L571",
+          "version": "repo-lines-v1:sha256:a1c07d7468fe41be213ec3e3456151ba05b420f129c62f0618f572a520b356a8:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgyZjMxMDBhMWYyZjUxNzRhYTkxMjRiYmRjN2UzMjUzMjRjNjQzZGUxY2MwOGE5Yjk2MGYwOTA5YTc3MDkwYjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiZjkxYTc1ZWRkNjRkNGI3NmU2NDQ0ZDBlNzUxMDQ2N2ZlMzE4ODlhNTYzNGYyOTk4OGRiY2U0NWU2MGRjOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY4MDYyYWRmMTlkMzg5YzQ5N2YzOTYwY2RlYmZkNWEwM2U2ZWU4MTdhNmUyOGEwNTA4NmEwZTA2ODgxNjYxNTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4NjEzMzcyYmMxMmQ3YjcwM2FiOTAxNWE4NjQ5MTAxNjI1ZjM2ZGUyMWE0NTA4NTI4MGVjZWQ3YmMzN2JjZTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cc19ab33ff3d406e930927cff3c4ed96",
+      "statement": "For existing managed datasets, `StorageManager.update()` reuses the stored provider unless explicitly overridden, derives an overlap fetch window from the last timestamp and `lookback_days`, and truncates that window to the provider's history capability when necessary.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L580-L636",
+          "version": "repo-lines-v1:sha256:609579aaa866c4e53fe2da0da9eb51da803dccee05e0fe2af20deab9ccd64a02:eyJzZWxlY3RlZExpbmVDb3VudCI6NTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYyNDAwMDFmOTJjYjBhYjM2MzUyYjAzMzJlNWIwMDdkNjU0ZjViMTU0OTk1OTQ0YWViM2M3N2FjMGRlMTZhYTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZjc0ZDZlN2EzNjE3M2RiNGNhNGJiODgxZDliMWUzNmQ2ZjA1OTQ5YTU2M2RlZmVlZTk5NzQzM2JlNWRiYjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkNzY5ZTRiN2M3MjYyMDA5YWVmYjliYTFmMTRlMTNhMTRmYTkwMjAwZDdiYjY4ZjU5OGQ2ODgxZjhkZThhYmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU0ZGY2N2FlOWUwMjNkOGU4MDAxYjUzM2IzOTgzMGI3NjMwNmJkZjdmNjExMjQ4MDM2YWI4YzEzODZmMjVkMDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_de0484785ef843499e52f6591e5f400f",
+      "statement": "Managed updates align old and new schemas, deduplicate by timestamp with the latest occurrence winning, and preserve metadata while refreshing range, recency, and non-imputing gap-report attributes.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L135-L161",
+          "version": "repo-lines-v1:sha256:3845621e366e88e6d39b026c54636799001e62f832b0673bf912761a5c84700e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkNzI2ZTMyNTI0NjFlMTY1ZjkyZmQ2NThjZTgyMTlmZDUwNWI2NTQzYzNhNTdlODY5ZDhlNTQ2M2YxM2Y3NTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk0YmEzMWUxMzk0OWY1YjVkNDk3Y2JmMTZjZTVhNTE3ZDJkMzVkZTcyMWI1Y2FjNTdkZWYwOGVmYWJiNWIyMWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVhM2I4MmE1OWFkNGRlN2RjYjFiMzE1MmRkMTU5YTMzNjk4ZGYzZGM0YTQ4MDhmNTBhNGMyODFlNDVkZGRjNTYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L658-L787",
+          "version": "repo-lines-v1:sha256:2827e40be553468f23841cc878a786d7262695a38e68ee6268473bed2d0005aa:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI1NTAzMmU5NjRkMDkzMjM1MWU1ZDE4NTI2OTI4MWIxNzFhM2EwOWIwOGIyODZlNjYxZWE0NzAzMjNjODJlYjRkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIxZjZmMzQ3MzViOThlZjliZmRjZmExMDc5NGE4MTM2NjY1ODc2Y2VjZWJhNjA3ZmZmOTI4MDg4Nzc2YmYyNzlmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0YjNmNjUxNTZmZGY0N2E5ZWRiYzFmMGY1NjMyZjIwZDg2ZGE0YzEzNGJkY2RmOWU2Y2Y1MTA1MmU4MmU2OTgwIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJjZDVlZDVjOGEzYzY3MmQwNWE1NTczZTdjNTFiYTYzZmFiNmExYWNmNDlmODgxNDFiNzUyMzdhYWU2ZDc0NGRkIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_36633abb5b384f669a9f91be8e5c156b",
+      "statement": "Managed gap checks are observational only: `fill_gaps=True` is rejected, `fill_gaps=False` disables checking, and detected gaps never change merged observations or set `gaps_filled` true.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L514-L524",
+          "version": "repo-lines-v1:sha256:c24c80620c60fa7f5a2e206c186a1fac0b21b12a6a368b2ed05263b18fa5d1c5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU1M2ExZWE1YWRkYjZlYzM3MmZmODJlODEwMTMyZjEwMjI1OTY0YmJhYmRkNWVmN2RhNGVjMTNiMDY1MzIyMjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFmODhkMTcwZDFjZThmNDczZTg1YTdlYTVkMjRiZTc0MzIyMTBiMzhlMTg4MDlmYzQxNDg1NjQxODAyMTU4NmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5MTQ1ZDI0MGM3ZDMyNTcwZDkzZGYwZTM0YjQ5YjY0N2ZkMGJhNmQxYzg1NDFlYmVkNDgwYjQyNmEyM2YzNzEifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/managers/storage_manager.py#L669-L720",
+          "version": "repo-lines-v1:sha256:0b1d9dc9a55811095ee0a546c848ce0d11121514c4e38a32396ab2aaf610b5fb:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhOGQ2MDhiMDY0MjFhYWJiZTQyYTg1NGE3YmQzMjUzMzNmYjQ4YzU3NWFmNTNmZDczMzFlNGYzZTYyMWM0ODYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxMDM0ODFjNTdkMGYwZGMwZjc2Y2QyY2M4YjM2MDRjNGU4Mjk2ZGE0MTIyYWRkMTllODE3NDVkYzdlMzMxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzYTY0ZGNhNjZjNzRlZGIyOGM3MzEwZTc2MmFmODgwY2U5OGJjMmY5ZjQxODZiYTQ2YTU5NjUwNTI1NWE5YjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk3Zjk1Y2NlODA0NDIzYzUxZTMxYTFlNDNhMTE0ZTgxODkzNmZmZDE1YzgwY2JlNmY2MTk3ZWRiMTQ0Zjg1NjMifQ"
+        },
+        {
+          "resource": "repo://tests/test_preserve_market_absences.py#L23-L74",
+          "version": "repo-lines-v1:sha256:e23599c6aadb67264fccc97b193efa070e35756041504be8dee248c8763596a7:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxNzBjOTZjZjA0NjBhODVjMzdiMTkwNDc4NzQ2MzE2OTllNTM5ODM3ZGE2ZDU2ZThmYzhlMzA0YjFlOWQ0MjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAxNzE5ZjNiYjQxOTFkZjY1MGFhY2FjNjZkOTg2NGIxYjM3NDg3OTQ1NzE4ZTZjZjNiMzJmYTE0YmU0MjY3NDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNmMjc2NDgwMTVhYTllMzI0NjIwOWQ5Yjc3NjE4NjNkYzlmMmQ2MWNjODQ5NTcyODA3NmQ1ZTM3MDM3OTkzYWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d81a17912898408fa90630447a8ab4d8",
+      "statement": "Calendar-aware daily gap detection classifies missing scheduled sessions rather than elapsed days, so exchange closures are not gaps, `24/7` calendars expect weekends, and an explicit null calendar disables schedule classification.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L129-L181",
+          "version": "repo-lines-v1:sha256:77eccc2a357f2019172a68f486660f5d653a638df8d9402761a2d2f3d5f2e796:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRjZjNhMGNiYjI0N2FkNWNhMWEzNTcwN2RiMzAxYzJmYzRiM2QyNWFkMTY5ZmE1ZDk2MzI2YTZiZTZkM2NiYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRhYmJlMDFkMDVkM2VkMjkxMzY1MDQ0NzlmODY1NzczMWY5YmJiOWEwNTQ5YzRmNzU0ZDRjMWRjYmM2NGMwNzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQ3NmFkNDIxOTcxNDkxY2Q5YWJjOTU3YzUyYTM0YmRiYWVhZWI2MmEyODk0YzRkYTg3OWFjODAwZGZmYWUwNzkifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L364-L400",
+          "version": "repo-lines-v1:sha256:26b4882dde0df8916c94137e41e300c372e128e484aaa4f5f11e5fa7cd7e1c0f:eyJzZWxlY3RlZExpbmVDb3VudCI6MzcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwYTYyNjZmNjQzZGYwMDkzOWQ3NjZjYWMwNGZjZjVlYWE0Yjk2OTBiMjNiNGFmNWUxMTRiNzhhNWM5NmExZDgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmZDAxOTlkMTk0MzBmOGU0YjAxYTQ2YmE2M2I4Y2IyMTk0NjRlNjZkNmM2YjRjZWJmMTI5YzFhOTE0ZjU1NjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYwYzBkMjEyMDg0ODczYTlhODZjMWI4NTVkOWYwNWUyYjA3MzBlYTk3ZWI5ZTdjZTQyNWNmMDNmNTVlMTZkOWIifQ"
+        },
+        {
+          "resource": "repo://tests/test_daily_session_gaps.py#L18-L96",
+          "version": "repo-lines-v1:sha256:72468e845aab66c93b1aa2cb60b3802cfc3bfcf18ac6655251910b156d72c98a:eyJzZWxlY3RlZExpbmVDb3VudCI6NzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzMGRiOTVkMjhjOTljM2E2NGJkMDUwNzU0M2VhMWIwOTg2ZGFhMjk3Njg3ZGI3Y2U3OGIyM2Y4ZWM1NWQyODMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU0MDBjMjM1MjFkOGEwNmFhZGQzY2Y5YzIxMTA2YTQwNDYyMmJmZTg0ZTc3OWFiZWYyZjJkNjhmZjI5ZWNkYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJjODhkYWU4MWJhMWIyZmU0YTc0YWY2NTM2Njg2NzIxOGYzMGM2ZGQ4MzRmOWM0YjE5NTg1YjY5ZmU0NzA1ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhhMGJkMDM1MGRiNTU1Yzg3MDQwMDMyZWU1OWU2MzFmMTNkYmMxNGI4NjM2MDg2N2UxYjFhY2ExODY1NDkwNTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8e39cbbdcf6946baaaffb66db9ec73b5",
+      "statement": "Calendar-aware intraday gap detection requires a complete version-2 fixed-time bar-grid declaration, builds expected positions from tradable calendar intervals, and rejects off-grid timestamps; rows marked with Boolean `is_imputed` are excluded from observed rows.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L220-L227",
+          "version": "repo-lines-v1:sha256:18d39b33b086b0562da1271b05a3d01e2fa367cbdd515807af76114c151b0de0:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTQyYjBmNjY4NjUxYzAxMTg5NDY1M2U4MmVmNmVjNDE2NTQ2OGVlNTRjMjI2MTI3ZTVjMTFlMTMwNzE4NTZiZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmRjZTdmNTExY2EwMTExYTcyYWM2NDdkOGM2ZTRiNTJmMWU2ZjBmYWE4OWFjZDkwMWVkODAyODdhNGEwOWY1MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODRhMzY5MjNiNDdjMTA0MWI5ODAwYjA1YjQ0YmVkM2E5YjQxNTUzNTMwODUxYzU0ZDE3YWFlYjBhZjkyZjRhMyJ9"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L229-L338",
+          "version": "repo-lines-v1:sha256:b106ffea8211c4a60df6e0aa962962d5c28bc4e9b81999343335704c6dcaf23e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMWJhNDcxOWM4MGI2ZmU5MTFiMDkxYTdjMDUxMjRiNjRlZWVjZTk2NGUwOWMwNThlZjhmOTgwNWRhY2E1NDZiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlNWYyZTkzYTBjNjcwYjRhNmM4OTAzNDc2NGRiY2VkNGNlODk0Y2ZhZmE2MGZhMzBhOTU5NmVhMWM5OWQwNTdkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5ODRlYjMzODE2NGM5YjQ4Y2IyM2M3YTFhYTY0YzE2YWJmZjYwYjYyNTRhMTZjYzAwYWRmZDJjODg4NTljZGI2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwYzU2Mzc4MTJlY2Y1YTU4ZTlkMmU3MzQyZDYwOGFmNGM2YzUyMWY2NmM4MDM1ZDhjODJjNmJlYTc2NTYxOGViIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_bdd811aae0e54223b613f8f2863c2141",
+      "statement": "`IncrementalUpdater.determine_update_range()` returns full coverage for absent or unusable storage, no work when the requested end is already observed, overlaps the last real row without a schedule, and with a schedule begins at the first still-missing expected observation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L603-L670",
+          "version": "repo-lines-v1:sha256:7e299de08bad1c8233289964352a8011097b87d842450d9d6f734ab959778be5:eyJzZWxlY3RlZExpbmVDb3VudCI6NjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1YThlNDMyOWU0MTAxYjRiNDljNmQyZjg3MzI2Mjc0OTY0NTdiMzY1NTRkNDFkYTI2ZjI1MGVjM2NhOGIwZWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2NmEyYWQ0ZTI5OTdlMmY5YWZmMDg5MzAxZTQ4ZDA3M2NmYTRlZjdlMjhlOTdjOTg0NTc3ZDZjNWY1NjFkOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZmYzRmZGRiNDI0OTdjMGZjNzExOWFjNDU5ZDE2NDRjNTRlZDE3YjFlYTYwMTllNzhiN2U0MGE5YzAyZmQ5NDEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE1NzM0NGIwMGU1Y2ZiZmJlMmY5OGFlNGIyYzZkMDJhMDBkNzdmMTVlZjZjMmM1YTk3MmU1YmEyMGVjNTA4N2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2dc41bb1b4d24fc98383b4c7d2aa3d5e",
+      "statement": "The lower-level update strategies have distinct replacement semantics: incremental replaces overlaps and appends later rows, append-only accepts only timestamps after the stored maximum, full refresh replaces the entire frame, and backfill selects incoming rows only inside detected gaps.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L774-L957",
+          "version": "repo-lines-v1:sha256:6b40a49c439d23a6d62d5268245fd7c422112aefc2bd9007f89ea9abbfa19b9b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTg0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4Mzc3YjdmYjQxYzE2ZWE0MzE5NDRhMmQyZjU5ZjcwMDMwMTE5ZGE1NTI4MGVlZDI3YzIxNmI5NDBjZmE3ZmI5IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyNTljYmIxZWQ2OTllYTJlYTMxZDk5OWNmODUzZDFkZWZkMDhiMDFlNjhjMDJiODZiMTViYmE2Y2E5MWUwZjY4IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIwZTY1NjY4MmRiZGExOGMwMTg1OWEyYzc2ZDIzY2I4MzIzMjM2OTJhM2UxMzA5YjhkZDhmYzQ1ZDhkYjk4YmJjIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI4OWJkZGEyY2Q5OTQwM2QxYjdmZmYxNTIzMDcyYTExZmJlZDhhOTMwYWE0YjY2ODU1ZmE3MmQ2MzcwYmZiYzk5In0"
+        },
+        {
+          "resource": "repo://tests/test_incremental_update_system.py#L255-L510",
+          "version": "repo-lines-v1:sha256:076851e8e56b7479141836ddf82b78f15ce722468a7aee21fb41130a094f7437:eyJzZWxlY3RlZExpbmVDb3VudCI6MjU2LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIxMTg0MTAzMzI4ZjFhMWQyMjA1NWE3MjAyMjAwYTE4NDlmZjg5NGY1ZTU5NmQ2MjYyYjkxOTc0ZWRlNWMwYTQ4IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0MTdjMjVlYWI5NWRmODM5NTI1Y2JiZDI3YjZkMzY4MGNjOWRkNGQwN2M2MjUwMDA3ZTAxNGZmZjE3OTJjNTllIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI2ZDljNDlkMDRhNDIyZWNmNzAyZDM3MjljNWM5Yzg5MDdhMTYzMTM2MTMyM2U5ZmNlOWNmZjY4MjAxYTYwODVkIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NGYyZmUzNmZkNTVkYTcyYTY3Mzc2N2E5MTQ1NjVjYjVhZGNiZjQwMzhjNmYyNjdiNDA5Y2EwZTU3YzJkOGI0In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_4c732042ceb4474ab48264903507dfcc",
+      "statement": "Lower-level replacement writes preserve dataset metadata while recomputing range and recency, and storage publishes a staged immutable generation through one atomic current-commit pointer so readers do not observe a partial generation.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L235-L289",
+          "version": "repo-lines-v1:sha256:074357f00beab8519c4bde4c1c31bf733befdb5f9ccf86140c1535aeb6a12812:eyJzZWxlY3RlZExpbmVDb3VudCI6NTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY4YjU1MDVjMzE0MDAzMTIyZmFkZTc5OWNmMWQzZmJkYWZmNGQzYjhkNjU2YzY0OGNkNGYzOGU3MTc1OTRiYjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjNTUwMjRlMzQ4OWMyNTg3YTQ0Yjk0NmJiNDRkOGYyN2Q4YjBkZTc4ZjQ0MzBkYmUzNThhMGFlNWEwMTI5ZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2MmNmYTE0NWU3OWE2Nzc0NWUzZTc2NjI2ODQ4YThiM2RkNGYwOWQ2OTQ4ODVhNWQ4ZmZjZTdmMmM4ODExOWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwOWE4M2UyM2MyOWMwYTE1MjVjNGQ1YWRmODdhNzhhODMyMTNlNmQ0YmQ1MzM4OTQwMjM3OGVhNjRlY2QzMDcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L42-L70",
+          "version": "repo-lines-v1:sha256:eb502ebbfece4f33e1374c6a2021dfa3ee9750f1cbd0ed82d617ab5761184225:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMwYzFmMTg4ZjE0MmVkN2E4MjQ2ODBiMjA3MTcyYzU1MTliYzYxNGE0OGZkYTdjZjE2N2VkYjhkZGY3OTk1NmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMyYzhmZWNhZGMyZDIwNDI0NTViMjQ5MDNhYTJlNmY0YzMzYTA0YjFjMjI5NWZhNzIxYzViM2MxNDQ4NGMwNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk5NDNkZjZkNzQwNThmNWVmYmY2YmQ5NjBlMmU4OWY2OThlZTRlZTJlMmVkOTg2MDEyODBjOWM0ZWNjNGUzMWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_update_manager.py#L628-L679",
+          "version": "repo-lines-v1:sha256:ddf2a888c757be8a0f1a2eca9943149f64edd5b2c90241965647eaf636f863b4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiMDMzNjczODdlMzQ5NzUwNzMwMGM0OWRmMTEwYTVkMTZmNTA3MzMxOGQyMGEzNDJlN2QzMGU0N2YwYTUxOTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4NjU4MDY5MWM0ZDMxZjQxNDQyYmI3NjQ0ZTI1MzlkZTRhNGJhYzU4NjlmYjg0ZGE3NTZiZjg5MzkyYjMyMGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMzNDE1ZjU2YmFkYWUwY2MzNDRhMGFiNmYyNWVhZDUxZTY0NTdjZmZhMWE4ZDBhNTBiZTc3NDJjMmJkZjBiN2EiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkyZmVlNDVkNjNkNTgzZDZiODFjMGJiZmUzODdmY2UxNmY4NTU2Yjc1NDMzNzk0M2ViMmMzN2E2NTI4MTQyNjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_95e10f14560a4689971a4573e283e1ce",
+      "statement": "`MetadataTracker` maintains separate per-key dataset metadata and a locked JSON update history capped at 100 records; it is updated after successful strategy publication and is not part of the storage generation's atomic commit.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/storage/backend.py#L254-L289",
+          "version": "repo-lines-v1:sha256:ac3355ec0a3485baac4c98f52d740e5d8d6bed891f550094e09975d83dc1a4a3:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzMTFhMzg0OGRkNmM4YjcxZDdmYWU0ZWUzZDU0OTMwMGVlZmYyNWU2ZDZmMWVmOWRkYTkwODBhODc2ODFmNmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVjNTUwMjRlMzQ4OWMyNTg3YTQ0Yjk0NmJiNDRkOGYyN2Q4YjBkZTc4ZjQ0MzBkYmUzNThhMGFlNWEwMTI5ZjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk1ODhkYmQyZjUxOTUxYTcwNjlkMDdmNGQ5ZjdkYjNmODJjOTI1MGU3NjczYjU0MDNkMzk2MTBhYWZiNjdhNTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwOWE4M2UyM2MyOWMwYTE1MjVjNGQ1YWRmODdhNzhhODMyMTNlNmQ0YmQ1MzM4OTQwMjM3OGVhNjRlY2QzMDcifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/storage/metadata_tracker.py#L181-L284",
+          "version": "repo-lines-v1:sha256:4bcb3fc5023f594ae920d62f9ce35d92809c36941fb8a636f532aaf39d970ccf:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiZDI1ZGQ2ZDYyOGY3MTQxZTk2YzJlOTcxZDE3M2IyNzllMTI0MmRjZTI4OGVjMzQ4YTIyNjc5NzhkZjIzZTU1IiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4MTc1Y2Y4YjI0OThhOTRmZWE4NzA5NGFmNTU2ZTMwM2E2MTViZTQzYWNiMWZjZWYxZjkxMjc2NWMwZTFkZDljIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI4Y2FlMGYyY2VhYTE1OTFlYmNkN2ZkNWY0ZjljYzQ3MjFiNjA1ZmQ1MWQ2OTU4N2IxYTFlYTRiNWVjMmMwNDU2IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiJhOGM5OTVkYjEzZDMzYWQ4NjM2ZDZhY2UwNzE1ZWEyMTE4YjdlNjAwYWY5MWZkNGRiMzI5YjhjYWQ4ZjVjZjM3In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L672-L745",
+          "version": "repo-lines-v1:sha256:49250988699c3c23180b2c67f6bbbe2ea5fa789248e9bdb857e615f8bfb1f6e9:eyJzZWxlY3RlZExpbmVDb3VudCI6NzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViM2RhODM1NDQ1NjM3NjdjYTIzMzk4ZTVhODI2ZTNmZjVlZDhlMDg5ZTkwOWNiZDM4YTgwYmM0MDhlZmI2OGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4ZGVmZTNiNTUxMDUxNjIyNmM5MTYyNTA1MzBmZjIxMzNjMDkxOGZjNjk2MjhkNzEwZjJkNTJmNzlkOGI3ZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFjZWJkMmM1ZDllOWEwYTc0Nzk0ZDYxZTdhMTExYmExYjQxNWRiNDEwZmYyMzExYWIyMWUyYmIyMTkxZjU0M2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4be1ca8c60c74cd5b0af7e56fc51afe0",
+      "statement": "Backfill rechecks requested ranges, downloads source observations, filters them to expected missing sessions or bars, preserves a single instrument identity and provider provenance, and reports unresolved ranges rather than fabricating values.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L1103-L1280",
+          "version": "repo-lines-v1:sha256:fe9c15371b1092f011972ee6bf077d12900b684b1f120df89ce4f363d5b1936a:eyJzZWxlY3RlZExpbmVDb3VudCI6MTc4LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJjYmE4MzI3OWQ2ZTZhNGFiZDU3YjcxOWJmNDc0MTcwZTgyMTdhNGUxMTkyMzhkNjcwMTAyNzJjZjI0MjViN2FlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI1OTA5YTUzYTYxOGQwMjhlMWQzMDAwYzBhN2FiY2VlY2JlNWZiMzdmNGU1MTFlZmU0NjY0M2ZhZDZlNjY4NzJmIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiIyNTVlMzIxNTQ1MmY3ZTE4NTk5NjQ4OTg3ODg2NjZlMjkzYzhkMGI5YThkZmNhMzY1MWFjODBiYTU2ZmQ4NWY3IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L82-L111",
+          "version": "repo-lines-v1:sha256:14d7c03e9ec9e7a0bb351b75c9562a0abc91342279dbdaa7e09ad18ee75dc5cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzNDlhMWVjM2I3N2M4MzRhYjMxMDZiYTdhOGE3OTJmMDY2ZjRmODk1NWU4OGM0ZWU4N2ZiMTA0NjgyZGE0ODgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1ZjY2MmFkNjU3NjRhZGUxYjEwOTlkNjMzNTg5ZWI3ODc3YTM5ZjIyYzY1ZjNiMjE5ZGYxYThhNzIwMzg2N2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVlZGNjZDhlMDExNDIyZWY2YzRiYTA3YTcxMTQxZjU2YWFlZDViOTZlMDU3YjRhNGJlMTBhNGQ3ZTFlMTZiMDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmZDgwNGIzOGYwNWY1NjFkNDE3NzRmNDJjZmRkMWJmMzZkZTBjODlmZjQ2ZmQzN2Y0MzAxMWUxZGEyOTliMDMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/utils/gaps.py#L475-L492",
+          "version": "repo-lines-v1:sha256:70be6d5b99b84d9b660176ff87ddaf11850ee9467f4873f6afd2093c6b1aee70:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI2YmNmYmU1Y2Y4ZGY4ZjAyYmM2MGRhMjE5Zjk0ZWJhNDQyY2EyYWI4OTg0YzIyOTJjYmEwZjhjNDgzN2M4MjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyMWYzYzMzYzg5YmY1ZWFhMmY4OWRlOTVlMjVhMjAwMTM5MjdlZWFlNzNiYTIyYjI1ZmZkYjlmYzVjY2YxMDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b6176c33e8d74151b4bd2549254f2a6d",
+      "statement": "Targeted intraday backfill requires a timestamp-range-capable provider and left-labeled bars, while daily backfill uses date-range `fetch_ohlcv`; provider and source-symbol mismatches are rejected.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L1138-L1190",
+          "version": "repo-lines-v1:sha256:a07cc7344b62d6f816d51036fcab94afabaaa1e989610b3b241b6aed142a5754:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1MDMyZTk2NGQwOTMyMzUxZTVkMTg1MjY5MjgxYjE3MWEzYTA5YjA4YjI4NmU2NjFlYTQ3MDMyM2M4MmViNGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhZDZmYWFjOGU2ZWRjMjVhY2U5NWI3NTA4ODU3NzhjNjc3ZmQxMmNjOGNkODM5MDA2NzQ2MTc3ODZkMjM2MGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUyNzEyYTYyYTU1ZDE5YTRkMWZjNTY0YWQwZTJlYWI5NWIyNDNjNGQzNTVkY2M4ZWFmMTcyNGFhM2I0NTg1YzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBiY2IxNDhiZGMxMjBkZWIwNjk4MDJhZWVlNGZmNjkyNzkyZjVhNmY3YTk1M2QyM2MyNDFjMDFkYzY4MDM4YjMifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/update_manager.py#L1215-L1244",
+          "version": "repo-lines-v1:sha256:c302941d2b137f085e2b6d6dea671bf13d9a8110d4b8c61ac14bd109ad9dad87:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjczZDI4NTkwMjFiZTg3YjUzZmIyNjRmNmQxNmUyNDA0OTlkZjAyMzJjMmFiOWE5OWU0ZGMzZTI4YTA2NzI0MjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkYzI2OWE0YjdmMTcxNzMzMWRmYzA2NDIxOWU1MWRlNTU3ZTI2N2IzZjYzY2U1NzU2MzQ2OTE3MzNhYzRhZTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZhNTY1ZDg0ZTk0Yjc4NWMyNzVlNTNmMGY2NjZhYzc1Mzg4OGZiM2NjZjg0MTU2Mjc1MjU4OWRmOTM3MGFlODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdhMDBhODE3NTlhYjg3MzI5YmFkMGJhNWEwZjc5NTZmNDkxYzFjMzA4YTYyY2E4NjE2YTBkNjI2OGFhYjJiMzUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ea7fd4e2b6d9435d94371f494e935a94",
+      "statement": "`ProviderUpdater` is an independent template-method integration surface whose subclasses provide fetch, transform, and default-start hooks; it computes an incremental safety-margin range and saves a chunk, combined data, then metadata through `IncrementalStorageBackend`.",
+      "evidence": [
+        {
+          "resource": "repo://src/ml4t/data/provider_updater.py#L19-L67",
+          "version": "repo-lines-v1:sha256:aab2347ec73558bf4b17afe5f5b72cb13c4e46289e08a5e08dcead79dd90ca86:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNmNjQ4NTczZWIyMjQyMDcxNmFhYTU0OTEwNWYwNmZkMjAxNDE5YWQ0ZDUzYzJhOTQyMWU4ZGU2NzQ1MDBlYWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjEzYWU1MTI4NjM0ZGQ1OWExMjFlM2MxYzBhMTlkOTZlNTMxNzkyMTFlZTE0MjgyOTk4YmYxZTdkMjI5MjE3NzYifQ"
+        },
+        {
+          "resource": "repo://src/ml4t/data/provider_updater.py#L244-L364",
+          "version": "repo-lines-v1:sha256:a47ae4397cb26b2a582b97c4cbc8cac0f2b637b241e2c504a9fe6b6f08f656c1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI4YWU0MzlkMzdlNmM5YmQ5YjhjMTQzYjIwZGNlNDdkZjc4MTlkMTM5NTRmNTNjM2M4YjI3M2JjNmZhNDhiMWNlIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI3Y2E3Y2I1OTc4MjU4OGFjZjFkZDg2MmRiM2JhZWY4YWFjMDFjNzZiZGY0NjJmOTlkZjlkMGE3ODM5MDdlOWRjIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI5OTQwZDJhMmMwMTYwMjJiNzNlMTc2ZmRhNGNmNjM5YTk4NTYzYTAwNGY1YTAwN2YzN2JlYTk1ZWU0OWQxZDJlIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI3ODk1ODQyMjU3YzI2ZmJhNTE3Zjg2Njg4NjRkYzQ3NTQ1NGRhY2FlZWY0NWMyYjBmYWMwNjRkNGRhMDg2MWRmIn0"
+        },
+        {
+          "resource": "repo://src/ml4t/data/provider_updater.py#L385-L466",
+          "version": "repo-lines-v1:sha256:37fa971d92a60d44cc7186e03895f66ca03fab43840846af040874a685139a3f:eyJzZWxlY3RlZExpbmVDb3VudCI6ODIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZGUyNTg3MTk2MTQ5MjYwNzFjOGZiMTlmZDg2NjE1MDU1NWYxYjAxMzU0ZjhjZDE2MDNhMTA5YTdkZGFlNDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI3NDQxZTM3OTdkOGVmMTkzNDJhMzkzYTgxYTZlZDNlYTgyZmI0NWNiZDRkM2RiMTU1MmI3ZDUxYzMwMzJiNWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-10T03:14:30.944Z"
+  }
+}
